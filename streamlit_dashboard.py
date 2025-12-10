@@ -158,55 +158,51 @@ LOG_HEADER = [
     "app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"
 ]
 
-def append_test_event_atomic(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
+def append_test_event(row: dict) -> bool:
     """
-    Robust append implemented as: read existing rows -> append -> write temp -> atomic replace.
-    This avoids partial/corrupted files when multiple writes happen.
+    Cloud-safe simple append. No atomic replace, no tempfile.
+    Guarantees writing even in restricted environments.
     """
-    for attempt in range(retries):
-        try:
-            # read existing rows (if any) using csv.DictReader to be robust against weird quoting
-            existing = []
-            if os.path.exists(TEST_EVENTS_CSV):
-                try:
-                    with open(TEST_EVENTS_CSV, "r", newline="", encoding="utf-8") as rf:
-                        reader = csv.DictReader(rf)
-                        for r in reader:
-                            # keep only header keys (ignore stray columns)
-                            entry = {k: r.get(k, "") for k in LOG_HEADER}
-                            existing.append(entry)
-                except Exception:
-                    # if reading fails, fall back to treating as empty (we'll rewrite the file)
-                    existing = []
+    header = ["timestamp","customer_id","event_type","message","phone","email",
+              "app_installed","chosen_channel","provider_message_id","status",
+              "otp_demo","replayed_from"]
 
-            # append new row (ensure all keys present as strings)
-            normalized = {k: (str(row.get(k, "")) if row.get(k,"") is not None else "") for k in LOG_HEADER}
-            existing.append(normalized)
+    try:
+        # check if file exists
+        file_exists = os.path.exists(TEST_EVENTS_CSV)
 
-            # write to a temp file in same directory then atomic replace
-            fd, tmp_path = tempfile.mkstemp(dir=LOGS_DIR, prefix="tmp_logs_", suffix=".csv")
-            os.close(fd)
-            with open(tmp_path, "w", newline="", encoding="utf-8") as wf:
-                writer = csv.DictWriter(wf, fieldnames=LOG_HEADER, extrasaction="ignore", quoting=csv.QUOTE_MINIMAL)
+        # open in append mode
+        with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(
+                f,
+                fieldnames=header,
+                extrasaction="ignore",
+                quoting=csv.QUOTE_MINIMAL
+            )
+
+            # write header only if first time
+            if not file_exists:
                 writer.writeheader()
-                for r in existing:
-                    writer.writerow(r)
-                try:
-                    wf.flush()
-                    os.fsync(wf.fileno())
-                except Exception:
-                    pass
-            # atomic replace
-            os.replace(tmp_path, TEST_EVENTS_CSV)
-            return True
-        except Exception:
-            if attempt < retries - 1:
-                time.sleep(delay)
-                continue
-            else:
-                return False
-    return False
 
+            # normalize row
+            clean_row = {k: str(row.get(k, "")) for k in header}
+            writer.writerow(clean_row)
+
+            # flush buffer
+            f.flush()
+
+            # try fsync (cloud may reject—ignore if fails)
+            try:
+                os.fsync(f.fileno())
+            except Exception:
+                pass
+
+        return True
+
+    except Exception as e:
+        st.error(f"LOGGING ERROR: {e}")
+        return False
+    
 def read_test_events_csv() -> pd.DataFrame:
     """
     Read logs using csv module to avoid pandas tokenization issues.
@@ -417,7 +413,7 @@ if submit:
         if backend_url.startswith("http://127.") or backend_url.startswith("http://localhost"):
             if "RUNNING_LOCALLY" not in os.environ:
                 use_simulated = True
-                st.warning("Backend URL points to localhost. On cloud the app cannot reach localhost — using simulated fallback.")
+                st.warning("Backend URL points to localhost. On cloud the app cannot reach localhost using simulated fallback.")
 
     if not use_simulated:
         try:
@@ -462,7 +458,7 @@ if submit:
         "otp_demo": otp_value or "",
         "replayed_from": ""
     }
-    ok = append_test_event_atomic(row)
+    ok = append_test_event(row)
     if ok:
         st.success("Saved test event to logs/test_events.csv")
         # show download snapshot (useful on ephemeral cloud)
@@ -508,7 +504,7 @@ if st.button("Refresh logs"):
 logs_df = read_test_events_csv()
 
 if logs_df.empty:
-    st.info("No test events logged yet — run a prediction to generate logs.")
+    st.info("No test events logged yet run a prediction to generate logs.")
 else:
     st.markdown("### 📄 Saved Predictions (Latest rows)")
 
