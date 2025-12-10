@@ -10,6 +10,7 @@ from datetime import datetime
 import random
 import csv
 import time
+import traceback
 from pathlib import Path
 
 # ---------------- Page config & theme colors ----------------
@@ -140,56 +141,77 @@ def load_sample_data():
     })
     return df
 
-# ---------------- Logging (robust + fallback buffer) ----------------
+LOG_HEADER = [
+    "timestamp", "customer_id", "event_type", "message", "phone", "email",
+    "app_installed", "chosen_channel", "provider_message_id", "status", "otp_demo", "replayed_from"
+]
+
 def _write_row_to_file(row: dict) -> None:
-    """Low level: write a normalized row to CSV path. Raises on failure."""
-    header = LOG_HEADER
-    file_exists = TEST_EVENTS_CSV.exists()
+    """
+    Writes a row to test_events.csv.
+    Creates file + header automatically.
+    Raises exception on failure.
+    """
+    TEST_EVENTS_CSV.parent.mkdir(parents=True, exist_ok=True)
+
+    write_header = not TEST_EVENTS_CSV.exists() or TEST_EVENTS_CSV.stat().st_size == 0
+
     with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=header, extrasaction="ignore", quoting=csv.QUOTE_MINIMAL)
-        if not file_exists:
+        writer = csv.DictWriter(f, fieldnames=LOG_HEADER, extrasaction="ignore")
+        if write_header:
             writer.writeheader()
-        # normalize values to strings
-        clean_row = {k: ("" if row.get(k) is None else str(row.get(k))) for k in header}
+
+        clean_row = {k: ("" if row.get(k) is None else str(row.get(k))) for k in LOG_HEADER}
         writer.writerow(clean_row)
         f.flush()
         try:
             os.fsync(f.fileno())
-        except Exception:
-            # some platforms deny fsync — ignore
+        except:
             pass
 
-def append_test_event(row: dict) -> (bool, str): # type: ignore
+
+def append_test_event(row: dict):
     """
-    Append a test event row. Returns (success, message).
-    On failure: stores the row in session_state.pending_logs and returns False with error string.
+    Writes a row safely.
+    If write fails, row is stored in session_state pending buffer.
+    Returns (success: bool, message: str)
     """
-    # Try direct write first
     try:
         _write_row_to_file(row)
         return True, "OK"
+
     except Exception as e:
-        # store in session buffer for later retry
-        pending = st.session_state.get("pending_logs", [])
-        pending.append({"row": row, "error": str(e), "ts": datetime.utcnow().isoformat()})
-        st.session_state["pending_logs"] = pending
-        return False, str(e)
+        err = f"{type(e).__name__}: {e}"
+
+        # store in pending buffer
+        pend = st.session_state.get("pending_logs", [])
+        pend.append({"row": row, "error": err})
+        st.session_state["pending_logs"] = pend
+
+        # also write error to logs/errors.log if possible
+        try:
+            with open(TEST_EVENTS_CSV.parent / "errors.log", "a", encoding="utf-8") as ef:
+                ef.write(f"{datetime.utcnow().isoformat()} — {err}\n")
+        except:
+            pass
+
+        return False, err
+
 
 def read_test_events_csv() -> pd.DataFrame:
-    """
-    Read logs using csv.DictReader to avoid tokenization problems.
-    Returns DataFrame (strings) with expected columns.
-    """
+    """Reads CSV safely using csv.DictReader."""
+    if not TEST_EVENTS_CSV.exists():
+        return pd.DataFrame(columns=LOG_HEADER)
+
     rows = []
-    if TEST_EVENTS_CSV.exists():
-        try:
-            with open(TEST_EVENTS_CSV, "r", newline="", encoding="utf-8") as rf:
-                reader = csv.DictReader(rf)
-                for r in reader:
-                    # guarantee all keys exist
-                    rows.append({k: r.get(k, "") for k in LOG_HEADER})
-        except Exception:
-            return pd.DataFrame(columns=LOG_HEADER)
+    try:
+        with open(TEST_EVENTS_CSV, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for r in reader:
+                rows.append({k: r.get(k, "") for k in LOG_HEADER})
+    except:
+        return pd.DataFrame(columns=LOG_HEADER)
+
     return pd.DataFrame(rows, columns=LOG_HEADER)
 
 def flush_pending_logs() -> (int, list): # type: ignore
