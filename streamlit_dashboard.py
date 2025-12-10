@@ -213,34 +213,7 @@ def read_test_events_csv() -> pd.DataFrame:
         return pd.DataFrame(columns=LOG_HEADER)
 
     return pd.DataFrame(rows, columns=LOG_HEADER)
-
-def flush_pending_logs() -> (int, list): # type: ignore
-    """
-    Try to flush pending logs from session_state to disk. Returns (count_flushed, failures_list).
-    """
-    pending = st.session_state.get("pending_logs", [])
-    failures = []
-    flushed = 0
-    if not pending:
-        return 0, failures
-    # attempt sequential write
-    remaining = []
-    for item in pending:
-        row = item.get("row", {})
-        try:
-            _write_row_to_file(row)
-            flushed += 1
-        except Exception as e:
-            item["error"] = str(e)
-            item["last_try"] = datetime.utcnow().isoformat()
-            remaining.append(item)
-    st.session_state["pending_logs"] = remaining
-    return flushed, remaining
-
-# init pending_logs if not present
-if "pending_logs" not in st.session_state:
-    st.session_state["pending_logs"] = []
-
+    
 # ---------------- Sidebar controls ----------------
 st.sidebar.title("Data & Controls")
 uploaded_file = st.sidebar.file_uploader("Upload CSV / Excel (optional)", type=["csv","xlsx","xls"])
