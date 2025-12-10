@@ -1,0 +1,23 @@
+2. Risk Analysis (with Mitigation Measures)
+
+2.1 Technical Risks
+Risk	                                        Impact	                           Mitigation
+Model fails due to missing features	        Wrong predictions	           Added fallback logic + input validation
+Synthetic training not accurate	                Low real-world accuracy	           Retrain with real bank delivery data
+API downtime	                                Users can't send notifications	   Health-check endpoint + retry strategy
+Message delivery provider fails (SMS/Email)	Failed alerts	                   Fallback to alternate channel
+
+2.2 Data Risks
+Risk	                        Impact	                          Mitigation
+Incorrect contact details	Message not delivered	          Backend validation + fallback
+PII exposure	                Security/compliance issue	  No PII stored in logs, masked logs, CSV sanitization
+
+2.3 Operational Risks
+Risk	                                          Impact	                          Mitigation
+Users misinterpret EDA insights	                  Wrong decisions	                  Add clear descriptions in dashboard
+System misuse or accidental test spamming	  Flood of test events	                  Replay button confirmation (future enhancement)
+
+2.4 Project Risks
+Risk	                Impact	                Mitigation
+Incomplete dataset	Weak patterns	        Auto-generated synthetic fallback dataset
+Time constraints	Rushed delivery  	Modular development approach

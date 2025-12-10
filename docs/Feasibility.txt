@@ -1,0 +1,41 @@
+1. Feasibility Study (Trusted Notifications Project)
+
+1.1 Technical Feasibility
+Aspect	                        Evaluation
+Technology Stack	        Python, FastAPI, Streamlit, Scikit-Learn — lightweight, open-source, easy to deploy.
+Model Complexity	        Decision Tree model is small and explainable; inference is fast (<1 ms).
+Resource Requirements	        Can run on low-spec systems (dual-core + 4GB RAM). Cloud deployment possible (Render, Railway, Streamlit Cloud).
+Integration Compatibility	API-first architecture allows integration into banking systems (CRM, Notification Service, Mobile Banking App).
+Data Handling	                Prototype uses synthetic training data + user-uploaded Excel/CSV datasets — feasible for offline demo.
+
+Conclusion: Technically feasible and easy to integrate in real-world banking workflow.
+
+1.2 Operational Feasibility
+Factor          	Explanation
+Ease of Use	        Streamlit UI is intuitive for non-technical staff (CRM, Risk, Operations).
+Data Upload	        Supports Excel/CSV uploads, making it compatible with daily operations.
+Customer Lookup 	Auto-fills customer info → reduces manual entry and human error.
+Notification Testing	Supports simulation & replay — ideal for training & monitoring.
+
+Conclusion: Operationally feasible and easily adoptable by bank teams.
+
+1.3 Economic Feasibility
+Cost Aspect	             Benefit
+Software Licensing	     Free open-source tools.
+Infrastructure	             Can be deployed on low-cost cloud or bank server.
+Development Cost	     Low — small ML model with basic rules.
+ROI	                     Reduced message retries → lower SMS cost, faster alert delivery, improved customer satisfaction.
+
+Conclusion: Economically very viable.
+
+1.4 Schedule Feasibility
+
+Backend + model development: 1–2 weeks
+
+Dashboard building: 1 week
+
+Integration + testing: 2–3 days
+
+Documentation + deployment: 2–3 days
+
+Conclusion: Entire prototype can be delivered comfortably within academic timelines.

@@ -1,0 +1,5001 @@
+event_type,msg_len,app_installed,delivery_retry_score,label_channel
+Fraud Alert,97,1,1,SMS
+Payment Confirmation,61,0,0,Email
+Login OTP,7,1,0,SMS
+Transaction OTP,4,1,0,Email
+Login OTP,9,1,1,SMS
+Transaction OTP,4,1,0,Push Notification
+Payment Confirmation,148,1,2,Email
+Reward Points Update,75,1,2,Push Notification
+Payment Confirmation,164,0,0,Email
+Login OTP,8,1,0,SMS
+Low Balance Alert,102,0,0,Email
+Low Balance Alert,47,1,1,Push Notification
+Low Balance Alert,78,1,0,Push Notification
+Beneficiary Added Alert,88,1,0,WhatsApp
+Reward Points Update,142,1,1,Email
+Beneficiary Added Alert,73,1,1,WhatsApp
+Transaction OTP,11,1,1,Push Notification
+Low Balance Alert,114,1,0,Email
+Beneficiary Added Alert,114,0,1,WhatsApp
+Payment Confirmation,82,1,2,Email
+Payment Confirmation,183,1,0,Email
+Monthly Statement,161,1,1,Push Notification
+Fraud Alert,21,1,1,SMS
+Credit Card Bill Reminder,209,1,0,Push Notification
+KYC Reminder,104,1,0,Push Notification
+Monthly Statement,27,1,1,Email
+Monthly Statement,146,1,3,Push Notification
+Payment Confirmation,187,1,0,Email
+Credit Card Bill Reminder,180,0,1,Email
+Transaction OTP,10,1,0,Email
+Beneficiary Added Alert,96,0,1,WhatsApp
+Transaction OTP,8,1,0,Push Notification
+Reward Points Update,26,0,1,Email
+Monthly Statement,135,1,1,Push Notification
+Reward Points Update,129,0,1,Email
+Beneficiary Added Alert,80,0,1,WhatsApp
+Monthly Statement,99,1,0,Email
+Login OTP,10,0,0,SMS
+Fraud Alert,52,1,0,SMS
+Login OTP,10,1,1,SMS
+Reward Points Update,20,0,1,Email
+Fraud Alert,29,1,0,Email
+Login OTP,5,1,1,SMS
+Payment Confirmation,199,1,1,Push Notification
+Transaction OTP,5,1,3,Push Notification
+KYC Reminder,145,1,0,SMS
+Beneficiary Added Alert,20,0,1,WhatsApp
+Reward Points Update,62,1,0,Push Notification
+Fraud Alert,28,0,0,Push Notification
+Payment Confirmation,122,1,1,Push Notification
+Reward Points Update,93,1,0,Email
+Beneficiary Added Alert,71,1,0,WhatsApp
+Transaction OTP,6,1,0,Email
+Beneficiary Added Alert,107,1,1,WhatsApp
+Low Balance Alert,84,0,2,Email
+Fraud Alert,88,0,0,SMS
+Beneficiary Added Alert,117,1,1,WhatsApp
+Transaction OTP,8,1,0,Push Notification
+Monthly Statement,109,0,1,Email
+Fraud Alert,36,0,1,SMS
+Reward Points Update,149,1,1,Push Notification
+Payment Confirmation,191,1,0,Email
+KYC Reminder,265,0,0,Push Notification
+Login OTP,11,0,0,SMS
+Low Balance Alert,59,1,0,Push Notification
+Reward Points Update,79,1,2,Push Notification
+Credit Card Bill Reminder,324,0,1,Email
+Beneficiary Added Alert,115,1,0,WhatsApp
+Credit Card Bill Reminder,159,1,0,Email
+Monthly Statement,72,1,1,Push Notification
+Login OTP,6,1,0,SMS
+Login OTP,4,1,0,SMS
+Login OTP,11,1,0,SMS
+Monthly Statement,69,0,0,Email
+Credit Card Bill Reminder,293,0,0,Email
+KYC Reminder,115,1,0,Push Notification
+KYC Reminder,349,0,0,Push Notification
+Payment Confirmation,106,0,1,Email
+Reward Points Update,31,1,0,Push Notification
+Monthly Statement,50,1,0,Email
+Beneficiary Added Alert,105,0,0,WhatsApp
+Login OTP,6,0,1,SMS
+Low Balance Alert,57,1,0,Push Notification
+Credit Card Bill Reminder,160,1,0,SMS
+KYC Reminder,133,1,1,Push Notification
+Reward Points Update,159,1,0,Push Notification
+Fraud Alert,119,1,0,SMS
+Reward Points Update,172,0,2,Email
+Payment Confirmation,59,1,0,SMS
+Reward Points Update,159,1,0,Email
+Reward Points Update,178,1,0,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Fraud Alert,94,1,1,SMS
+Beneficiary Added Alert,120,1,2,WhatsApp
+KYC Reminder,116,1,2,Push Notification
+Reward Points Update,97,1,0,Email
+Beneficiary Added Alert,91,1,0,WhatsApp
+Low Balance Alert,61,1,1,Email
+Fraud Alert,72,1,1,SMS
+Low Balance Alert,101,1,0,Push Notification
+Credit Card Bill Reminder,329,1,2,Email
+Payment Confirmation,87,0,1,Email
+Fraud Alert,21,1,0,SMS
+Credit Card Bill Reminder,221,1,1,Email
+Login OTP,4,0,3,SMS
+Fraud Alert,74,1,0,SMS
+Beneficiary Added Alert,110,0,1,WhatsApp
+Login OTP,5,0,0,SMS
+Beneficiary Added Alert,60,0,0,WhatsApp
+Payment Confirmation,138,0,1,Email
+Fraud Alert,67,1,0,SMS
+Monthly Statement,194,0,1,Email
+Login OTP,9,0,0,SMS
+Beneficiary Added Alert,101,0,0,WhatsApp
+Login OTP,10,0,0,SMS
+Reward Points Update,134,1,1,Email
+Payment Confirmation,106,0,0,Email
+Credit Card Bill Reminder,301,1,0,Email
+Login OTP,10,0,2,SMS
+Payment Confirmation,162,0,1,Email
+Credit Card Bill Reminder,205,0,0,Email
+Monthly Statement,102,1,2,Push Notification
+Fraud Alert,72,0,0,SMS
+Low Balance Alert,38,1,0,Push Notification
+Fraud Alert,24,0,0,SMS
+Credit Card Bill Reminder,281,1,0,Push Notification
+Reward Points Update,181,1,1,Push Notification
+KYC Reminder,209,0,0,Push Notification
+Transaction OTP,6,1,0,Email
+Beneficiary Added Alert,61,0,2,WhatsApp
+Transaction OTP,5,1,1,Email
+KYC Reminder,138,0,1,Push Notification
+Payment Confirmation,22,1,1,Push Notification
+Transaction OTP,9,0,1,Email
+Login OTP,9,0,0,SMS
+Low Balance Alert,52,1,0,Email
+Fraud Alert,88,1,1,SMS
+KYC Reminder,134,1,0,Push Notification
+Credit Card Bill Reminder,158,1,0,Push Notification
+Fraud Alert,67,0,0,SMS
+Credit Card Bill Reminder,207,0,1,Email
+KYC Reminder,287,0,0,Push Notification
+Credit Card Bill Reminder,111,1,1,Email
+Reward Points Update,73,1,2,Push Notification
+Monthly Statement,50,1,0,Email
+Transaction OTP,11,1,1,Push Notification
+Reward Points Update,24,1,0,Email
+KYC Reminder,313,1,0,Push Notification
+Login OTP,9,1,1,SMS
+Monthly Statement,45,0,0,Email
+Monthly Statement,24,1,0,Push Notification
+KYC Reminder,251,1,0,Push Notification
+Credit Card Bill Reminder,304,1,1,Email
+Low Balance Alert,81,1,1,Push Notification
+Credit Card Bill Reminder,192,0,0,Email
+Low Balance Alert,39,1,1,Push Notification
+Credit Card Bill Reminder,282,0,0,Email
+Low Balance Alert,70,1,2,Push Notification
+Transaction OTP,4,1,1,Email
+Fraud Alert,120,1,0,SMS
+Beneficiary Added Alert,82,0,0,WhatsApp
+Credit Card Bill Reminder,302,0,0,Email
+KYC Reminder,201,1,0,Push Notification
+Beneficiary Added Alert,74,1,0,WhatsApp
+Fraud Alert,40,0,1,SMS
+Monthly Statement,150,1,0,Email
+Fraud Alert,34,1,1,SMS
+Transaction OTP,12,0,1,Email
+Fraud Alert,112,0,0,SMS
+Low Balance Alert,115,1,1,Email
+Reward Points Update,68,1,1,Email
+Beneficiary Added Alert,67,0,0,SMS
+Payment Confirmation,130,1,1,Push Notification
+Fraud Alert,107,0,0,SMS
+Monthly Statement,72,1,1,Push Notification
+Payment Confirmation,148,0,1,Email
+Payment Confirmation,107,1,2,WhatsApp
+KYC Reminder,100,1,0,Push Notification
+Beneficiary Added Alert,30,1,0,WhatsApp
+KYC Reminder,243,1,0,Push Notification
+Fraud Alert,79,0,0,SMS
+Fraud Alert,43,1,1,SMS
+Transaction OTP,4,1,0,Email
+Transaction OTP,9,1,1,Email
+Transaction OTP,8,1,0,Push Notification
+Credit Card Bill Reminder,103,0,1,Email
+Low Balance Alert,70,1,0,Push Notification
+KYC Reminder,331,1,1,Push Notification
+Credit Card Bill Reminder,158,1,1,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Beneficiary Added Alert,101,1,1,WhatsApp
+Payment Confirmation,48,0,0,Email
+Login OTP,6,0,0,SMS
+Login OTP,7,1,0,SMS
+Reward Points Update,42,1,0,Push Notification
+Credit Card Bill Reminder,208,1,1,Email
+Reward Points Update,200,0,2,Email
+Fraud Alert,51,1,1,SMS
+Payment Confirmation,176,1,0,Push Notification
+Fraud Alert,116,0,0,SMS
+Payment Confirmation,187,0,1,Email
+Monthly Statement,157,1,1,Email
+Login OTP,5,1,1,SMS
+Login OTP,6,0,0,SMS
+Credit Card Bill Reminder,232,1,1,Push Notification
+Payment Confirmation,35,0,0,WhatsApp
+KYC Reminder,250,1,2,Push Notification
+Low Balance Alert,20,1,1,Email
+Beneficiary Added Alert,75,0,0,Email
+Credit Card Bill Reminder,172,1,0,Push Notification
+Monthly Statement,161,1,2,Push Notification
+KYC Reminder,290,0,0,Push Notification
+Credit Card Bill Reminder,203,1,0,Push Notification
+Monthly Statement,35,0,0,Push Notification
+Monthly Statement,95,1,0,Push Notification
+Transaction OTP,7,1,0,Push Notification
+Login OTP,8,0,0,SMS
+Login OTP,6,1,2,SMS
+Login OTP,10,0,0,SMS
+Login OTP,7,1,0,SMS
+Reward Points Update,189,0,0,Email
+Low Balance Alert,69,1,0,Push Notification
+Credit Card Bill Reminder,202,1,2,WhatsApp
+Beneficiary Added Alert,92,0,1,WhatsApp
+Fraud Alert,59,0,1,SMS
+KYC Reminder,272,0,0,Email
+Reward Points Update,179,1,1,Email
+Credit Card Bill Reminder,277,0,0,WhatsApp
+Payment Confirmation,80,1,1,Push Notification
+Monthly Statement,35,1,0,Push Notification
+Login OTP,8,0,0,Email
+Fraud Alert,31,1,0,SMS
+Monthly Statement,150,0,0,Email
+Fraud Alert,57,1,1,SMS
+Beneficiary Added Alert,64,1,0,WhatsApp
+Beneficiary Added Alert,62,0,0,WhatsApp
+KYC Reminder,131,0,0,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Credit Card Bill Reminder,206,1,0,Push Notification
+Fraud Alert,117,0,0,SMS
+Credit Card Bill Reminder,142,1,1,WhatsApp
+Reward Points Update,50,1,2,WhatsApp
+Reward Points Update,143,0,0,Email
+Credit Card Bill Reminder,185,1,2,Email
+Monthly Statement,166,1,2,Email
+Credit Card Bill Reminder,276,1,1,WhatsApp
+Reward Points Update,185,1,0,Email
+Credit Card Bill Reminder,239,0,0,SMS
+KYC Reminder,293,0,2,Push Notification
+Payment Confirmation,160,0,0,Email
+Beneficiary Added Alert,119,1,0,WhatsApp
+Payment Confirmation,191,0,1,Email
+Login OTP,12,0,0,SMS
+Credit Card Bill Reminder,166,1,0,Push Notification
+Monthly Statement,169,1,2,Push Notification
+Fraud Alert,74,1,0,SMS
+Monthly Statement,37,1,0,Email
+Reward Points Update,52,0,0,Email
+Low Balance Alert,84,0,0,Email
+Fraud Alert,87,1,1,SMS
+Monthly Statement,83,1,0,Email
+Fraud Alert,35,1,0,SMS
+KYC Reminder,328,1,1,Push Notification
+Login OTP,12,1,0,SMS
+Fraud Alert,112,0,2,SMS
+Fraud Alert,95,1,0,SMS
+Monthly Statement,193,0,0,Email
+Login OTP,5,1,1,SMS
+Low Balance Alert,49,0,0,Email
+KYC Reminder,273,1,0,Push Notification
+Low Balance Alert,22,1,2,Push Notification
+Payment Confirmation,61,1,0,Email
+Transaction OTP,4,0,0,Email
+Beneficiary Added Alert,105,1,0,WhatsApp
+Monthly Statement,36,0,0,Email
+Login OTP,8,1,0,SMS
+Payment Confirmation,111,1,1,Push Notification
+Beneficiary Added Alert,95,0,1,WhatsApp
+Credit Card Bill Reminder,194,1,0,Push Notification
+Reward Points Update,186,0,1,Email
+Beneficiary Added Alert,72,1,1,WhatsApp
+Monthly Statement,162,1,0,Push Notification
+Transaction OTP,11,0,0,Email
+Fraud Alert,40,1,2,SMS
+KYC Reminder,269,1,1,Push Notification
+Credit Card Bill Reminder,129,0,0,Email
+Login OTP,5,1,1,SMS
+Monthly Statement,87,0,1,Email
+Reward Points Update,162,0,1,Email
+Monthly Statement,100,1,0,Email
+Transaction OTP,4,0,1,Email
+Fraud Alert,108,1,0,SMS
+Payment Confirmation,89,1,0,Push Notification
+Payment Confirmation,122,1,0,Email
+KYC Reminder,215,1,2,Push Notification
+KYC Reminder,224,0,2,Push Notification
+Payment Confirmation,167,0,0,Email
+Reward Points Update,82,1,0,Push Notification
+Transaction OTP,7,1,3,Push Notification
+Credit Card Bill Reminder,285,1,3,Push Notification
+Monthly Statement,172,1,0,SMS
+Fraud Alert,69,1,0,SMS
+Monthly Statement,146,1,0,Push Notification
+Payment Confirmation,91,1,1,SMS
+Credit Card Bill Reminder,251,0,1,Push Notification
+Monthly Statement,112,1,2,Push Notification
+Login OTP,12,1,0,SMS
+KYC Reminder,194,0,0,Push Notification
+Reward Points Update,135,1,0,Push Notification
+Low Balance Alert,46,0,3,Email
+Transaction OTP,10,0,0,Email
+Monthly Statement,149,0,0,Email
+Beneficiary Added Alert,52,1,1,WhatsApp
+Credit Card Bill Reminder,335,1,1,Email
+Monthly Statement,183,1,2,SMS
+Beneficiary Added Alert,23,1,1,WhatsApp
+Credit Card Bill Reminder,271,0,0,Email
+KYC Reminder,329,0,0,Push Notification
+Monthly Statement,109,1,1,Push Notification
+Reward Points Update,82,1,1,Email
+KYC Reminder,331,1,2,Push Notification
+Monthly Statement,41,1,0,Push Notification
+Fraud Alert,99,0,1,SMS
+Low Balance Alert,74,1,1,Push Notification
+Transaction OTP,12,1,2,Email
+Reward Points Update,137,0,0,Email
+Low Balance Alert,100,0,0,Email
+Fraud Alert,78,0,0,SMS
+Monthly Statement,26,1,2,Push Notification
+Low Balance Alert,96,1,0,Push Notification
+KYC Reminder,295,0,0,Push Notification
+Transaction OTP,7,1,0,Push Notification
+Beneficiary Added Alert,26,1,0,WhatsApp
+Login OTP,5,0,0,SMS
+Transaction OTP,10,1,1,Push Notification
+Transaction OTP,4,0,0,Email
+KYC Reminder,306,1,2,Push Notification
+Transaction OTP,7,1,1,Push Notification
+Payment Confirmation,121,1,0,Email
+Transaction OTP,12,1,0,Push Notification
+Fraud Alert,87,1,1,SMS
+Monthly Statement,128,1,2,Email
+Monthly Statement,94,1,1,Push Notification
+Reward Points Update,176,1,0,Push Notification
+Login OTP,7,0,0,SMS
+Beneficiary Added Alert,57,1,1,WhatsApp
+Credit Card Bill Reminder,282,0,0,Push Notification
+Beneficiary Added Alert,75,1,1,SMS
+KYC Reminder,206,1,1,Push Notification
+Beneficiary Added Alert,106,0,1,WhatsApp
+Fraud Alert,39,1,0,SMS
+Payment Confirmation,122,1,0,Push Notification
+Reward Points Update,176,0,0,Email
+Monthly Statement,81,1,1,Email
+Login OTP,12,1,2,SMS
+Transaction OTP,7,1,1,Email
+Credit Card Bill Reminder,272,1,0,Email
+Fraud Alert,82,1,0,SMS
+Payment Confirmation,145,0,0,Email
+KYC Reminder,209,1,2,Push Notification
+Transaction OTP,4,1,0,Email
+Beneficiary Added Alert,114,1,1,Push Notification
+KYC Reminder,183,1,0,Push Notification
+Transaction OTP,9,0,1,Email
+Fraud Alert,54,1,0,SMS
+Credit Card Bill Reminder,123,0,1,Email
+KYC Reminder,143,0,0,Push Notification
+Beneficiary Added Alert,119,1,1,WhatsApp
+Reward Points Update,28,1,0,Push Notification
+Transaction OTP,4,1,0,Push Notification
+Payment Confirmation,38,0,0,Email
+KYC Reminder,138,0,1,Push Notification
+Beneficiary Added Alert,69,0,0,WhatsApp
+Monthly Statement,175,1,0,Email
+Reward Points Update,139,1,0,Email
+Fraud Alert,97,0,1,SMS
+Monthly Statement,103,1,3,Email
+Payment Confirmation,147,1,2,Push Notification
+KYC Reminder,196,0,0,Push Notification
+Fraud Alert,61,1,0,SMS
+Monthly Statement,111,1,0,Email
+Login OTP,12,1,0,SMS
+Monthly Statement,177,1,0,Push Notification
+Fraud Alert,57,1,1,SMS
+Low Balance Alert,85,1,1,Email
+Fraud Alert,62,0,1,SMS
+Monthly Statement,129,1,1,Email
+Low Balance Alert,71,1,0,Push Notification
+Beneficiary Added Alert,102,1,0,WhatsApp
+Transaction OTP,5,1,0,Push Notification
+Beneficiary Added Alert,25,1,1,SMS
+Payment Confirmation,52,0,1,Email
+Reward Points Update,43,0,0,Email
+Low Balance Alert,21,1,1,Email
+Transaction OTP,7,0,1,Email
+Beneficiary Added Alert,66,1,2,WhatsApp
+Payment Confirmation,183,1,0,Push Notification
+Login OTP,10,1,1,SMS
+Login OTP,7,1,0,SMS
+Credit Card Bill Reminder,227,1,2,Push Notification
+KYC Reminder,215,0,0,Push Notification
+Fraud Alert,66,0,0,SMS
+Transaction OTP,4,0,0,Email
+Payment Confirmation,200,1,0,Email
+Monthly Statement,79,1,1,Email
+Monthly Statement,157,0,0,Email
+KYC Reminder,252,1,0,Push Notification
+Fraud Alert,81,1,0,SMS
+KYC Reminder,211,0,3,Push Notification
+Beneficiary Added Alert,80,0,0,WhatsApp
+Fraud Alert,49,0,0,SMS
+Low Balance Alert,48,0,0,Email
+Monthly Statement,142,1,2,Push Notification
+Beneficiary Added Alert,57,0,0,WhatsApp
+KYC Reminder,195,1,1,Push Notification
+Payment Confirmation,114,1,0,WhatsApp
+Low Balance Alert,70,0,0,Email
+Payment Confirmation,85,1,0,Email
+Transaction OTP,9,1,0,Push Notification
+KYC Reminder,150,1,1,Push Notification
+Credit Card Bill Reminder,210,1,0,Push Notification
+Low Balance Alert,109,0,1,Email
+Payment Confirmation,135,1,0,Email
+Credit Card Bill Reminder,219,1,2,Push Notification
+Beneficiary Added Alert,103,0,2,WhatsApp
+Transaction OTP,7,1,0,Email
+Fraud Alert,21,0,0,SMS
+KYC Reminder,193,1,2,Push Notification
+Fraud Alert,101,1,1,SMS
+Credit Card Bill Reminder,216,1,1,Push Notification
+Fraud Alert,102,0,0,SMS
+Monthly Statement,181,1,2,Email
+Fraud Alert,33,0,1,SMS
+Low Balance Alert,54,1,0,Email
+Credit Card Bill Reminder,350,0,2,Email
+KYC Reminder,339,1,1,Push Notification
+Beneficiary Added Alert,113,1,1,WhatsApp
+Login OTP,8,0,0,SMS
+KYC Reminder,189,1,1,Push Notification
+Login OTP,12,1,0,SMS
+Monthly Statement,138,1,1,Push Notification
+Beneficiary Added Alert,77,0,0,WhatsApp
+Payment Confirmation,49,1,1,Push Notification
+Fraud Alert,113,0,0,SMS
+Monthly Statement,103,1,0,Push Notification
+Reward Points Update,39,0,0,Email
+Payment Confirmation,71,0,1,Email
+Credit Card Bill Reminder,339,1,0,Email
+KYC Reminder,227,1,1,Push Notification
+Credit Card Bill Reminder,123,0,0,Email
+Reward Points Update,133,0,0,Email
+Fraud Alert,112,0,1,SMS
+Beneficiary Added Alert,109,1,0,WhatsApp
+Payment Confirmation,156,0,1,Email
+KYC Reminder,133,0,1,Push Notification
+Login OTP,10,1,0,SMS
+Login OTP,5,0,0,SMS
+Credit Card Bill Reminder,322,0,0,Email
+Monthly Statement,38,1,0,WhatsApp
+Monthly Statement,122,0,0,Email
+Login OTP,11,1,0,SMS
+Reward Points Update,155,1,2,Email
+Payment Confirmation,196,1,0,SMS
+Monthly Statement,150,0,0,Email
+Low Balance Alert,62,1,1,Email
+Transaction OTP,4,1,2,Push Notification
+Login OTP,12,0,2,SMS
+Reward Points Update,140,0,2,Email
+Monthly Statement,24,1,1,Email
+Login OTP,12,1,1,SMS
+Credit Card Bill Reminder,175,1,1,Email
+Login OTP,7,1,2,SMS
+Payment Confirmation,47,1,1,Email
+Low Balance Alert,75,1,1,Email
+Transaction OTP,4,1,0,Push Notification
+Reward Points Update,137,1,0,Push Notification
+Beneficiary Added Alert,32,0,1,WhatsApp
+Login OTP,5,0,1,SMS
+Fraud Alert,107,0,0,Push Notification
+KYC Reminder,184,0,0,Push Notification
+KYC Reminder,241,1,1,Push Notification
+Login OTP,4,1,0,SMS
+KYC Reminder,210,1,1,Push Notification
+Reward Points Update,75,1,0,Push Notification
+Fraud Alert,113,1,0,SMS
+Fraud Alert,30,1,2,SMS
+Low Balance Alert,52,1,0,Push Notification
+Beneficiary Added Alert,38,1,1,WhatsApp
+Reward Points Update,191,1,0,Push Notification
+Payment Confirmation,183,1,0,Email
+Login OTP,12,1,2,Email
+Beneficiary Added Alert,91,1,1,WhatsApp
+Login OTP,12,1,0,SMS
+Beneficiary Added Alert,116,1,2,WhatsApp
+Monthly Statement,151,0,1,Email
+Reward Points Update,144,1,1,Push Notification
+Low Balance Alert,91,1,0,Email
+Reward Points Update,24,0,0,Email
+Transaction OTP,6,1,3,Email
+Login OTP,11,0,1,SMS
+KYC Reminder,147,1,2,Push Notification
+Monthly Statement,109,1,0,Email
+Reward Points Update,90,1,0,Push Notification
+KYC Reminder,147,0,2,Push Notification
+Payment Confirmation,52,1,1,Email
+Payment Confirmation,155,1,1,Push Notification
+Transaction OTP,12,1,0,Push Notification
+Payment Confirmation,76,0,0,Email
+Payment Confirmation,176,0,1,Email
+Reward Points Update,21,0,2,Email
+Credit Card Bill Reminder,294,0,0,Email
+Monthly Statement,30,0,3,Email
+Payment Confirmation,185,1,1,WhatsApp
+KYC Reminder,257,1,0,Push Notification
+Credit Card Bill Reminder,166,0,0,SMS
+Credit Card Bill Reminder,252,1,1,Email
+Low Balance Alert,71,1,1,Email
+Reward Points Update,100,1,0,Email
+Fraud Alert,104,1,0,SMS
+KYC Reminder,205,1,0,Push Notification
+Reward Points Update,163,1,1,Push Notification
+KYC Reminder,265,1,1,Push Notification
+Monthly Statement,53,1,1,Push Notification
+Credit Card Bill Reminder,336,1,1,Email
+Reward Points Update,147,0,0,Email
+Credit Card Bill Reminder,107,0,0,Email
+Transaction OTP,11,0,0,Email
+Credit Card Bill Reminder,173,0,0,Email
+Beneficiary Added Alert,36,0,0,WhatsApp
+Beneficiary Added Alert,48,0,0,WhatsApp
+Beneficiary Added Alert,39,0,1,WhatsApp
+Fraud Alert,114,0,0,SMS
+Login OTP,12,0,0,SMS
+Low Balance Alert,90,1,2,Push Notification
+Reward Points Update,101,1,1,Push Notification
+Login OTP,7,0,2,SMS
+Reward Points Update,180,1,0,Push Notification
+Low Balance Alert,99,1,0,Push Notification
+KYC Reminder,195,1,1,Push Notification
+Monthly Statement,119,1,0,Push Notification
+Login OTP,4,1,0,SMS
+Transaction OTP,11,1,0,Push Notification
+Reward Points Update,117,0,1,Email
+Monthly Statement,74,1,0,Push Notification
+Payment Confirmation,140,1,2,Push Notification
+Monthly Statement,153,1,1,Push Notification
+Credit Card Bill Reminder,140,0,0,Email
+Monthly Statement,77,1,1,WhatsApp
+Payment Confirmation,182,1,0,Email
+Low Balance Alert,78,0,0,Email
+Login OTP,7,0,2,SMS
+Low Balance Alert,64,1,1,Email
+Payment Confirmation,167,1,0,Email
+KYC Reminder,233,1,0,Push Notification
+KYC Reminder,226,1,3,Push Notification
+Beneficiary Added Alert,106,0,2,WhatsApp
+Transaction OTP,10,1,1,Email
+Credit Card Bill Reminder,311,1,0,Email
+Fraud Alert,92,1,0,SMS
+KYC Reminder,190,0,1,Push Notification
+Monthly Statement,125,1,0,Push Notification
+Credit Card Bill Reminder,328,0,1,WhatsApp
+Low Balance Alert,74,0,0,Email
+Beneficiary Added Alert,82,1,1,WhatsApp
+Monthly Statement,42,1,2,Email
+Transaction OTP,12,1,1,Email
+Monthly Statement,48,0,1,Email
+Reward Points Update,189,1,0,Push Notification
+Login OTP,7,0,2,SMS
+Fraud Alert,89,1,1,SMS
+Transaction OTP,7,0,0,Email
+Fraud Alert,55,1,0,SMS
+Reward Points Update,58,0,0,Email
+Login OTP,8,0,2,SMS
+Monthly Statement,23,1,0,Push Notification
+Fraud Alert,93,1,2,SMS
+Credit Card Bill Reminder,260,1,1,SMS
+KYC Reminder,272,0,0,Push Notification
+KYC Reminder,223,0,1,Push Notification
+Payment Confirmation,58,0,1,Email
+Low Balance Alert,57,0,2,Email
+Login OTP,11,1,1,SMS
+Credit Card Bill Reminder,348,0,0,Email
+Reward Points Update,90,1,0,Email
+Low Balance Alert,119,1,0,Push Notification
+Monthly Statement,139,0,0,Email
+KYC Reminder,158,0,0,Push Notification
+Low Balance Alert,91,1,2,Push Notification
+Monthly Statement,178,0,1,Email
+Monthly Statement,58,0,0,Push Notification
+Monthly Statement,129,0,1,Email
+KYC Reminder,178,0,0,Push Notification
+Beneficiary Added Alert,101,0,0,WhatsApp
+Credit Card Bill Reminder,199,0,1,Email
+Reward Points Update,186,1,2,Email
+Credit Card Bill Reminder,273,0,0,Email
+Fraud Alert,81,1,0,SMS
+Credit Card Bill Reminder,150,1,0,Push Notification
+Beneficiary Added Alert,58,1,1,WhatsApp
+KYC Reminder,307,0,0,Push Notification
+Transaction OTP,12,1,0,Push Notification
+Reward Points Update,126,1,1,Email
+Beneficiary Added Alert,28,1,2,WhatsApp
+Low Balance Alert,35,1,1,Email
+KYC Reminder,235,0,1,Email
+Low Balance Alert,57,1,1,Push Notification
+Login OTP,8,1,1,SMS
+Login OTP,7,0,0,SMS
+Login OTP,7,1,2,SMS
+Reward Points Update,179,0,1,Email
+Credit Card Bill Reminder,149,1,2,Email
+Transaction OTP,11,0,2,Email
+KYC Reminder,263,1,0,Push Notification
+Login OTP,4,1,0,SMS
+Login OTP,9,1,0,SMS
+Payment Confirmation,127,1,0,Email
+Reward Points Update,136,1,3,Push Notification
+Payment Confirmation,52,1,1,Push Notification
+Monthly Statement,64,0,1,Email
+Credit Card Bill Reminder,141,1,1,Push Notification
+Fraud Alert,42,0,1,SMS
+Payment Confirmation,69,0,2,Email
+KYC Reminder,307,1,1,Push Notification
+KYC Reminder,123,0,0,Push Notification
+Credit Card Bill Reminder,191,0,1,Email
+Low Balance Alert,27,1,0,Push Notification
+Beneficiary Added Alert,84,1,0,WhatsApp
+Reward Points Update,35,0,1,Email
+Login OTP,6,0,2,SMS
+Low Balance Alert,112,0,0,Email
+Monthly Statement,200,0,0,Email
+Reward Points Update,140,1,1,Push Notification
+Fraud Alert,46,1,0,SMS
+Transaction OTP,9,0,1,Email
+Login OTP,7,1,0,SMS
+Login OTP,4,0,0,SMS
+Beneficiary Added Alert,50,0,1,WhatsApp
+Monthly Statement,155,1,0,Email
+Beneficiary Added Alert,73,1,3,WhatsApp
+KYC Reminder,152,1,1,Push Notification
+KYC Reminder,264,1,1,Push Notification
+Reward Points Update,28,1,0,Email
+Reward Points Update,92,1,0,Email
+Login OTP,5,1,0,SMS
+Login OTP,10,1,0,SMS
+Beneficiary Added Alert,66,0,0,WhatsApp
+KYC Reminder,275,1,1,Push Notification
+Transaction OTP,10,0,0,Email
+Fraud Alert,92,1,1,SMS
+Login OTP,8,1,0,SMS
+Reward Points Update,98,1,1,Push Notification
+Beneficiary Added Alert,105,1,0,WhatsApp
+Fraud Alert,20,0,0,SMS
+Credit Card Bill Reminder,338,0,1,Email
+Login OTP,10,1,1,SMS
+Reward Points Update,29,1,2,Push Notification
+Low Balance Alert,79,1,2,Push Notification
+Credit Card Bill Reminder,303,0,0,Email
+Reward Points Update,39,1,1,Email
+Reward Points Update,109,1,1,Email
+Beneficiary Added Alert,100,1,0,WhatsApp
+Monthly Statement,40,1,0,Push Notification
+Beneficiary Added Alert,35,0,1,Push Notification
+Credit Card Bill Reminder,225,0,0,Email
+Fraud Alert,95,1,2,SMS
+Beneficiary Added Alert,48,1,0,WhatsApp
+KYC Reminder,238,1,0,SMS
+Low Balance Alert,102,0,1,Email
+Payment Confirmation,167,0,0,Email
+Low Balance Alert,48,0,1,Email
+KYC Reminder,141,0,1,Push Notification
+KYC Reminder,287,0,0,Push Notification
+Reward Points Update,20,0,1,Email
+Monthly Statement,25,1,3,Push Notification
+Credit Card Bill Reminder,142,0,0,Email
+Reward Points Update,131,1,2,Push Notification
+Credit Card Bill Reminder,212,1,1,Push Notification
+Login OTP,12,1,0,SMS
+Payment Confirmation,51,1,1,Email
+Monthly Statement,129,0,0,Email
+Fraud Alert,82,0,0,SMS
+KYC Reminder,267,0,1,Push Notification
+Low Balance Alert,34,1,1,Email
+Beneficiary Added Alert,26,0,0,WhatsApp
+Reward Points Update,197,0,1,Email
+Payment Confirmation,183,1,0,Push Notification
+Fraud Alert,96,1,0,SMS
+Login OTP,11,1,0,SMS
+KYC Reminder,234,1,1,Push Notification
+Login OTP,9,1,0,SMS
+Credit Card Bill Reminder,319,1,0,Email
+Beneficiary Added Alert,107,0,0,WhatsApp
+Monthly Statement,50,1,0,Push Notification
+Reward Points Update,186,1,0,Push Notification
+Beneficiary Added Alert,73,1,1,WhatsApp
+Reward Points Update,149,1,1,Push Notification
+Beneficiary Added Alert,45,0,0,WhatsApp
+Fraud Alert,105,0,0,SMS
+Low Balance Alert,33,1,0,Push Notification
+Reward Points Update,150,1,0,Email
+Credit Card Bill Reminder,130,1,0,Push Notification
+Monthly Statement,80,0,1,Email
+Reward Points Update,70,0,0,Email
+KYC Reminder,266,1,1,Push Notification
+Reward Points Update,33,0,0,Email
+Payment Confirmation,183,1,0,Email
+Beneficiary Added Alert,103,1,0,WhatsApp
+Beneficiary Added Alert,33,0,0,WhatsApp
+Login OTP,9,0,0,SMS
+Payment Confirmation,159,0,0,Email
+Transaction OTP,8,0,0,Email
+Monthly Statement,139,1,2,Email
+Monthly Statement,133,1,0,Push Notification
+Monthly Statement,22,1,1,Email
+Beneficiary Added Alert,94,0,2,WhatsApp
+Reward Points Update,131,0,0,Email
+Reward Points Update,70,0,0,Email
+KYC Reminder,298,1,0,Push Notification
+Login OTP,12,0,1,WhatsApp
+Payment Confirmation,104,1,0,Email
+Reward Points Update,161,1,1,Email
+Fraud Alert,90,0,0,SMS
+Fraud Alert,87,1,1,SMS
+Transaction OTP,8,1,0,Push Notification
+Beneficiary Added Alert,94,0,0,WhatsApp
+Low Balance Alert,113,0,0,Email
+KYC Reminder,143,1,0,Push Notification
+Login OTP,10,1,1,WhatsApp
+Login OTP,12,0,0,SMS
+Beneficiary Added Alert,80,1,1,WhatsApp
+KYC Reminder,300,1,1,Push Notification
+Transaction OTP,12,1,1,Push Notification
+Low Balance Alert,93,0,0,Email
+Monthly Statement,35,1,2,Push Notification
+Fraud Alert,108,0,0,SMS
+Fraud Alert,108,1,0,SMS
+KYC Reminder,249,0,1,Push Notification
+Transaction OTP,5,1,0,Push Notification
+Low Balance Alert,90,0,0,Email
+Login OTP,5,0,0,SMS
+Credit Card Bill Reminder,224,1,1,Push Notification
+Fraud Alert,113,1,1,SMS
+Beneficiary Added Alert,105,0,0,WhatsApp
+Beneficiary Added Alert,83,0,1,Email
+Login OTP,12,1,0,SMS
+Payment Confirmation,75,1,1,Push Notification
+Reward Points Update,168,1,2,Push Notification
+Transaction OTP,4,0,0,Email
+Beneficiary Added Alert,104,1,2,WhatsApp
+Credit Card Bill Reminder,325,0,0,Email
+Login OTP,11,1,1,SMS
+KYC Reminder,301,1,0,Email
+Payment Confirmation,68,1,0,Email
+Credit Card Bill Reminder,199,1,1,Push Notification
+Login OTP,5,1,1,SMS
+Fraud Alert,64,1,2,SMS
+Low Balance Alert,51,0,1,Email
+Low Balance Alert,70,0,0,Email
+Login OTP,9,1,0,SMS
+Monthly Statement,182,1,0,Push Notification
+Monthly Statement,63,0,0,Email
+Beneficiary Added Alert,106,0,0,WhatsApp
+Monthly Statement,58,0,0,Email
+Reward Points Update,151,0,1,Email
+Transaction OTP,5,1,0,Email
+KYC Reminder,190,0,0,Push Notification
+Fraud Alert,62,1,0,SMS
+Monthly Statement,53,1,0,Push Notification
+Fraud Alert,62,1,1,SMS
+Monthly Statement,142,1,1,Push Notification
+Credit Card Bill Reminder,315,1,0,Email
+Reward Points Update,169,1,1,Push Notification
+KYC Reminder,139,0,1,Push Notification
+Login OTP,7,1,1,SMS
+Fraud Alert,58,1,2,SMS
+Payment Confirmation,95,1,0,Push Notification
+Transaction OTP,9,1,0,Email
+Reward Points Update,44,1,0,Push Notification
+Transaction OTP,8,1,3,Email
+Payment Confirmation,94,1,0,Email
+Reward Points Update,150,0,1,Email
+Credit Card Bill Reminder,138,0,1,Email
+KYC Reminder,155,1,0,Push Notification
+Transaction OTP,6,1,1,Email
+Low Balance Alert,73,1,0,Push Notification
+Credit Card Bill Reminder,308,1,2,Push Notification
+Credit Card Bill Reminder,281,0,0,Email
+Login OTP,7,0,0,SMS
+Credit Card Bill Reminder,193,0,0,Email
+Credit Card Bill Reminder,291,1,1,Email
+Fraud Alert,40,0,0,SMS
+Reward Points Update,63,1,2,Push Notification
+KYC Reminder,238,0,2,Push Notification
+Reward Points Update,105,0,0,Email
+Fraud Alert,116,1,0,SMS
+Monthly Statement,172,1,1,Email
+Fraud Alert,47,1,0,SMS
+KYC Reminder,105,1,2,Push Notification
+Monthly Statement,45,1,1,Email
+Fraud Alert,99,0,2,SMS
+Low Balance Alert,101,1,2,Email
+Credit Card Bill Reminder,350,0,0,Email
+Login OTP,7,0,0,SMS
+KYC Reminder,198,1,0,Push Notification
+Beneficiary Added Alert,119,1,0,Email
+Beneficiary Added Alert,107,1,1,WhatsApp
+Transaction OTP,11,1,0,Push Notification
+KYC Reminder,179,0,0,Push Notification
+Transaction OTP,6,1,1,Push Notification
+Transaction OTP,12,0,0,Email
+Monthly Statement,81,1,0,Push Notification
+KYC Reminder,191,1,1,Push Notification
+Beneficiary Added Alert,44,1,2,WhatsApp
+Monthly Statement,169,0,1,Email
+Reward Points Update,181,1,2,Push Notification
+Low Balance Alert,62,1,0,Push Notification
+Login OTP,6,1,1,SMS
+Payment Confirmation,124,0,0,Email
+Fraud Alert,52,1,0,SMS
+Credit Card Bill Reminder,173,1,1,Push Notification
+Login OTP,8,1,0,SMS
+Fraud Alert,61,1,0,SMS
+KYC Reminder,166,0,1,Push Notification
+Reward Points Update,136,1,0,Email
+KYC Reminder,242,1,0,Push Notification
+Low Balance Alert,85,1,0,Push Notification
+Low Balance Alert,111,0,2,Email
+Transaction OTP,4,1,2,Push Notification
+KYC Reminder,270,1,2,Push Notification
+Payment Confirmation,50,1,0,Email
+Credit Card Bill Reminder,222,1,1,Push Notification
+Payment Confirmation,146,1,2,Push Notification
+Monthly Statement,74,1,2,Email
+Fraud Alert,78,1,1,SMS
+Payment Confirmation,125,1,0,Email
+Fraud Alert,99,1,1,SMS
+KYC Reminder,331,0,0,Push Notification
+Low Balance Alert,30,1,2,Push Notification
+Transaction OTP,11,0,0,Email
+Login OTP,5,1,0,SMS
+Transaction OTP,12,1,0,Email
+Beneficiary Added Alert,111,1,2,WhatsApp
+Monthly Statement,52,1,3,Push Notification
+Login OTP,11,1,2,SMS
+Low Balance Alert,48,0,1,Email
+Fraud Alert,107,1,1,SMS
+Beneficiary Added Alert,69,0,1,WhatsApp
+Fraud Alert,104,1,1,SMS
+Beneficiary Added Alert,53,0,1,WhatsApp
+Beneficiary Added Alert,86,1,1,WhatsApp
+Monthly Statement,120,1,1,Email
+Low Balance Alert,105,1,1,Push Notification
+Credit Card Bill Reminder,335,1,0,Push Notification
+KYC Reminder,140,0,0,Push Notification
+Monthly Statement,135,1,1,Push Notification
+Fraud Alert,62,1,2,SMS
+Transaction OTP,11,0,2,Email
+Fraud Alert,105,1,1,SMS
+Login OTP,5,0,1,SMS
+KYC Reminder,170,1,3,Push Notification
+Transaction OTP,9,0,0,Email
+Reward Points Update,54,0,0,Email
+Monthly Statement,104,0,0,Email
+Reward Points Update,27,0,0,Email
+Low Balance Alert,31,1,1,Push Notification
+Beneficiary Added Alert,20,0,0,WhatsApp
+Beneficiary Added Alert,100,0,0,WhatsApp
+Credit Card Bill Reminder,265,0,1,Email
+Fraud Alert,38,1,0,SMS
+Beneficiary Added Alert,42,0,1,WhatsApp
+Transaction OTP,4,1,0,Push Notification
+Fraud Alert,54,0,0,SMS
+Fraud Alert,67,1,0,SMS
+Credit Card Bill Reminder,148,1,0,Push Notification
+KYC Reminder,250,0,0,Push Notification
+Fraud Alert,105,0,2,SMS
+Reward Points Update,23,0,3,Email
+Login OTP,7,0,0,Push Notification
+Beneficiary Added Alert,44,1,1,WhatsApp
+Monthly Statement,49,1,0,Email
+Credit Card Bill Reminder,149,1,0,Email
+Monthly Statement,105,1,1,Push Notification
+Login OTP,6,0,0,SMS
+KYC Reminder,175,1,1,Push Notification
+Fraud Alert,111,0,0,SMS
+Transaction OTP,10,0,2,WhatsApp
+KYC Reminder,116,0,0,Push Notification
+Payment Confirmation,38,1,0,Push Notification
+Reward Points Update,50,0,0,Email
+Login OTP,9,1,0,SMS
+Transaction OTP,4,1,1,Push Notification
+Beneficiary Added Alert,74,1,1,WhatsApp
+Transaction OTP,8,1,1,Push Notification
+Transaction OTP,12,1,1,Push Notification
+Monthly Statement,71,1,1,Push Notification
+Monthly Statement,200,0,0,Email
+Credit Card Bill Reminder,285,0,1,Email
+KYC Reminder,218,1,1,Push Notification
+Beneficiary Added Alert,42,0,1,WhatsApp
+Beneficiary Added Alert,25,0,1,WhatsApp
+Reward Points Update,48,0,1,Email
+Credit Card Bill Reminder,132,0,0,Email
+Payment Confirmation,87,0,1,Email
+Low Balance Alert,66,0,1,Email
+Fraud Alert,100,0,0,SMS
+Login OTP,10,1,0,SMS
+Credit Card Bill Reminder,238,0,0,Email
+Reward Points Update,133,1,1,Push Notification
+Credit Card Bill Reminder,172,0,1,Email
+KYC Reminder,173,1,1,Push Notification
+Low Balance Alert,60,1,0,Push Notification
+Reward Points Update,94,0,0,Email
+Monthly Statement,124,1,1,Push Notification
+Monthly Statement,24,1,2,Push Notification
+Fraud Alert,52,0,0,SMS
+KYC Reminder,195,1,0,Push Notification
+Low Balance Alert,92,1,2,Email
+Beneficiary Added Alert,120,1,1,WhatsApp
+Reward Points Update,197,0,1,Email
+Low Balance Alert,111,0,0,WhatsApp
+KYC Reminder,262,1,0,Push Notification
+Low Balance Alert,29,1,0,Push Notification
+Login OTP,8,0,1,SMS
+Low Balance Alert,94,1,0,Push Notification
+Login OTP,7,0,0,SMS
+Reward Points Update,101,1,0,Push Notification
+Reward Points Update,76,0,1,Email
+KYC Reminder,221,0,0,Push Notification
+Payment Confirmation,102,1,1,Email
+Payment Confirmation,61,1,0,Email
+Transaction OTP,6,1,0,Push Notification
+Fraud Alert,76,1,1,SMS
+KYC Reminder,308,0,2,Push Notification
+KYC Reminder,234,0,1,Push Notification
+KYC Reminder,181,1,0,Push Notification
+Low Balance Alert,34,0,2,Email
+Beneficiary Added Alert,118,1,1,WhatsApp
+Payment Confirmation,104,0,2,Email
+Fraud Alert,117,0,0,SMS
+Monthly Statement,77,1,0,Email
+Transaction OTP,7,1,0,Push Notification
+KYC Reminder,330,1,0,Push Notification
+Fraud Alert,93,1,0,SMS
+Reward Points Update,112,0,2,Email
+Payment Confirmation,71,1,2,Push Notification
+Monthly Statement,179,1,2,WhatsApp
+KYC Reminder,341,1,0,Push Notification
+Beneficiary Added Alert,100,0,1,WhatsApp
+Monthly Statement,191,0,0,Email
+KYC Reminder,247,0,2,SMS
+Payment Confirmation,83,0,1,Email
+Beneficiary Added Alert,115,0,1,WhatsApp
+Credit Card Bill Reminder,190,0,2,Email
+Fraud Alert,67,1,1,SMS
+Transaction OTP,7,0,1,Email
+Credit Card Bill Reminder,281,0,2,Email
+KYC Reminder,342,0,1,Push Notification
+Login OTP,8,1,0,SMS
+KYC Reminder,120,0,0,Push Notification
+Transaction OTP,12,1,0,Push Notification
+Low Balance Alert,101,0,0,Email
+Login OTP,11,0,1,SMS
+Fraud Alert,97,0,0,SMS
+Monthly Statement,125,1,1,Push Notification
+KYC Reminder,114,1,0,Push Notification
+Login OTP,6,1,3,SMS
+Beneficiary Added Alert,66,1,3,WhatsApp
+KYC Reminder,259,1,1,Push Notification
+Monthly Statement,51,1,2,Email
+Low Balance Alert,44,1,0,Push Notification
+Beneficiary Added Alert,76,1,2,WhatsApp
+Reward Points Update,86,1,1,Email
+Reward Points Update,197,0,2,Email
+Transaction OTP,4,0,0,Email
+Fraud Alert,83,1,0,Push Notification
+KYC Reminder,312,1,0,Push Notification
+Reward Points Update,168,0,0,Email
+Transaction OTP,6,1,1,Email
+Credit Card Bill Reminder,266,1,1,Push Notification
+Credit Card Bill Reminder,214,1,1,Push Notification
+Fraud Alert,73,1,0,SMS
+Credit Card Bill Reminder,304,1,0,Push Notification
+Credit Card Bill Reminder,113,1,1,Push Notification
+Fraud Alert,49,0,0,SMS
+Credit Card Bill Reminder,326,1,1,Push Notification
+Transaction OTP,11,1,0,Push Notification
+Fraud Alert,23,1,1,SMS
+KYC Reminder,117,1,0,Push Notification
+Reward Points Update,20,1,0,Push Notification
+Login OTP,6,1,0,SMS
+Transaction OTP,6,1,1,Email
+Monthly Statement,65,1,1,Push Notification
+Fraud Alert,55,0,1,SMS
+Login OTP,11,0,0,SMS
+Monthly Statement,193,0,0,SMS
+Beneficiary Added Alert,32,0,0,WhatsApp
+Reward Points Update,53,1,2,Push Notification
+Transaction OTP,12,0,0,Email
+Low Balance Alert,73,0,1,Email
+KYC Reminder,333,1,0,Push Notification
+Credit Card Bill Reminder,111,1,0,Email
+Transaction OTP,10,0,0,Email
+Fraud Alert,90,0,1,SMS
+Beneficiary Added Alert,60,1,1,WhatsApp
+Credit Card Bill Reminder,218,1,0,Push Notification
+Low Balance Alert,20,1,0,Email
+Fraud Alert,114,1,0,SMS
+Payment Confirmation,49,1,0,Email
+Transaction OTP,9,1,1,Push Notification
+Payment Confirmation,88,0,1,Email
+Payment Confirmation,173,1,1,Email
+Beneficiary Added Alert,32,1,0,WhatsApp
+Monthly Statement,132,0,2,Email
+Monthly Statement,104,0,0,Email
+Fraud Alert,71,1,1,SMS
+KYC Reminder,316,1,0,Push Notification
+Fraud Alert,102,1,1,SMS
+Beneficiary Added Alert,82,1,0,Push Notification
+Credit Card Bill Reminder,130,0,0,Email
+Low Balance Alert,88,0,0,Email
+Payment Confirmation,164,0,0,Email
+Credit Card Bill Reminder,283,0,2,Email
+Payment Confirmation,162,0,0,Email
+Low Balance Alert,99,0,0,Email
+KYC Reminder,164,0,2,Push Notification
+Login OTP,5,0,1,SMS
+Beneficiary Added Alert,95,0,0,WhatsApp
+Monthly Statement,38,1,0,Email
+Payment Confirmation,138,0,1,WhatsApp
+Payment Confirmation,37,0,1,Email
+Credit Card Bill Reminder,131,1,0,Push Notification
+Low Balance Alert,107,0,1,SMS
+Transaction OTP,12,1,0,Push Notification
+Beneficiary Added Alert,107,0,0,WhatsApp
+Credit Card Bill Reminder,210,0,0,Email
+Payment Confirmation,31,0,0,Email
+Beneficiary Added Alert,83,1,0,WhatsApp
+Credit Card Bill Reminder,194,0,0,Email
+Fraud Alert,61,0,1,SMS
+Beneficiary Added Alert,89,0,0,WhatsApp
+Credit Card Bill Reminder,178,1,1,Email
+Fraud Alert,95,0,1,WhatsApp
+Login OTP,11,1,0,SMS
+KYC Reminder,314,1,0,Push Notification
+Login OTP,10,1,0,SMS
+Low Balance Alert,91,1,1,Push Notification
+Credit Card Bill Reminder,133,1,1,Email
+Low Balance Alert,39,1,0,Push Notification
+Beneficiary Added Alert,72,1,0,WhatsApp
+Beneficiary Added Alert,66,1,2,WhatsApp
+Fraud Alert,63,1,2,SMS
+Login OTP,6,1,0,SMS
+Credit Card Bill Reminder,132,0,1,Email
+KYC Reminder,296,0,1,SMS
+Transaction OTP,5,1,0,Push Notification
+Credit Card Bill Reminder,276,0,0,Email
+Login OTP,7,0,0,SMS
+Low Balance Alert,29,0,2,Email
+Login OTP,9,1,2,SMS
+Beneficiary Added Alert,88,1,1,WhatsApp
+Fraud Alert,85,1,1,SMS
+Beneficiary Added Alert,53,1,1,WhatsApp
+KYC Reminder,250,0,0,Push Notification
+Low Balance Alert,98,0,0,Email
+Credit Card Bill Reminder,269,1,1,WhatsApp
+Reward Points Update,116,0,2,Email
+Fraud Alert,27,0,0,SMS
+Monthly Statement,166,0,2,Email
+Reward Points Update,82,1,0,Push Notification
+KYC Reminder,167,1,0,Push Notification
+Payment Confirmation,186,1,0,Email
+KYC Reminder,299,1,0,Push Notification
+Fraud Alert,108,0,0,SMS
+Beneficiary Added Alert,45,1,0,WhatsApp
+Low Balance Alert,63,1,1,Push Notification
+Reward Points Update,148,0,2,Email
+Monthly Statement,115,0,1,Email
+KYC Reminder,126,1,0,Push Notification
+Monthly Statement,60,1,1,Email
+Login OTP,4,0,1,SMS
+Transaction OTP,4,1,0,Email
+Reward Points Update,141,0,1,Email
+Payment Confirmation,110,0,0,Email
+Transaction OTP,7,0,0,Email
+Login OTP,9,0,1,SMS
+Beneficiary Added Alert,28,1,0,WhatsApp
+Fraud Alert,42,1,0,SMS
+Low Balance Alert,50,0,0,Email
+Login OTP,10,1,0,SMS
+Transaction OTP,5,0,0,Email
+Fraud Alert,103,0,0,SMS
+Payment Confirmation,167,0,3,Email
+Monthly Statement,172,1,0,Push Notification
+Payment Confirmation,115,1,2,Push Notification
+Reward Points Update,177,0,1,Email
+Reward Points Update,34,1,0,Email
+Login OTP,5,1,1,WhatsApp
+Login OTP,8,1,1,SMS
+Payment Confirmation,81,1,1,Push Notification
+Fraud Alert,33,0,0,SMS
+Login OTP,7,0,3,SMS
+Payment Confirmation,174,0,2,Email
+Beneficiary Added Alert,96,0,2,WhatsApp
+Login OTP,7,0,1,SMS
+KYC Reminder,196,0,0,Push Notification
+Low Balance Alert,24,1,2,Push Notification
+Monthly Statement,153,1,2,Email
+Credit Card Bill Reminder,107,1,1,Email
+KYC Reminder,338,1,1,Push Notification
+Transaction OTP,8,0,1,Email
+Low Balance Alert,22,1,1,Push Notification
+Payment Confirmation,161,1,1,Email
+KYC Reminder,166,0,1,Push Notification
+Beneficiary Added Alert,73,0,0,WhatsApp
+Credit Card Bill Reminder,108,1,0,Email
+KYC Reminder,184,1,0,Push Notification
+Transaction OTP,9,0,0,Email
+Reward Points Update,186,1,0,Push Notification
+Reward Points Update,37,0,0,Push Notification
+Monthly Statement,180,1,2,Push Notification
+KYC Reminder,256,0,0,Push Notification
+Credit Card Bill Reminder,315,0,1,Email
+Reward Points Update,119,1,0,Email
+Monthly Statement,46,1,0,Push Notification
+Reward Points Update,102,1,2,Email
+Fraud Alert,37,1,0,SMS
+KYC Reminder,200,1,1,Push Notification
+Beneficiary Added Alert,32,1,0,WhatsApp
+Low Balance Alert,98,1,1,Push Notification
+Payment Confirmation,45,0,2,Email
+Reward Points Update,80,1,0,Email
+Login OTP,9,1,0,SMS
+KYC Reminder,309,1,0,Push Notification
+Credit Card Bill Reminder,143,0,1,Email
+Low Balance Alert,81,1,0,Push Notification
+Monthly Statement,200,1,0,Email
+Login OTP,10,0,1,SMS
+Monthly Statement,74,0,0,Email
+Transaction OTP,9,0,1,Email
+Reward Points Update,110,0,0,Email
+Reward Points Update,27,1,0,Push Notification
+Beneficiary Added Alert,29,1,1,WhatsApp
+Login OTP,9,0,0,SMS
+Payment Confirmation,154,0,0,Push Notification
+Low Balance Alert,93,0,2,Email
+Credit Card Bill Reminder,291,1,0,Push Notification
+Reward Points Update,102,0,2,Email
+Credit Card Bill Reminder,231,0,0,Email
+Login OTP,12,1,0,SMS
+Login OTP,9,1,0,SMS
+Payment Confirmation,151,0,0,Email
+Fraud Alert,39,0,1,SMS
+Beneficiary Added Alert,87,1,2,WhatsApp
+KYC Reminder,335,0,1,Push Notification
+Payment Confirmation,94,1,0,SMS
+KYC Reminder,122,0,1,Push Notification
+Credit Card Bill Reminder,288,1,1,Push Notification
+Transaction OTP,12,0,0,Email
+Login OTP,8,1,2,SMS
+Fraud Alert,90,0,1,SMS
+Credit Card Bill Reminder,162,1,1,Email
+Fraud Alert,77,1,0,SMS
+Reward Points Update,25,1,0,Push Notification
+Reward Points Update,138,1,1,Push Notification
+Fraud Alert,29,1,0,SMS
+Fraud Alert,23,0,0,SMS
+Transaction OTP,8,1,2,Email
+Fraud Alert,83,0,0,SMS
+Fraud Alert,110,0,0,SMS
+Fraud Alert,60,1,0,SMS
+Fraud Alert,75,0,0,SMS
+Login OTP,9,0,0,SMS
+Low Balance Alert,54,0,0,Email
+Monthly Statement,148,1,0,Email
+Low Balance Alert,24,0,1,Email
+Login OTP,7,1,1,SMS
+Login OTP,9,0,2,SMS
+Reward Points Update,41,1,1,Email
+Login OTP,9,0,1,SMS
+Low Balance Alert,67,0,0,Email
+Low Balance Alert,115,0,1,Email
+Low Balance Alert,38,0,0,Email
+Payment Confirmation,49,1,2,Email
+Transaction OTP,10,0,0,Email
+Monthly Statement,92,1,1,Push Notification
+Low Balance Alert,36,1,3,Email
+Beneficiary Added Alert,113,0,1,WhatsApp
+Fraud Alert,108,1,0,SMS
+KYC Reminder,181,1,1,Push Notification
+Fraud Alert,38,0,0,SMS
+KYC Reminder,266,0,1,Push Notification
+Transaction OTP,12,0,2,Email
+Credit Card Bill Reminder,138,1,0,Push Notification
+Beneficiary Added Alert,93,1,1,WhatsApp
+Reward Points Update,43,0,1,Email
+Credit Card Bill Reminder,296,1,0,Push Notification
+Fraud Alert,63,1,1,SMS
+Credit Card Bill Reminder,149,1,0,Push Notification
+Reward Points Update,150,1,0,WhatsApp
+Credit Card Bill Reminder,192,0,0,Email
+KYC Reminder,254,0,1,Push Notification
+Monthly Statement,73,1,0,Push Notification
+Reward Points Update,38,0,1,Email
+Transaction OTP,12,1,0,Email
+Reward Points Update,83,1,1,Email
+Low Balance Alert,51,1,2,Email
+KYC Reminder,140,1,1,Push Notification
+KYC Reminder,128,0,1,Push Notification
+KYC Reminder,291,0,1,Push Notification
+Reward Points Update,158,1,1,Push Notification
+Fraud Alert,34,0,0,SMS
+KYC Reminder,185,0,1,Push Notification
+Monthly Statement,41,1,0,Push Notification
+Login OTP,9,1,0,SMS
+KYC Reminder,286,0,2,Push Notification
+Low Balance Alert,81,0,1,Email
+Credit Card Bill Reminder,180,1,0,Push Notification
+Credit Card Bill Reminder,110,1,1,Push Notification
+Monthly Statement,162,1,0,Email
+Credit Card Bill Reminder,292,0,0,Email
+Credit Card Bill Reminder,284,1,2,Push Notification
+KYC Reminder,291,1,0,Push Notification
+KYC Reminder,237,0,1,Push Notification
+Login OTP,12,1,0,SMS
+Transaction OTP,4,1,0,Email
+Login OTP,8,0,2,SMS
+Login OTP,4,1,0,SMS
+Credit Card Bill Reminder,275,0,0,Email
+Monthly Statement,23,1,1,Email
+Low Balance Alert,72,0,1,SMS
+Low Balance Alert,75,0,0,Email
+Transaction OTP,4,1,0,Email
+Monthly Statement,64,0,0,SMS
+Payment Confirmation,113,1,2,Email
+Transaction OTP,9,1,2,Email
+Login OTP,12,1,1,SMS
+Fraud Alert,63,1,1,SMS
+Beneficiary Added Alert,117,1,0,WhatsApp
+Payment Confirmation,55,1,2,Email
+Login OTP,10,1,0,SMS
+Low Balance Alert,68,1,0,Email
+Low Balance Alert,46,0,0,Email
+Beneficiary Added Alert,115,0,1,WhatsApp
+Beneficiary Added Alert,92,0,0,WhatsApp
+Reward Points Update,182,0,3,Email
+Fraud Alert,77,1,0,SMS
+KYC Reminder,218,0,0,Push Notification
+Fraud Alert,56,0,1,SMS
+Reward Points Update,106,0,0,Email
+Beneficiary Added Alert,40,1,0,WhatsApp
+Beneficiary Added Alert,41,0,0,WhatsApp
+Reward Points Update,60,1,0,Email
+Beneficiary Added Alert,101,0,1,WhatsApp
+Monthly Statement,97,0,0,Email
+KYC Reminder,288,1,1,Push Notification
+Credit Card Bill Reminder,203,0,1,Email
+Low Balance Alert,34,0,1,Email
+Reward Points Update,121,1,1,Push Notification
+Beneficiary Added Alert,58,1,1,WhatsApp
+Low Balance Alert,22,1,1,Push Notification
+Beneficiary Added Alert,57,0,0,WhatsApp
+Low Balance Alert,86,1,1,Email
+Beneficiary Added Alert,74,0,0,WhatsApp
+Low Balance Alert,74,0,0,Email
+Monthly Statement,123,1,1,Email
+Reward Points Update,93,1,0,Push Notification
+Fraud Alert,79,0,0,SMS
+Monthly Statement,86,0,2,Email
+Reward Points Update,60,1,2,Push Notification
+Login OTP,9,1,0,SMS
+Reward Points Update,106,0,1,Email
+KYC Reminder,102,1,0,Push Notification
+Login OTP,4,0,0,SMS
+Monthly Statement,77,1,0,Email
+Credit Card Bill Reminder,312,0,0,Email
+Monthly Statement,187,1,2,Push Notification
+KYC Reminder,347,0,1,Push Notification
+Beneficiary Added Alert,66,1,1,WhatsApp
+Monthly Statement,187,0,2,Email
+Transaction OTP,5,1,1,Email
+Transaction OTP,5,1,0,Push Notification
+Reward Points Update,199,1,0,Push Notification
+Reward Points Update,173,1,0,Push Notification
+Login OTP,6,0,0,SMS
+Fraud Alert,106,0,0,SMS
+KYC Reminder,106,1,3,Push Notification
+Reward Points Update,198,0,0,Email
+Monthly Statement,139,0,0,Email
+Reward Points Update,150,1,2,Push Notification
+Transaction OTP,5,1,0,Push Notification
+KYC Reminder,192,0,0,Push Notification
+Fraud Alert,29,1,1,SMS
+Payment Confirmation,77,1,0,Push Notification
+Low Balance Alert,109,1,0,Push Notification
+Monthly Statement,197,0,2,Email
+Reward Points Update,29,1,1,Email
+Payment Confirmation,104,0,1,Email
+Monthly Statement,72,1,0,Email
+Transaction OTP,8,0,1,Push Notification
+Credit Card Bill Reminder,308,0,1,Email
+Beneficiary Added Alert,105,0,0,WhatsApp
+Credit Card Bill Reminder,322,0,1,Email
+Fraud Alert,74,0,0,SMS
+Reward Points Update,125,0,0,Email
+Low Balance Alert,73,1,0,Email
+Fraud Alert,86,0,2,WhatsApp
+Credit Card Bill Reminder,213,1,0,Push Notification
+Beneficiary Added Alert,61,1,1,WhatsApp
+Credit Card Bill Reminder,154,1,1,Push Notification
+Login OTP,10,1,1,SMS
+Credit Card Bill Reminder,237,1,0,Push Notification
+Credit Card Bill Reminder,273,0,1,Email
+Reward Points Update,40,0,2,Email
+Monthly Statement,125,1,0,Push Notification
+Beneficiary Added Alert,77,1,0,WhatsApp
+Payment Confirmation,120,1,1,Email
+Login OTP,10,0,0,SMS
+Low Balance Alert,40,1,0,Email
+Fraud Alert,23,0,1,SMS
+Payment Confirmation,171,0,1,Email
+Payment Confirmation,57,1,0,Push Notification
+Login OTP,11,1,0,SMS
+KYC Reminder,240,1,1,Push Notification
+KYC Reminder,212,0,1,Push Notification
+KYC Reminder,263,0,1,Push Notification
+Fraud Alert,60,1,0,SMS
+Beneficiary Added Alert,34,1,0,SMS
+Transaction OTP,6,1,0,Push Notification
+KYC Reminder,236,0,0,Push Notification
+Login OTP,4,1,0,SMS
+Fraud Alert,120,1,0,SMS
+Login OTP,4,1,2,SMS
+Fraud Alert,49,1,1,SMS
+Credit Card Bill Reminder,263,1,0,Email
+Monthly Statement,151,0,0,Email
+Payment Confirmation,120,1,1,Email
+Beneficiary Added Alert,92,1,1,WhatsApp
+Transaction OTP,7,1,1,Push Notification
+KYC Reminder,280,1,2,Push Notification
+Credit Card Bill Reminder,197,1,3,Push Notification
+Payment Confirmation,180,1,1,Push Notification
+KYC Reminder,306,0,1,Push Notification
+Beneficiary Added Alert,42,1,1,WhatsApp
+Reward Points Update,177,1,1,Push Notification
+Login OTP,7,1,0,SMS
+Reward Points Update,23,1,0,WhatsApp
+Fraud Alert,80,0,0,SMS
+Monthly Statement,200,1,1,Push Notification
+Transaction OTP,10,0,0,Email
+Credit Card Bill Reminder,111,1,2,Push Notification
+Transaction OTP,8,0,1,Email
+Reward Points Update,56,0,0,Email
+Fraud Alert,30,0,1,SMS
+Low Balance Alert,97,0,0,Email
+Low Balance Alert,60,1,0,Push Notification
+Monthly Statement,142,0,1,Email
+Fraud Alert,47,1,1,SMS
+Monthly Statement,145,1,0,Push Notification
+KYC Reminder,316,0,0,Push Notification
+Monthly Statement,142,0,1,Email
+Beneficiary Added Alert,35,1,2,SMS
+Monthly Statement,136,0,0,Email
+Payment Confirmation,134,0,1,Email
+Transaction OTP,11,0,0,Email
+Credit Card Bill Reminder,214,0,1,Email
+Login OTP,5,0,1,SMS
+Beneficiary Added Alert,35,1,1,WhatsApp
+Payment Confirmation,142,1,2,Push Notification
+Beneficiary Added Alert,35,0,0,WhatsApp
+Login OTP,9,1,1,SMS
+Transaction OTP,8,0,0,Email
+Payment Confirmation,75,1,1,Push Notification
+KYC Reminder,115,1,0,Push Notification
+Beneficiary Added Alert,24,0,1,WhatsApp
+Transaction OTP,5,1,0,Email
+Low Balance Alert,24,1,3,Push Notification
+Monthly Statement,33,1,1,Email
+Low Balance Alert,37,1,2,Push Notification
+Credit Card Bill Reminder,254,1,2,Push Notification
+Payment Confirmation,39,1,2,SMS
+Credit Card Bill Reminder,156,1,0,Email
+Beneficiary Added Alert,34,1,0,WhatsApp
+Fraud Alert,50,1,0,SMS
+Transaction OTP,4,1,1,Push Notification
+KYC Reminder,206,1,2,Push Notification
+Payment Confirmation,187,1,0,Push Notification
+Low Balance Alert,34,0,1,Email
+Reward Points Update,93,0,0,Email
+Beneficiary Added Alert,36,1,0,WhatsApp
+Transaction OTP,12,1,3,Email
+Transaction OTP,5,1,1,Email
+Fraud Alert,60,1,0,SMS
+Transaction OTP,4,0,0,Email
+Beneficiary Added Alert,102,1,0,WhatsApp
+Monthly Statement,65,0,1,Email
+Fraud Alert,32,1,0,SMS
+Fraud Alert,44,1,0,SMS
+Login OTP,9,1,0,SMS
+Reward Points Update,117,1,2,SMS
+Beneficiary Added Alert,47,1,0,WhatsApp
+Beneficiary Added Alert,40,0,1,WhatsApp
+Reward Points Update,141,0,0,WhatsApp
+Low Balance Alert,87,0,0,Email
+Login OTP,9,1,1,SMS
+Monthly Statement,20,1,0,WhatsApp
+KYC Reminder,164,1,2,Push Notification
+Beneficiary Added Alert,26,0,1,Push Notification
+Monthly Statement,20,0,1,Email
+Transaction OTP,10,0,0,Email
+Credit Card Bill Reminder,112,1,2,Push Notification
+KYC Reminder,234,1,2,Push Notification
+KYC Reminder,160,0,1,Push Notification
+Beneficiary Added Alert,115,0,0,WhatsApp
+Reward Points Update,179,0,1,Email
+KYC Reminder,285,0,0,Push Notification
+Beneficiary Added Alert,84,0,1,WhatsApp
+Fraud Alert,37,1,0,SMS
+Transaction OTP,8,1,0,Email
+Login OTP,12,1,0,SMS
+Low Balance Alert,106,1,1,Push Notification
+Low Balance Alert,108,0,0,Email
+Transaction OTP,10,1,1,Email
+Login OTP,7,1,0,SMS
+Low Balance Alert,45,1,1,Push Notification
+Monthly Statement,41,0,1,Email
+Payment Confirmation,97,0,0,Email
+Transaction OTP,6,0,0,Email
+Monthly Statement,95,1,1,Push Notification
+Beneficiary Added Alert,85,1,0,WhatsApp
+Credit Card Bill Reminder,316,0,1,Email
+KYC Reminder,258,1,0,Push Notification
+Fraud Alert,87,1,1,SMS
+Credit Card Bill Reminder,155,0,0,Email
+Credit Card Bill Reminder,280,0,0,Email
+Payment Confirmation,34,1,0,Push Notification
+KYC Reminder,324,1,0,Push Notification
+Payment Confirmation,146,0,1,Email
+Monthly Statement,117,1,1,Email
+Beneficiary Added Alert,98,1,1,WhatsApp
+Fraud Alert,94,1,0,SMS
+Monthly Statement,136,0,0,Email
+KYC Reminder,350,1,1,Push Notification
+Payment Confirmation,145,0,1,Email
+Credit Card Bill Reminder,263,1,0,Email
+Payment Confirmation,43,1,0,Email
+Monthly Statement,78,0,0,Email
+Reward Points Update,45,1,1,Push Notification
+Transaction OTP,5,1,2,Push Notification
+Monthly Statement,20,0,0,Email
+Payment Confirmation,155,1,2,Email
+KYC Reminder,279,1,1,Push Notification
+KYC Reminder,147,0,0,Push Notification
+Payment Confirmation,158,0,1,Email
+Beneficiary Added Alert,56,0,0,WhatsApp
+Monthly Statement,131,1,0,Push Notification
+KYC Reminder,240,0,0,Push Notification
+KYC Reminder,246,1,1,Push Notification
+Login OTP,12,1,0,SMS
+Login OTP,8,1,1,SMS
+Beneficiary Added Alert,78,1,0,WhatsApp
+Fraud Alert,92,1,0,SMS
+Payment Confirmation,35,0,1,Email
+Low Balance Alert,79,1,1,Email
+KYC Reminder,341,0,1,Push Notification
+Reward Points Update,93,0,1,Email
+Monthly Statement,147,1,3,Push Notification
+Credit Card Bill Reminder,109,1,0,Email
+Low Balance Alert,66,1,1,WhatsApp
+Credit Card Bill Reminder,122,1,0,Push Notification
+Payment Confirmation,171,0,0,SMS
+Login OTP,9,1,0,SMS
+Monthly Statement,59,0,0,Email
+KYC Reminder,170,1,0,Push Notification
+Login OTP,6,0,0,SMS
+KYC Reminder,156,0,0,Push Notification
+Monthly Statement,62,0,0,Email
+Monthly Statement,35,1,0,Push Notification
+Fraud Alert,72,0,1,SMS
+Login OTP,6,1,0,SMS
+Fraud Alert,87,0,1,SMS
+Transaction OTP,5,1,2,Push Notification
+Transaction OTP,11,0,0,Email
+Beneficiary Added Alert,49,0,0,WhatsApp
+Low Balance Alert,32,1,2,Email
+Payment Confirmation,166,1,0,Push Notification
+Low Balance Alert,80,1,0,Email
+Login OTP,9,0,0,Email
+Login OTP,4,0,1,SMS
+Credit Card Bill Reminder,247,0,0,Email
+Payment Confirmation,157,1,1,Email
+Credit Card Bill Reminder,124,1,0,Email
+Transaction OTP,11,1,1,Email
+Low Balance Alert,110,1,1,Email
+KYC Reminder,152,1,0,Push Notification
+Credit Card Bill Reminder,251,1,1,Push Notification
+Login OTP,8,1,1,SMS
+Beneficiary Added Alert,26,0,0,WhatsApp
+Reward Points Update,127,1,1,Push Notification
+KYC Reminder,110,1,0,Push Notification
+Login OTP,8,1,2,SMS
+Payment Confirmation,64,0,0,Email
+Beneficiary Added Alert,71,0,1,WhatsApp
+Low Balance Alert,104,1,2,Email
+Reward Points Update,44,1,0,Email
+KYC Reminder,309,0,0,Push Notification
+KYC Reminder,327,0,0,WhatsApp
+Monthly Statement,119,1,1,Email
+Low Balance Alert,37,0,1,Email
+Credit Card Bill Reminder,323,1,1,Push Notification
+Monthly Statement,124,0,1,Email
+Beneficiary Added Alert,34,1,0,WhatsApp
+Low Balance Alert,31,0,1,Email
+Login OTP,6,1,2,SMS
+Reward Points Update,157,1,1,Push Notification
+Credit Card Bill Reminder,154,1,2,Push Notification
+KYC Reminder,118,1,2,Push Notification
+Monthly Statement,146,0,0,Email
+Login OTP,11,1,0,SMS
+Beneficiary Added Alert,89,0,0,WhatsApp
+Payment Confirmation,123,1,1,Email
+Reward Points Update,109,1,0,Push Notification
+Transaction OTP,10,0,1,Email
+Monthly Statement,126,0,0,Email
+Low Balance Alert,46,1,0,Email
+KYC Reminder,172,0,1,Push Notification
+Transaction OTP,9,1,0,Push Notification
+Low Balance Alert,30,0,0,Push Notification
+Transaction OTP,9,0,0,Email
+Monthly Statement,51,1,0,Push Notification
+KYC Reminder,290,1,0,Push Notification
+Beneficiary Added Alert,32,0,1,WhatsApp
+Transaction OTP,9,0,0,Email
+Reward Points Update,99,1,0,Email
+Low Balance Alert,81,1,0,Push Notification
+Fraud Alert,119,0,0,SMS
+Transaction OTP,5,0,0,Email
+Credit Card Bill Reminder,265,1,1,Push Notification
+Credit Card Bill Reminder,191,0,0,Email
+Fraud Alert,33,1,0,SMS
+Credit Card Bill Reminder,123,1,1,Push Notification
+Beneficiary Added Alert,24,1,1,WhatsApp
+KYC Reminder,334,1,2,Push Notification
+KYC Reminder,224,0,1,SMS
+Beneficiary Added Alert,72,1,0,WhatsApp
+Low Balance Alert,50,1,1,Email
+Login OTP,6,0,0,SMS
+Login OTP,5,1,0,SMS
+Fraud Alert,98,1,1,SMS
+Credit Card Bill Reminder,262,0,1,Email
+Low Balance Alert,43,0,1,Email
+Monthly Statement,174,1,1,Email
+KYC Reminder,121,0,0,Push Notification
+Fraud Alert,119,1,0,SMS
+KYC Reminder,269,1,1,Push Notification
+Fraud Alert,86,0,0,SMS
+Low Balance Alert,76,1,1,Push Notification
+Monthly Statement,83,1,0,Push Notification
+Monthly Statement,62,0,2,Email
+Payment Confirmation,193,0,0,Email
+KYC Reminder,189,0,0,Push Notification
+Monthly Statement,200,0,0,Email
+Beneficiary Added Alert,30,1,0,WhatsApp
+Credit Card Bill Reminder,306,1,2,Email
+Low Balance Alert,50,1,1,Push Notification
+KYC Reminder,137,1,1,Push Notification
+Monthly Statement,155,1,0,Email
+Payment Confirmation,182,1,1,Push Notification
+Payment Confirmation,160,1,0,Email
+Transaction OTP,9,1,1,Push Notification
+Reward Points Update,42,1,0,Email
+Payment Confirmation,137,1,0,Email
+Payment Confirmation,198,1,0,SMS
+Payment Confirmation,88,1,0,Push Notification
+Beneficiary Added Alert,107,1,0,WhatsApp
+Reward Points Update,85,1,1,Email
+KYC Reminder,198,0,1,Push Notification
+Payment Confirmation,50,1,1,Push Notification
+Fraud Alert,105,1,1,Email
+Credit Card Bill Reminder,165,0,0,Email
+KYC Reminder,173,0,0,Push Notification
+Payment Confirmation,188,1,0,Push Notification
+Monthly Statement,46,1,0,Email
+Beneficiary Added Alert,48,1,0,WhatsApp
+Monthly Statement,26,1,0,Push Notification
+Transaction OTP,9,1,0,Email
+Credit Card Bill Reminder,305,0,0,Email
+Login OTP,9,1,0,SMS
+Low Balance Alert,120,1,1,Push Notification
+Reward Points Update,195,0,1,Email
+Transaction OTP,10,1,1,Email
+Low Balance Alert,46,0,0,Email
+Reward Points Update,198,1,2,Push Notification
+Fraud Alert,23,0,1,SMS
+Fraud Alert,25,0,0,SMS
+Login OTP,4,0,0,SMS
+Payment Confirmation,192,1,1,Push Notification
+Transaction OTP,9,0,1,Email
+Fraud Alert,74,1,1,SMS
+Low Balance Alert,41,0,0,Push Notification
+Beneficiary Added Alert,103,1,2,WhatsApp
+KYC Reminder,207,1,0,Push Notification
+Login OTP,4,1,0,SMS
+Credit Card Bill Reminder,222,1,0,Email
+KYC Reminder,228,1,0,Push Notification
+KYC Reminder,105,0,2,Push Notification
+Credit Card Bill Reminder,285,0,0,Email
+Monthly Statement,130,0,1,Email
+Low Balance Alert,71,1,1,Email
+Payment Confirmation,64,1,1,SMS
+Beneficiary Added Alert,38,1,0,WhatsApp
+Beneficiary Added Alert,110,1,1,WhatsApp
+Login OTP,10,0,2,SMS
+Low Balance Alert,43,1,1,WhatsApp
+Monthly Statement,50,1,0,Email
+KYC Reminder,210,1,0,Push Notification
+Credit Card Bill Reminder,100,0,1,Email
+Beneficiary Added Alert,79,0,0,WhatsApp
+Fraud Alert,71,0,0,SMS
+Beneficiary Added Alert,31,0,0,WhatsApp
+KYC Reminder,260,1,0,Push Notification
+Credit Card Bill Reminder,216,0,0,Email
+Beneficiary Added Alert,109,0,1,WhatsApp
+Reward Points Update,110,0,1,Email
+Low Balance Alert,24,1,0,Push Notification
+Credit Card Bill Reminder,145,1,0,Email
+Credit Card Bill Reminder,345,1,1,Email
+Fraud Alert,106,1,1,SMS
+Payment Confirmation,113,1,0,Email
+Login OTP,8,1,0,SMS
+Beneficiary Added Alert,60,1,0,WhatsApp
+Payment Confirmation,167,1,0,Email
+Beneficiary Added Alert,36,0,2,WhatsApp
+Low Balance Alert,81,0,2,Email
+Payment Confirmation,74,0,0,Email
+Beneficiary Added Alert,47,1,0,WhatsApp
+Credit Card Bill Reminder,291,1,1,SMS
+Reward Points Update,182,0,0,Email
+Payment Confirmation,75,1,0,Email
+KYC Reminder,212,1,1,Push Notification
+KYC Reminder,150,1,2,Push Notification
+Beneficiary Added Alert,53,0,0,WhatsApp
+Transaction OTP,12,0,2,Email
+Monthly Statement,66,1,0,WhatsApp
+Monthly Statement,27,1,1,Email
+Fraud Alert,40,0,1,SMS
+KYC Reminder,244,1,1,Push Notification
+Login OTP,8,1,1,SMS
+Reward Points Update,62,1,1,Email
+Beneficiary Added Alert,59,0,2,WhatsApp
+Beneficiary Added Alert,94,0,2,Push Notification
+Reward Points Update,180,1,2,Email
+Monthly Statement,195,1,0,Push Notification
+Beneficiary Added Alert,28,1,1,SMS
+Beneficiary Added Alert,55,1,0,WhatsApp
+Beneficiary Added Alert,63,1,0,WhatsApp
+Login OTP,6,1,1,SMS
+Credit Card Bill Reminder,304,0,1,Email
+Monthly Statement,191,1,1,Email
+Payment Confirmation,84,0,2,Email
+Reward Points Update,29,0,0,Email
+Login OTP,4,1,1,SMS
+Login OTP,5,1,1,SMS
+Low Balance Alert,94,0,2,WhatsApp
+Low Balance Alert,116,1,0,Email
+Low Balance Alert,52,1,1,Email
+Payment Confirmation,35,1,0,Email
+Beneficiary Added Alert,46,0,1,WhatsApp
+Credit Card Bill Reminder,294,1,0,Email
+Payment Confirmation,175,1,1,Email
+Credit Card Bill Reminder,346,0,0,WhatsApp
+Low Balance Alert,87,0,3,Email
+Transaction OTP,4,0,1,Email
+Login OTP,8,1,0,SMS
+Beneficiary Added Alert,50,0,1,WhatsApp
+Credit Card Bill Reminder,252,0,1,Email
+Beneficiary Added Alert,56,0,0,WhatsApp
+Low Balance Alert,110,0,1,Email
+Beneficiary Added Alert,20,0,2,WhatsApp
+Beneficiary Added Alert,101,1,0,WhatsApp
+Payment Confirmation,85,0,0,Email
+Monthly Statement,53,1,0,Email
+Fraud Alert,63,1,1,SMS
+Transaction OTP,4,0,0,Email
+Login OTP,7,1,2,SMS
+KYC Reminder,350,1,0,Push Notification
+Monthly Statement,152,0,1,Email
+Reward Points Update,133,1,0,Email
+Transaction OTP,7,0,0,Email
+Low Balance Alert,63,1,1,Email
+Low Balance Alert,99,1,0,Push Notification
+Low Balance Alert,86,1,1,Push Notification
+Reward Points Update,109,1,2,Email
+Low Balance Alert,61,1,0,Push Notification
+Monthly Statement,46,0,0,Email
+Monthly Statement,34,0,0,Email
+Fraud Alert,39,0,0,SMS
+Beneficiary Added Alert,43,1,1,WhatsApp
+Reward Points Update,43,0,1,Email
+Fraud Alert,24,1,0,SMS
+Beneficiary Added Alert,34,1,2,WhatsApp
+Transaction OTP,12,0,0,Email
+Low Balance Alert,58,0,0,Email
+Fraud Alert,26,1,1,SMS
+Beneficiary Added Alert,103,1,1,WhatsApp
+Fraud Alert,80,1,0,SMS
+Login OTP,9,1,2,SMS
+Low Balance Alert,93,1,2,Email
+Login OTP,8,0,0,SMS
+Reward Points Update,154,1,0,Email
+Transaction OTP,5,0,1,Email
+Transaction OTP,8,1,0,Push Notification
+Beneficiary Added Alert,71,1,0,WhatsApp
+Reward Points Update,98,0,1,Email
+Beneficiary Added Alert,44,0,1,WhatsApp
+Low Balance Alert,90,1,0,Push Notification
+Transaction OTP,11,1,1,Push Notification
+Beneficiary Added Alert,51,1,1,WhatsApp
+Low Balance Alert,104,0,0,Email
+Fraud Alert,68,0,0,SMS
+Monthly Statement,114,1,0,Push Notification
+KYC Reminder,160,1,1,Push Notification
+Transaction OTP,5,0,0,Email
+Beneficiary Added Alert,32,0,2,WhatsApp
+Transaction OTP,9,1,1,Push Notification
+Credit Card Bill Reminder,206,1,0,Push Notification
+Monthly Statement,194,1,1,Push Notification
+Payment Confirmation,146,1,0,Email
+Monthly Statement,90,1,0,Email
+Beneficiary Added Alert,32,1,2,WhatsApp
+Low Balance Alert,43,0,0,WhatsApp
+Fraud Alert,23,1,0,SMS
+Payment Confirmation,131,1,2,Email
+Login OTP,4,1,0,SMS
+Reward Points Update,164,1,1,Email
+Transaction OTP,11,0,0,Email
+KYC Reminder,205,1,0,Push Notification
+Beneficiary Added Alert,25,0,0,WhatsApp
+Fraud Alert,69,0,0,SMS
+Monthly Statement,58,1,2,Push Notification
+Fraud Alert,111,1,1,SMS
+Beneficiary Added Alert,90,0,1,WhatsApp
+Transaction OTP,12,1,0,Push Notification
+Low Balance Alert,76,1,1,Email
+Reward Points Update,70,1,1,Email
+KYC Reminder,293,1,0,Push Notification
+Fraud Alert,52,1,0,SMS
+Payment Confirmation,109,0,0,Email
+Payment Confirmation,102,1,0,Push Notification
+Monthly Statement,58,1,0,Email
+Reward Points Update,67,0,0,Email
+Login OTP,12,1,1,SMS
+Payment Confirmation,107,1,2,Push Notification
+Reward Points Update,60,0,0,Email
+Fraud Alert,41,1,1,SMS
+Payment Confirmation,137,0,0,Email
+Transaction OTP,12,0,0,Email
+Credit Card Bill Reminder,346,0,1,Email
+KYC Reminder,347,0,1,Push Notification
+Credit Card Bill Reminder,239,1,1,SMS
+Monthly Statement,101,1,0,Email
+Payment Confirmation,163,1,1,WhatsApp
+Login OTP,10,0,0,SMS
+Login OTP,7,1,1,SMS
+Low Balance Alert,23,0,1,Email
+Login OTP,7,1,0,SMS
+Transaction OTP,10,0,1,Email
+Login OTP,5,0,2,SMS
+Credit Card Bill Reminder,268,1,2,Push Notification
+Low Balance Alert,30,0,0,Email
+Transaction OTP,6,1,1,Push Notification
+Login OTP,11,0,0,SMS
+Beneficiary Added Alert,30,0,0,WhatsApp
+Fraud Alert,28,0,2,SMS
+Reward Points Update,189,1,1,Push Notification
+KYC Reminder,296,1,0,Push Notification
+Low Balance Alert,74,0,0,WhatsApp
+Payment Confirmation,31,1,2,Push Notification
+Credit Card Bill Reminder,280,1,0,Email
+Login OTP,10,0,0,SMS
+Fraud Alert,68,1,1,Email
+Monthly Statement,141,1,1,SMS
+Login OTP,12,0,0,SMS
+Transaction OTP,8,0,0,Email
+Fraud Alert,64,1,0,Email
+Transaction OTP,6,0,0,Email
+KYC Reminder,266,1,1,Push Notification
+Login OTP,6,0,2,SMS
+Fraud Alert,40,1,0,SMS
+Transaction OTP,11,1,0,Email
+Payment Confirmation,122,1,1,Email
+Low Balance Alert,41,1,2,Push Notification
+Payment Confirmation,155,1,1,Push Notification
+Fraud Alert,80,0,1,SMS
+Beneficiary Added Alert,64,0,0,WhatsApp
+Transaction OTP,6,0,0,Email
+Beneficiary Added Alert,46,1,0,WhatsApp
+Fraud Alert,111,0,0,SMS
+Monthly Statement,159,0,0,Email
+Reward Points Update,74,0,0,Email
+Credit Card Bill Reminder,316,1,0,Push Notification
+Fraud Alert,92,1,1,SMS
+KYC Reminder,219,1,0,Push Notification
+Reward Points Update,52,0,0,Email
+Transaction OTP,7,0,2,Email
+Transaction OTP,4,1,2,Push Notification
+Transaction OTP,11,0,0,Email
+Low Balance Alert,112,1,1,Push Notification
+Monthly Statement,122,1,1,Push Notification
+Low Balance Alert,28,0,0,Email
+Beneficiary Added Alert,61,0,0,WhatsApp
+Reward Points Update,70,1,0,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Monthly Statement,129,1,0,Push Notification
+Payment Confirmation,188,0,1,Email
+Reward Points Update,147,1,2,Push Notification
+Beneficiary Added Alert,106,1,1,WhatsApp
+Beneficiary Added Alert,35,1,0,WhatsApp
+Reward Points Update,84,0,0,Email
+Payment Confirmation,129,0,1,Email
+KYC Reminder,292,1,1,Push Notification
+Monthly Statement,189,1,1,Push Notification
+Payment Confirmation,103,1,0,Push Notification
+Beneficiary Added Alert,105,1,0,WhatsApp
+Payment Confirmation,151,1,2,Email
+KYC Reminder,285,1,0,Push Notification
+Reward Points Update,40,1,1,Email
+Payment Confirmation,121,0,2,Email
+Reward Points Update,177,1,1,Email
+KYC Reminder,267,0,0,Push Notification
+Beneficiary Added Alert,26,0,0,WhatsApp
+Transaction OTP,7,0,0,Email
+Transaction OTP,4,0,1,Email
+Transaction OTP,6,0,0,Email
+KYC Reminder,127,1,0,WhatsApp
+Fraud Alert,113,1,1,SMS
+Low Balance Alert,101,1,1,Push Notification
+Fraud Alert,49,1,0,SMS
+Transaction OTP,7,0,2,Email
+Login OTP,6,1,0,SMS
+Credit Card Bill Reminder,212,0,0,Email
+Login OTP,4,0,0,SMS
+Reward Points Update,49,1,0,Push Notification
+KYC Reminder,135,0,0,Push Notification
+Credit Card Bill Reminder,242,1,1,Push Notification
+Credit Card Bill Reminder,129,0,1,Email
+Monthly Statement,134,1,1,Push Notification
+Low Balance Alert,73,1,0,Email
+Monthly Statement,188,1,2,Push Notification
+Beneficiary Added Alert,39,0,1,WhatsApp
+KYC Reminder,186,1,1,Push Notification
+Credit Card Bill Reminder,187,1,0,Push Notification
+Low Balance Alert,81,0,0,Email
+KYC Reminder,310,1,1,Push Notification
+Reward Points Update,70,0,1,Email
+Reward Points Update,103,0,0,Email
+Credit Card Bill Reminder,136,1,0,Push Notification
+Beneficiary Added Alert,78,1,1,WhatsApp
+Reward Points Update,38,1,2,Push Notification
+Credit Card Bill Reminder,205,0,1,Email
+Reward Points Update,55,1,1,SMS
+Fraud Alert,98,1,0,SMS
+Login OTP,5,1,0,SMS
+Reward Points Update,47,0,0,Email
+Transaction OTP,8,1,1,Push Notification
+Beneficiary Added Alert,94,1,1,WhatsApp
+Beneficiary Added Alert,26,0,0,WhatsApp
+Reward Points Update,96,1,1,Email
+Low Balance Alert,93,1,0,Email
+Credit Card Bill Reminder,247,1,0,WhatsApp
+Fraud Alert,58,0,0,Email
+KYC Reminder,318,0,1,Push Notification
+Monthly Statement,198,1,1,Push Notification
+Reward Points Update,166,1,2,Email
+Beneficiary Added Alert,27,0,0,WhatsApp
+Fraud Alert,76,1,1,SMS
+Reward Points Update,106,1,1,Push Notification
+Monthly Statement,194,1,0,Push Notification
+Low Balance Alert,28,0,0,Email
+Payment Confirmation,71,0,2,Email
+KYC Reminder,155,1,0,Push Notification
+Transaction OTP,10,1,0,Email
+Credit Card Bill Reminder,265,1,0,Push Notification
+Payment Confirmation,168,1,0,Push Notification
+Login OTP,11,0,0,SMS
+Low Balance Alert,23,1,1,Email
+Fraud Alert,78,1,0,SMS
+Payment Confirmation,93,1,3,Email
+Monthly Statement,68,1,1,Email
+Login OTP,6,0,0,SMS
+Beneficiary Added Alert,98,0,0,WhatsApp
+Monthly Statement,199,0,2,Email
+Monthly Statement,152,1,2,WhatsApp
+KYC Reminder,238,1,0,Push Notification
+Low Balance Alert,83,0,1,Email
+KYC Reminder,238,1,0,Push Notification
+Login OTP,10,1,0,WhatsApp
+Login OTP,9,0,1,SMS
+Monthly Statement,83,1,1,Push Notification
+Payment Confirmation,151,1,0,Push Notification
+Beneficiary Added Alert,117,0,2,WhatsApp
+Credit Card Bill Reminder,340,1,0,Push Notification
+Reward Points Update,159,1,1,Push Notification
+Monthly Statement,60,1,2,Email
+Login OTP,11,1,1,SMS
+Reward Points Update,50,1,0,Push Notification
+Login OTP,11,1,2,SMS
+Beneficiary Added Alert,68,0,3,WhatsApp
+Transaction OTP,11,1,0,Email
+Login OTP,4,0,0,SMS
+Fraud Alert,43,0,1,SMS
+Monthly Statement,48,1,2,Push Notification
+Payment Confirmation,57,1,0,Email
+Low Balance Alert,24,0,0,Email
+Payment Confirmation,120,0,1,Email
+Beneficiary Added Alert,40,1,3,WhatsApp
+Monthly Statement,197,1,0,Email
+Reward Points Update,149,0,1,WhatsApp
+Transaction OTP,9,1,0,Email
+Beneficiary Added Alert,20,0,1,WhatsApp
+Low Balance Alert,49,1,0,Push Notification
+Monthly Statement,87,0,1,Email
+Reward Points Update,50,1,2,SMS
+Monthly Statement,140,0,0,Email
+Low Balance Alert,56,0,1,Email
+Transaction OTP,11,0,1,Push Notification
+KYC Reminder,348,0,1,Push Notification
+Fraud Alert,91,0,0,WhatsApp
+Credit Card Bill Reminder,133,0,0,Email
+Low Balance Alert,88,1,2,Email
+Beneficiary Added Alert,81,1,0,WhatsApp
+Fraud Alert,69,1,0,SMS
+KYC Reminder,186,1,0,Push Notification
+Monthly Statement,130,1,2,Push Notification
+Login OTP,12,1,0,SMS
+Reward Points Update,93,0,1,Email
+Reward Points Update,187,1,0,Push Notification
+Monthly Statement,154,0,0,Email
+Fraud Alert,33,1,0,SMS
+Transaction OTP,4,1,1,Email
+Monthly Statement,158,1,0,Push Notification
+Reward Points Update,76,1,2,Email
+Beneficiary Added Alert,104,0,1,WhatsApp
+KYC Reminder,169,1,0,Push Notification
+Payment Confirmation,93,1,0,Push Notification
+Reward Points Update,40,0,0,Email
+Fraud Alert,34,1,0,SMS
+Login OTP,6,0,0,SMS
+Reward Points Update,62,1,1,Email
+Low Balance Alert,48,1,2,Push Notification
+Reward Points Update,92,1,0,Push Notification
+Reward Points Update,73,1,0,Push Notification
+KYC Reminder,244,0,0,Push Notification
+Monthly Statement,89,0,0,Email
+KYC Reminder,326,1,0,Push Notification
+KYC Reminder,137,0,1,Push Notification
+Payment Confirmation,93,1,0,Push Notification
+Low Balance Alert,58,0,3,Email
+Monthly Statement,86,0,0,Email
+Fraud Alert,79,0,1,SMS
+Transaction OTP,9,1,0,Email
+Fraud Alert,61,0,0,SMS
+Reward Points Update,172,0,0,Email
+Fraud Alert,105,1,1,SMS
+KYC Reminder,342,1,0,Push Notification
+KYC Reminder,131,1,1,Push Notification
+Low Balance Alert,51,1,0,Email
+Credit Card Bill Reminder,322,0,0,Email
+Fraud Alert,114,1,0,SMS
+KYC Reminder,214,1,0,Push Notification
+Fraud Alert,75,1,1,SMS
+Beneficiary Added Alert,77,0,0,WhatsApp
+Reward Points Update,118,1,0,Push Notification
+Reward Points Update,181,1,1,Email
+Fraud Alert,55,1,1,SMS
+Low Balance Alert,44,1,0,Push Notification
+Monthly Statement,166,0,0,Email
+Beneficiary Added Alert,98,0,1,WhatsApp
+KYC Reminder,132,0,0,Push Notification
+Transaction OTP,12,1,0,Push Notification
+Beneficiary Added Alert,28,0,1,WhatsApp
+Fraud Alert,92,1,2,SMS
+Reward Points Update,154,1,0,Push Notification
+Fraud Alert,66,1,1,SMS
+Payment Confirmation,103,0,1,Email
+Beneficiary Added Alert,78,0,1,Push Notification
+Beneficiary Added Alert,36,0,0,WhatsApp
+Reward Points Update,139,0,0,Email
+Low Balance Alert,61,1,0,Email
+Reward Points Update,124,1,0,Push Notification
+Payment Confirmation,67,0,1,Email
+Low Balance Alert,97,0,1,Email
+Beneficiary Added Alert,87,1,1,WhatsApp
+Login OTP,5,1,1,SMS
+Payment Confirmation,164,0,1,Email
+KYC Reminder,165,1,0,Push Notification
+Beneficiary Added Alert,59,0,0,WhatsApp
+Beneficiary Added Alert,82,0,0,WhatsApp
+Monthly Statement,21,1,1,Email
+Low Balance Alert,60,0,0,Email
+Fraud Alert,63,1,0,SMS
+Credit Card Bill Reminder,256,0,0,Email
+Monthly Statement,162,1,0,Push Notification
+KYC Reminder,163,1,1,Push Notification
+Monthly Statement,55,0,1,Email
+Reward Points Update,27,1,0,Email
+Beneficiary Added Alert,31,1,0,WhatsApp
+Payment Confirmation,110,0,0,Email
+Transaction OTP,8,1,0,Email
+KYC Reminder,300,1,1,Push Notification
+Reward Points Update,130,0,0,Email
+Credit Card Bill Reminder,264,1,0,Push Notification
+Login OTP,12,0,0,SMS
+Credit Card Bill Reminder,305,1,1,Push Notification
+KYC Reminder,234,1,0,Push Notification
+Reward Points Update,92,1,0,Email
+Payment Confirmation,131,1,1,Push Notification
+Fraud Alert,23,1,0,SMS
+Login OTP,9,1,1,SMS
+KYC Reminder,225,0,0,Push Notification
+Login OTP,9,1,1,SMS
+Transaction OTP,10,1,2,Push Notification
+Login OTP,11,0,1,SMS
+Reward Points Update,175,1,1,SMS
+Credit Card Bill Reminder,295,0,0,Email
+Monthly Statement,109,1,0,Push Notification
+Login OTP,9,0,1,SMS
+Transaction OTP,6,1,0,Email
+Login OTP,12,1,2,SMS
+Reward Points Update,134,1,0,Email
+Low Balance Alert,23,1,1,Email
+Monthly Statement,58,1,1,Email
+KYC Reminder,220,0,1,Push Notification
+Monthly Statement,68,1,1,Push Notification
+Low Balance Alert,66,1,1,Email
+KYC Reminder,165,0,0,Push Notification
+Beneficiary Added Alert,120,0,2,WhatsApp
+Reward Points Update,183,0,0,Email
+Credit Card Bill Reminder,343,1,2,SMS
+Credit Card Bill Reminder,139,0,0,Email
+Reward Points Update,87,0,1,Email
+Transaction OTP,5,0,1,Email
+Reward Points Update,113,1,0,Push Notification
+Fraud Alert,25,0,1,SMS
+Reward Points Update,93,0,0,Email
+Fraud Alert,53,1,0,SMS
+Monthly Statement,43,1,0,Push Notification
+Transaction OTP,5,0,2,Email
+Low Balance Alert,38,1,0,Push Notification
+KYC Reminder,134,0,0,Push Notification
+Transaction OTP,8,1,1,Email
+Credit Card Bill Reminder,266,0,2,Email
+KYC Reminder,207,1,0,Push Notification
+Credit Card Bill Reminder,102,1,0,Push Notification
+Transaction OTP,9,1,0,Push Notification
+Beneficiary Added Alert,111,0,1,WhatsApp
+Beneficiary Added Alert,69,1,1,WhatsApp
+Transaction OTP,5,1,0,Email
+Login OTP,4,1,1,SMS
+KYC Reminder,104,0,2,Push Notification
+Monthly Statement,49,1,1,Push Notification
+KYC Reminder,120,0,1,Push Notification
+Fraud Alert,111,0,0,SMS
+Payment Confirmation,184,1,2,Push Notification
+Low Balance Alert,56,0,1,Email
+Credit Card Bill Reminder,107,1,2,Push Notification
+Payment Confirmation,159,0,1,Email
+Login OTP,8,0,1,Email
+KYC Reminder,347,1,0,Push Notification
+Monthly Statement,159,0,1,Email
+Low Balance Alert,97,1,0,Push Notification
+Reward Points Update,65,0,1,Email
+Low Balance Alert,51,1,1,Push Notification
+KYC Reminder,313,0,1,Push Notification
+Beneficiary Added Alert,50,0,1,Push Notification
+Transaction OTP,6,1,2,WhatsApp
+Monthly Statement,35,1,0,Email
+Credit Card Bill Reminder,189,0,1,Email
+Beneficiary Added Alert,28,1,0,WhatsApp
+Credit Card Bill Reminder,287,1,0,Push Notification
+Fraud Alert,55,1,1,SMS
+Login OTP,4,0,0,SMS
+Monthly Statement,191,0,1,Email
+Fraud Alert,113,0,0,SMS
+Beneficiary Added Alert,72,0,0,WhatsApp
+Credit Card Bill Reminder,133,0,2,Email
+KYC Reminder,201,1,2,Push Notification
+Monthly Statement,61,0,0,Email
+Credit Card Bill Reminder,118,1,1,Email
+Fraud Alert,33,1,0,SMS
+KYC Reminder,110,1,0,WhatsApp
+Credit Card Bill Reminder,322,0,0,Email
+Payment Confirmation,93,1,0,Push Notification
+Reward Points Update,71,1,0,Email
+Transaction OTP,4,0,0,Email
+Reward Points Update,172,0,1,Email
+Credit Card Bill Reminder,246,0,1,Email
+Credit Card Bill Reminder,158,1,1,Push Notification
+Credit Card Bill Reminder,227,0,0,Email
+Low Balance Alert,99,0,2,Email
+Beneficiary Added Alert,99,1,0,WhatsApp
+KYC Reminder,211,0,2,Push Notification
+Login OTP,5,1,0,Push Notification
+Login OTP,8,1,0,Email
+Credit Card Bill Reminder,313,1,1,Push Notification
+Login OTP,11,1,0,SMS
+Beneficiary Added Alert,99,1,1,WhatsApp
+Transaction OTP,6,1,0,Email
+Reward Points Update,22,1,0,Email
+Reward Points Update,133,1,0,Push Notification
+Beneficiary Added Alert,51,1,1,WhatsApp
+KYC Reminder,345,0,1,Email
+Monthly Statement,187,0,1,Email
+Transaction OTP,7,1,0,Push Notification
+Beneficiary Added Alert,110,1,0,WhatsApp
+Monthly Statement,64,1,0,Push Notification
+Reward Points Update,94,0,0,Email
+Payment Confirmation,118,1,0,Email
+KYC Reminder,126,1,0,Email
+Beneficiary Added Alert,95,0,1,WhatsApp
+Monthly Statement,52,1,0,Push Notification
+Reward Points Update,120,1,2,Push Notification
+Monthly Statement,133,1,1,Email
+Credit Card Bill Reminder,205,1,0,Push Notification
+Low Balance Alert,89,1,0,SMS
+Monthly Statement,186,1,0,Push Notification
+KYC Reminder,172,0,1,Push Notification
+Beneficiary Added Alert,51,0,1,WhatsApp
+KYC Reminder,116,1,1,Push Notification
+Low Balance Alert,75,0,1,Email
+Credit Card Bill Reminder,189,1,2,Email
+Login OTP,5,1,1,SMS
+Low Balance Alert,31,1,2,Email
+Credit Card Bill Reminder,246,0,0,Email
+Credit Card Bill Reminder,284,1,0,Email
+Payment Confirmation,76,1,2,Email
+Credit Card Bill Reminder,234,0,0,Email
+Payment Confirmation,91,0,0,Email
+Transaction OTP,10,0,0,Email
+Payment Confirmation,55,0,1,SMS
+Low Balance Alert,36,1,0,Push Notification
+Credit Card Bill Reminder,203,1,1,Email
+Credit Card Bill Reminder,203,1,0,Push Notification
+Credit Card Bill Reminder,161,0,1,Email
+Login OTP,9,0,1,SMS
+Low Balance Alert,83,0,0,Email
+Beneficiary Added Alert,71,1,3,WhatsApp
+Monthly Statement,117,1,0,Email
+Fraud Alert,76,1,0,SMS
+KYC Reminder,344,0,1,Push Notification
+Reward Points Update,147,1,0,Push Notification
+Monthly Statement,123,1,1,Email
+Login OTP,6,0,0,SMS
+Credit Card Bill Reminder,245,1,0,Email
+Reward Points Update,172,0,2,Email
+Transaction OTP,10,1,0,Push Notification
+Fraud Alert,47,0,1,Email
+Transaction OTP,8,0,1,Email
+Fraud Alert,28,0,1,SMS
+KYC Reminder,103,1,0,Push Notification
+Monthly Statement,92,1,0,Email
+Low Balance Alert,97,1,1,Push Notification
+Monthly Statement,65,0,1,Email
+Fraud Alert,43,1,2,SMS
+Low Balance Alert,24,1,0,Push Notification
+Payment Confirmation,30,0,1,Email
+KYC Reminder,335,1,1,Push Notification
+Credit Card Bill Reminder,335,1,0,Push Notification
+KYC Reminder,311,0,0,Push Notification
+KYC Reminder,176,1,1,Push Notification
+Reward Points Update,63,1,1,Email
+Reward Points Update,186,0,0,Email
+Credit Card Bill Reminder,140,0,0,Email
+Fraud Alert,28,1,1,SMS
+Reward Points Update,177,1,0,Push Notification
+Login OTP,8,0,0,SMS
+Low Balance Alert,55,1,0,Email
+Fraud Alert,87,1,2,SMS
+Login OTP,5,1,0,SMS
+Monthly Statement,30,1,0,Push Notification
+Credit Card Bill Reminder,224,1,2,Email
+Credit Card Bill Reminder,174,1,1,Email
+Login OTP,7,0,0,SMS
+Credit Card Bill Reminder,165,1,1,Push Notification
+Low Balance Alert,35,0,0,Email
+KYC Reminder,132,0,2,Push Notification
+Transaction OTP,11,0,1,Email
+Credit Card Bill Reminder,296,0,0,Email
+Beneficiary Added Alert,91,1,1,WhatsApp
+Low Balance Alert,37,1,1,Email
+KYC Reminder,147,0,0,Push Notification
+Login OTP,11,1,0,WhatsApp
+Credit Card Bill Reminder,225,1,0,Push Notification
+Payment Confirmation,124,1,0,Email
+Credit Card Bill Reminder,265,0,1,Email
+KYC Reminder,307,0,0,Push Notification
+Credit Card Bill Reminder,182,1,1,Push Notification
+Fraud Alert,94,1,2,Push Notification
+Login OTP,5,1,1,SMS
+Low Balance Alert,35,1,1,Push Notification
+Monthly Statement,182,0,0,Email
+Fraud Alert,110,0,1,SMS
+KYC Reminder,176,1,1,Push Notification
+Low Balance Alert,64,0,1,Email
+Transaction OTP,8,1,0,Email
+Beneficiary Added Alert,82,1,1,WhatsApp
+Transaction OTP,7,0,0,Email
+Transaction OTP,7,1,0,Email
+Fraud Alert,21,1,0,SMS
+Payment Confirmation,91,1,1,Email
+Fraud Alert,34,1,1,SMS
+Fraud Alert,29,1,1,SMS
+KYC Reminder,320,1,1,Push Notification
+Credit Card Bill Reminder,333,0,1,Email
+Monthly Statement,115,1,1,Push Notification
+Reward Points Update,186,1,2,Email
+Low Balance Alert,62,0,1,Email
+Credit Card Bill Reminder,165,0,0,Email
+Monthly Statement,23,1,0,Email
+Low Balance Alert,22,1,1,SMS
+KYC Reminder,233,0,0,Push Notification
+Fraud Alert,79,1,0,SMS
+Credit Card Bill Reminder,225,1,0,Push Notification
+Monthly Statement,78,1,1,Email
+KYC Reminder,270,1,0,WhatsApp
+KYC Reminder,184,0,2,SMS
+Reward Points Update,199,1,0,Push Notification
+Reward Points Update,36,1,0,Email
+KYC Reminder,269,0,0,Push Notification
+Payment Confirmation,126,0,1,WhatsApp
+Low Balance Alert,101,1,2,Email
+Beneficiary Added Alert,33,1,0,Email
+Credit Card Bill Reminder,255,0,0,Email
+Login OTP,10,1,1,SMS
+Credit Card Bill Reminder,149,1,0,Email
+Login OTP,12,1,0,SMS
+KYC Reminder,336,0,0,Push Notification
+Credit Card Bill Reminder,247,1,0,Push Notification
+Reward Points Update,50,1,1,Push Notification
+KYC Reminder,200,1,0,Push Notification
+Login OTP,6,1,1,SMS
+Fraud Alert,20,0,1,SMS
+Fraud Alert,116,1,0,SMS
+Transaction OTP,9,0,2,Email
+Payment Confirmation,112,1,0,WhatsApp
+Payment Confirmation,85,1,2,Push Notification
+Payment Confirmation,142,0,0,Email
+Reward Points Update,34,1,0,WhatsApp
+Beneficiary Added Alert,41,1,0,WhatsApp
+Payment Confirmation,122,0,0,Email
+Credit Card Bill Reminder,331,1,0,Push Notification
+Reward Points Update,181,1,0,Push Notification
+KYC Reminder,224,1,2,Push Notification
+Transaction OTP,10,0,1,Email
+Fraud Alert,119,0,2,SMS
+Transaction OTP,5,0,0,Email
+Credit Card Bill Reminder,316,0,0,Email
+Fraud Alert,94,1,0,SMS
+Reward Points Update,90,0,2,Email
+Reward Points Update,69,1,0,Push Notification
+Login OTP,4,0,1,SMS
+Transaction OTP,4,0,1,Email
+Reward Points Update,79,1,1,Push Notification
+Login OTP,11,1,1,SMS
+KYC Reminder,336,1,0,Push Notification
+Transaction OTP,6,0,1,Email
+KYC Reminder,345,1,0,Push Notification
+Transaction OTP,10,0,0,Email
+Payment Confirmation,158,0,2,Email
+Fraud Alert,77,0,0,SMS
+Payment Confirmation,69,1,0,Email
+Beneficiary Added Alert,61,1,0,SMS
+Reward Points Update,194,1,1,Push Notification
+Login OTP,5,0,0,SMS
+Beneficiary Added Alert,22,1,1,WhatsApp
+Low Balance Alert,28,0,0,Email
+Transaction OTP,12,1,0,Push Notification
+Beneficiary Added Alert,62,0,1,WhatsApp
+Payment Confirmation,56,0,1,Email
+Fraud Alert,89,1,1,Email
+Transaction OTP,8,0,1,Email
+Credit Card Bill Reminder,108,1,1,Email
+Monthly Statement,101,1,0,Push Notification
+KYC Reminder,108,0,1,Push Notification
+Beneficiary Added Alert,113,1,0,WhatsApp
+Transaction OTP,10,1,1,Push Notification
+KYC Reminder,311,1,1,Push Notification
+Beneficiary Added Alert,31,1,0,WhatsApp
+Credit Card Bill Reminder,239,0,0,Email
+Payment Confirmation,47,1,1,Push Notification
+Reward Points Update,58,1,0,Email
+KYC Reminder,314,0,2,Push Notification
+Payment Confirmation,125,0,0,Email
+Low Balance Alert,54,0,2,Email
+Transaction OTP,8,1,2,WhatsApp
+Monthly Statement,113,1,0,Push Notification
+Reward Points Update,132,1,1,Email
+Low Balance Alert,107,1,0,Push Notification
+Monthly Statement,25,1,1,Push Notification
+Reward Points Update,120,1,2,Push Notification
+Monthly Statement,40,0,1,Email
+Monthly Statement,63,0,0,Email
+Fraud Alert,109,0,1,WhatsApp
+Fraud Alert,75,0,0,SMS
+Login OTP,6,1,1,SMS
+Beneficiary Added Alert,57,0,0,WhatsApp
+Fraud Alert,62,0,0,SMS
+Reward Points Update,23,0,1,Email
+KYC Reminder,185,0,1,Push Notification
+Transaction OTP,4,0,1,Email
+Monthly Statement,166,0,0,Email
+Login OTP,11,0,0,SMS
+Beneficiary Added Alert,47,1,1,WhatsApp
+Fraud Alert,66,1,0,SMS
+Transaction OTP,4,1,0,Email
+Login OTP,6,0,0,SMS
+Beneficiary Added Alert,50,0,1,WhatsApp
+Credit Card Bill Reminder,238,0,2,Email
+Transaction OTP,10,1,0,SMS
+Payment Confirmation,106,0,0,Email
+Beneficiary Added Alert,114,0,1,WhatsApp
+Login OTP,8,1,0,SMS
+Reward Points Update,182,1,0,Email
+Transaction OTP,7,1,0,Push Notification
+Low Balance Alert,120,1,1,Email
+Payment Confirmation,55,1,3,Push Notification
+KYC Reminder,324,1,0,Push Notification
+Payment Confirmation,76,1,0,Push Notification
+Reward Points Update,86,1,0,Email
+Low Balance Alert,37,1,2,Push Notification
+Transaction OTP,12,1,1,Push Notification
+Login OTP,10,0,0,SMS
+Login OTP,11,1,1,WhatsApp
+Fraud Alert,105,0,1,SMS
+Monthly Statement,48,0,2,Email
+Credit Card Bill Reminder,155,1,0,Push Notification
+KYC Reminder,346,0,0,Push Notification
+Fraud Alert,37,0,1,SMS
+Transaction OTP,4,1,0,Push Notification
+Beneficiary Added Alert,50,0,2,WhatsApp
+Beneficiary Added Alert,97,1,2,WhatsApp
+KYC Reminder,133,1,1,Push Notification
+Monthly Statement,133,1,0,Email
+Monthly Statement,200,0,1,Email
+Credit Card Bill Reminder,154,1,0,Push Notification
+Login OTP,7,1,1,SMS
+Transaction OTP,10,1,1,Email
+Reward Points Update,195,1,3,Email
+Payment Confirmation,22,1,0,Push Notification
+Monthly Statement,186,0,0,Email
+Login OTP,8,0,2,SMS
+Monthly Statement,183,1,0,Push Notification
+Beneficiary Added Alert,77,1,1,SMS
+Transaction OTP,5,0,2,Email
+Login OTP,9,1,0,SMS
+Monthly Statement,188,1,0,Push Notification
+Credit Card Bill Reminder,291,1,2,Email
+Fraud Alert,48,0,2,SMS
+Login OTP,6,0,0,WhatsApp
+Fraud Alert,87,1,0,SMS
+Fraud Alert,39,0,0,SMS
+Monthly Statement,187,1,1,Push Notification
+Low Balance Alert,52,0,0,WhatsApp
+Beneficiary Added Alert,57,1,0,WhatsApp
+Fraud Alert,61,0,2,SMS
+Fraud Alert,42,1,0,SMS
+Reward Points Update,113,1,0,Push Notification
+Transaction OTP,6,1,1,Push Notification
+Payment Confirmation,133,0,0,Email
+Monthly Statement,109,0,1,Email
+Monthly Statement,169,0,0,Email
+Monthly Statement,147,1,2,Push Notification
+Fraud Alert,118,0,2,SMS
+Low Balance Alert,30,0,0,Email
+Reward Points Update,59,0,0,Email
+Beneficiary Added Alert,101,1,1,WhatsApp
+Beneficiary Added Alert,103,0,0,WhatsApp
+Reward Points Update,159,1,0,Push Notification
+Monthly Statement,114,1,1,Push Notification
+Login OTP,5,1,1,SMS
+Payment Confirmation,189,1,3,Push Notification
+Fraud Alert,81,0,2,SMS
+Login OTP,4,0,1,SMS
+Payment Confirmation,120,1,1,Push Notification
+Payment Confirmation,120,1,1,Push Notification
+Monthly Statement,166,1,0,Email
+Credit Card Bill Reminder,286,1,0,Push Notification
+Beneficiary Added Alert,51,1,2,WhatsApp
+Login OTP,7,1,0,SMS
+Credit Card Bill Reminder,258,0,0,Email
+KYC Reminder,168,1,0,Push Notification
+Transaction OTP,12,0,1,Email
+Beneficiary Added Alert,82,1,0,WhatsApp
+Monthly Statement,126,1,1,Push Notification
+Beneficiary Added Alert,93,0,0,WhatsApp
+Payment Confirmation,150,1,0,Push Notification
+Fraud Alert,20,1,0,SMS
+Low Balance Alert,21,1,2,Email
+Fraud Alert,66,0,1,SMS
+Monthly Statement,99,1,2,Push Notification
+Fraud Alert,85,0,0,WhatsApp
+Low Balance Alert,96,0,1,Email
+Payment Confirmation,168,0,0,Email
+Payment Confirmation,53,0,1,Email
+Low Balance Alert,90,1,0,Push Notification
+KYC Reminder,150,0,0,Push Notification
+Transaction OTP,8,0,0,Email
+Beneficiary Added Alert,25,1,0,SMS
+Monthly Statement,76,0,0,Email
+Payment Confirmation,44,0,1,Email
+Monthly Statement,69,0,1,Email
+Transaction OTP,9,0,0,Email
+Transaction OTP,8,1,1,Email
+Beneficiary Added Alert,58,0,0,WhatsApp
+Fraud Alert,68,1,3,SMS
+Monthly Statement,170,1,1,Email
+KYC Reminder,105,1,0,Push Notification
+Reward Points Update,43,1,0,Push Notification
+Transaction OTP,7,1,1,Email
+Monthly Statement,96,0,0,Email
+Beneficiary Added Alert,68,1,2,WhatsApp
+Credit Card Bill Reminder,296,1,1,Push Notification
+Fraud Alert,85,1,0,SMS
+Monthly Statement,170,0,1,Email
+Credit Card Bill Reminder,103,1,0,Email
+Monthly Statement,25,1,1,Push Notification
+Monthly Statement,138,0,0,Email
+Payment Confirmation,82,0,0,Email
+Payment Confirmation,97,0,2,Email
+KYC Reminder,116,0,0,Push Notification
+Monthly Statement,54,1,0,Push Notification
+KYC Reminder,144,0,0,Push Notification
+Payment Confirmation,111,1,2,Push Notification
+Monthly Statement,122,0,1,Email
+Reward Points Update,132,1,0,Push Notification
+Transaction OTP,11,1,1,Push Notification
+KYC Reminder,108,1,0,Push Notification
+Reward Points Update,136,1,1,Email
+KYC Reminder,329,0,1,Push Notification
+Monthly Statement,80,1,0,Push Notification
+KYC Reminder,204,1,0,Push Notification
+KYC Reminder,136,1,0,Push Notification
+Monthly Statement,24,1,0,Push Notification
+Monthly Statement,82,0,0,Email
+Low Balance Alert,60,1,0,Push Notification
+Transaction OTP,8,1,1,Push Notification
+Transaction OTP,11,0,1,Email
+Monthly Statement,84,0,0,Email
+Transaction OTP,7,1,0,Email
+KYC Reminder,209,1,0,Push Notification
+Beneficiary Added Alert,111,0,0,WhatsApp
+KYC Reminder,350,1,0,Push Notification
+Beneficiary Added Alert,34,0,1,WhatsApp
+Credit Card Bill Reminder,292,0,1,Email
+Beneficiary Added Alert,99,1,1,WhatsApp
+Beneficiary Added Alert,63,1,0,WhatsApp
+KYC Reminder,173,0,1,Push Notification
+Beneficiary Added Alert,107,1,0,Push Notification
+Beneficiary Added Alert,45,1,0,WhatsApp
+Monthly Statement,95,0,2,Email
+Login OTP,10,1,1,SMS
+Payment Confirmation,99,1,0,Email
+Credit Card Bill Reminder,111,1,0,Push Notification
+Reward Points Update,33,1,0,Email
+Payment Confirmation,74,0,0,Email
+Transaction OTP,8,1,0,Push Notification
+Reward Points Update,171,1,0,Push Notification
+Beneficiary Added Alert,102,0,2,WhatsApp
+Reward Points Update,23,1,0,Push Notification
+Transaction OTP,8,1,1,Push Notification
+Reward Points Update,100,1,2,Email
+Low Balance Alert,42,1,2,Push Notification
+Fraud Alert,34,1,0,SMS
+Credit Card Bill Reminder,270,1,1,Email
+Monthly Statement,122,0,1,Email
+Low Balance Alert,38,0,0,Email
+Fraud Alert,29,1,0,SMS
+Monthly Statement,61,0,2,Email
+KYC Reminder,117,0,1,Push Notification
+Fraud Alert,30,0,1,SMS
+Reward Points Update,88,1,1,Push Notification
+Monthly Statement,91,0,0,Email
+Reward Points Update,115,0,0,Email
+Credit Card Bill Reminder,267,1,0,Email
+KYC Reminder,236,1,0,Push Notification
+Monthly Statement,36,1,1,WhatsApp
+Transaction OTP,6,0,0,Email
+Credit Card Bill Reminder,298,0,2,Email
+Login OTP,9,1,1,SMS
+Monthly Statement,139,1,1,Push Notification
+Reward Points Update,26,0,0,Email
+KYC Reminder,200,0,1,Push Notification
+Login OTP,4,1,0,SMS
+Fraud Alert,104,1,1,SMS
+Transaction OTP,6,0,2,Email
+KYC Reminder,345,1,0,Push Notification
+Transaction OTP,10,1,0,Push Notification
+Monthly Statement,126,1,2,Push Notification
+KYC Reminder,183,1,2,Push Notification
+KYC Reminder,142,0,2,Push Notification
+Reward Points Update,192,1,0,Push Notification
+Beneficiary Added Alert,72,0,0,WhatsApp
+Transaction OTP,4,1,0,Email
+Credit Card Bill Reminder,190,1,0,Push Notification
+Transaction OTP,5,0,0,Email
+KYC Reminder,205,0,1,Push Notification
+Credit Card Bill Reminder,225,0,0,Email
+Low Balance Alert,115,1,1,Push Notification
+Fraud Alert,79,0,2,SMS
+Low Balance Alert,43,0,0,Email
+Fraud Alert,81,1,0,SMS
+Login OTP,10,1,0,SMS
+Fraud Alert,30,1,2,SMS
+Fraud Alert,106,1,0,SMS
+Credit Card Bill Reminder,297,1,1,Push Notification
+Fraud Alert,117,0,1,SMS
+Monthly Statement,92,0,1,Email
+Reward Points Update,162,0,1,Email
+Login OTP,6,0,0,SMS
+Transaction OTP,4,0,0,Email
+Beneficiary Added Alert,39,1,1,WhatsApp
+Fraud Alert,94,1,0,WhatsApp
+Payment Confirmation,56,1,2,Push Notification
+Fraud Alert,33,1,1,SMS
+Transaction OTP,10,1,0,WhatsApp
+Login OTP,6,1,0,SMS
+Low Balance Alert,50,1,0,Push Notification
+Low Balance Alert,74,0,1,Email
+Beneficiary Added Alert,26,1,0,WhatsApp
+KYC Reminder,111,0,0,Push Notification
+Monthly Statement,65,1,0,Email
+Beneficiary Added Alert,21,1,0,WhatsApp
+Transaction OTP,10,0,0,Email
+Transaction OTP,5,0,1,Email
+Credit Card Bill Reminder,218,1,1,Email
+Login OTP,8,0,2,SMS
+Login OTP,5,1,0,SMS
+Low Balance Alert,75,1,0,Email
+Monthly Statement,45,1,1,Email
+Beneficiary Added Alert,42,1,1,WhatsApp
+KYC Reminder,333,0,1,Push Notification
+Low Balance Alert,97,0,0,Email
+Reward Points Update,108,1,1,Push Notification
+Beneficiary Added Alert,48,0,1,WhatsApp
+Transaction OTP,4,1,0,Email
+Reward Points Update,94,1,0,Email
+Low Balance Alert,110,1,0,Push Notification
+KYC Reminder,269,1,0,Push Notification
+Reward Points Update,154,0,1,SMS
+Monthly Statement,68,1,0,Email
+Low Balance Alert,102,0,0,Email
+Reward Points Update,152,1,1,Push Notification
+KYC Reminder,312,0,0,Push Notification
+Payment Confirmation,60,1,0,Push Notification
+Payment Confirmation,57,0,2,SMS
+Monthly Statement,105,0,0,Email
+Reward Points Update,85,1,2,Push Notification
+Login OTP,12,0,1,SMS
+Payment Confirmation,20,1,0,Push Notification
+Credit Card Bill Reminder,337,0,1,Email
+Low Balance Alert,115,0,0,Email
+Monthly Statement,160,1,1,Email
+Login OTP,5,0,0,SMS
+Payment Confirmation,163,1,0,Email
+Monthly Statement,127,1,2,Push Notification
+Monthly Statement,45,0,0,Email
+Reward Points Update,69,1,0,Push Notification
+Transaction OTP,12,0,0,Email
+Credit Card Bill Reminder,188,1,0,Email
+Login OTP,6,0,1,SMS
+Beneficiary Added Alert,90,1,0,WhatsApp
+Monthly Statement,178,1,0,Push Notification
+Credit Card Bill Reminder,252,1,0,Email
+Monthly Statement,192,0,0,Email
+Beneficiary Added Alert,70,0,0,WhatsApp
+Beneficiary Added Alert,46,0,0,WhatsApp
+Transaction OTP,12,1,2,Email
+Low Balance Alert,27,0,0,Email
+Credit Card Bill Reminder,241,1,0,Push Notification
+Reward Points Update,151,1,0,Push Notification
+KYC Reminder,318,1,0,Push Notification
+Fraud Alert,70,1,0,SMS
+Transaction OTP,8,1,0,Push Notification
+Login OTP,10,0,2,WhatsApp
+Fraud Alert,72,1,0,SMS
+KYC Reminder,314,1,0,Push Notification
+Monthly Statement,188,1,1,Push Notification
+Monthly Statement,54,1,1,Email
+Low Balance Alert,65,0,0,Email
+Credit Card Bill Reminder,287,1,2,Email
+Transaction OTP,10,1,1,Push Notification
+Monthly Statement,189,0,2,Email
+Low Balance Alert,99,1,0,Push Notification
+Login OTP,11,1,0,SMS
+KYC Reminder,116,0,1,Push Notification
+Login OTP,5,0,1,SMS
+Reward Points Update,69,0,2,Email
+Monthly Statement,77,1,0,Push Notification
+Login OTP,7,1,2,SMS
+Monthly Statement,81,1,1,Push Notification
+Low Balance Alert,35,0,2,Email
+Payment Confirmation,82,1,0,Email
+Credit Card Bill Reminder,180,1,3,Push Notification
+Reward Points Update,77,0,1,Email
+KYC Reminder,284,1,1,Push Notification
+Beneficiary Added Alert,95,0,0,WhatsApp
+Beneficiary Added Alert,99,1,1,WhatsApp
+Fraud Alert,96,0,0,SMS
+Beneficiary Added Alert,58,1,0,Email
+Payment Confirmation,132,1,0,Push Notification
+Login OTP,12,1,1,SMS
+KYC Reminder,245,0,0,Push Notification
+Fraud Alert,100,0,0,SMS
+KYC Reminder,285,0,0,Push Notification
+Beneficiary Added Alert,52,1,0,WhatsApp
+Fraud Alert,73,1,2,SMS
+Reward Points Update,104,0,1,Email
+Beneficiary Added Alert,55,1,3,WhatsApp
+Beneficiary Added Alert,90,1,0,WhatsApp
+Payment Confirmation,108,1,1,Push Notification
+Login OTP,10,1,1,SMS
+Payment Confirmation,107,0,1,Email
+Low Balance Alert,73,1,0,Push Notification
+Login OTP,6,0,2,SMS
+Payment Confirmation,56,1,0,Push Notification
+KYC Reminder,203,1,1,Push Notification
+Low Balance Alert,98,0,1,Email
+Monthly Statement,117,0,1,WhatsApp
+Payment Confirmation,63,0,1,Email
+KYC Reminder,238,1,2,Push Notification
+Beneficiary Added Alert,24,0,0,WhatsApp
+Reward Points Update,170,1,3,SMS
+Monthly Statement,197,1,0,WhatsApp
+Credit Card Bill Reminder,161,0,0,Email
+Reward Points Update,81,1,0,Push Notification
+Credit Card Bill Reminder,298,0,0,Email
+Transaction OTP,4,0,0,Email
+KYC Reminder,228,0,1,Push Notification
+Low Balance Alert,36,0,1,Email
+Login OTP,10,0,0,SMS
+Credit Card Bill Reminder,148,0,0,Email
+Login OTP,4,1,0,SMS
+KYC Reminder,282,1,0,Push Notification
+Monthly Statement,55,1,2,Push Notification
+Beneficiary Added Alert,106,0,1,WhatsApp
+KYC Reminder,171,1,1,Push Notification
+Fraud Alert,40,1,0,SMS
+Low Balance Alert,62,0,0,Email
+KYC Reminder,270,0,1,Push Notification
+Payment Confirmation,123,0,0,Email
+KYC Reminder,172,1,1,Push Notification
+KYC Reminder,123,0,1,Push Notification
+KYC Reminder,127,1,1,Push Notification
+Credit Card Bill Reminder,302,1,1,Email
+Credit Card Bill Reminder,242,1,0,Push Notification
+Fraud Alert,87,1,2,SMS
+KYC Reminder,284,0,0,Push Notification
+Credit Card Bill Reminder,109,0,0,Email
+Low Balance Alert,41,0,0,Push Notification
+Monthly Statement,66,0,2,Email
+Login OTP,8,0,0,SMS
+Low Balance Alert,24,0,0,Email
+KYC Reminder,225,1,0,Push Notification
+KYC Reminder,169,1,1,Push Notification
+Login OTP,9,1,0,Email
+Monthly Statement,182,1,1,Push Notification
+Low Balance Alert,40,1,0,Push Notification
+Low Balance Alert,27,1,0,Email
+Transaction OTP,8,1,1,Email
+Monthly Statement,174,0,1,Email
+Fraud Alert,114,0,0,SMS
+Monthly Statement,63,1,0,Push Notification
+Low Balance Alert,27,0,2,Email
+Login OTP,9,1,0,Email
+Fraud Alert,79,0,0,SMS
+Login OTP,11,0,0,SMS
+Fraud Alert,95,0,0,SMS
+Monthly Statement,148,1,1,Push Notification
+Transaction OTP,10,1,0,Push Notification
+KYC Reminder,337,1,1,Push Notification
+Beneficiary Added Alert,45,1,2,WhatsApp
+Credit Card Bill Reminder,249,0,0,WhatsApp
+Login OTP,10,0,3,SMS
+Login OTP,10,0,1,SMS
+Payment Confirmation,135,1,0,Push Notification
+Reward Points Update,194,0,2,Email
+Reward Points Update,87,0,1,Email
+Beneficiary Added Alert,53,1,1,WhatsApp
+Fraud Alert,25,0,0,SMS
+Monthly Statement,59,1,1,Push Notification
+Reward Points Update,56,1,0,SMS
+KYC Reminder,170,1,0,Push Notification
+Transaction OTP,11,1,1,Email
+KYC Reminder,280,0,2,Push Notification
+Beneficiary Added Alert,53,1,0,WhatsApp
+Login OTP,12,1,0,SMS
+Fraud Alert,65,1,2,WhatsApp
+Low Balance Alert,119,1,1,Email
+Payment Confirmation,77,1,0,Email
+Transaction OTP,10,1,2,Push Notification
+Fraud Alert,102,0,1,SMS
+Fraud Alert,58,1,2,SMS
+Low Balance Alert,116,1,0,Email
+Beneficiary Added Alert,120,1,0,Push Notification
+Login OTP,12,1,1,SMS
+Reward Points Update,113,1,0,Email
+Fraud Alert,62,1,0,SMS
+KYC Reminder,229,0,0,Push Notification
+Payment Confirmation,86,0,1,Email
+Payment Confirmation,91,1,0,Email
+Low Balance Alert,32,1,0,SMS
+Credit Card Bill Reminder,136,0,2,Email
+KYC Reminder,327,1,0,Push Notification
+Monthly Statement,175,0,0,Email
+Reward Points Update,125,0,0,Email
+KYC Reminder,258,1,0,Push Notification
+Beneficiary Added Alert,76,1,0,Push Notification
+Fraud Alert,103,1,1,SMS
+Low Balance Alert,32,1,0,Push Notification
+Credit Card Bill Reminder,314,1,0,Email
+Monthly Statement,140,1,0,Email
+Login OTP,7,1,0,SMS
+Reward Points Update,74,1,1,Email
+KYC Reminder,334,0,0,Push Notification
+Transaction OTP,11,1,0,Push Notification
+Low Balance Alert,41,0,0,Email
+Payment Confirmation,91,1,0,Push Notification
+Beneficiary Added Alert,27,0,0,SMS
+Low Balance Alert,116,1,2,Push Notification
+KYC Reminder,276,1,0,Push Notification
+Beneficiary Added Alert,93,1,0,WhatsApp
+Beneficiary Added Alert,23,1,1,WhatsApp
+Payment Confirmation,167,0,0,Push Notification
+KYC Reminder,281,0,0,Push Notification
+KYC Reminder,160,1,1,Push Notification
+Payment Confirmation,59,1,2,Push Notification
+Login OTP,7,0,1,SMS
+Fraud Alert,95,0,0,SMS
+KYC Reminder,348,1,0,Push Notification
+Transaction OTP,9,0,1,Email
+Credit Card Bill Reminder,267,1,1,Email
+Login OTP,6,0,0,SMS
+Beneficiary Added Alert,118,1,2,WhatsApp
+Reward Points Update,75,0,1,WhatsApp
+Beneficiary Added Alert,86,0,0,WhatsApp
+Payment Confirmation,99,1,1,SMS
+Payment Confirmation,194,0,0,Email
+Monthly Statement,51,0,1,Email
+Monthly Statement,82,1,1,Push Notification
+Reward Points Update,168,1,1,Push Notification
+Low Balance Alert,56,0,1,Email
+Low Balance Alert,101,1,1,Push Notification
+Payment Confirmation,61,0,1,Email
+Credit Card Bill Reminder,166,0,0,Email
+Monthly Statement,149,1,0,Push Notification
+Transaction OTP,10,0,0,Email
+Fraud Alert,38,0,2,SMS
+Login OTP,11,1,1,SMS
+KYC Reminder,303,0,2,Push Notification
+KYC Reminder,309,0,0,Push Notification
+Fraud Alert,92,0,1,SMS
+Payment Confirmation,167,0,1,Email
+Monthly Statement,74,1,0,Push Notification
+Beneficiary Added Alert,52,1,1,WhatsApp
+Credit Card Bill Reminder,309,0,0,Email
+KYC Reminder,245,1,0,Push Notification
+Fraud Alert,73,1,1,SMS
+Transaction OTP,10,1,1,Push Notification
+KYC Reminder,108,1,0,Push Notification
+Monthly Statement,68,0,2,Email
+KYC Reminder,101,1,0,Push Notification
+Low Balance Alert,48,0,0,Email
+Monthly Statement,128,0,2,Email
+Payment Confirmation,95,0,1,WhatsApp
+Monthly Statement,78,1,0,Email
+Login OTP,12,1,0,SMS
+Transaction OTP,12,0,2,Email
+KYC Reminder,185,0,1,WhatsApp
+KYC Reminder,332,0,1,Push Notification
+Fraud Alert,55,1,1,SMS
+Credit Card Bill Reminder,159,0,0,Email
+Login OTP,4,1,1,SMS
+Reward Points Update,160,0,0,Email
+Reward Points Update,66,1,0,Push Notification
+Transaction OTP,5,1,1,Push Notification
+Reward Points Update,184,0,1,Email
+Low Balance Alert,119,1,0,Push Notification
+KYC Reminder,223,0,1,Push Notification
+Credit Card Bill Reminder,138,0,2,Email
+Transaction OTP,6,1,0,Push Notification
+KYC Reminder,313,0,0,Push Notification
+Beneficiary Added Alert,51,1,2,WhatsApp
+Payment Confirmation,137,1,1,Push Notification
+Fraud Alert,104,0,0,SMS
+Transaction OTP,4,1,0,Push Notification
+Credit Card Bill Reminder,278,0,3,Email
+Reward Points Update,181,1,0,Push Notification
+Beneficiary Added Alert,82,1,1,WhatsApp
+KYC Reminder,233,1,1,Push Notification
+Monthly Statement,40,0,0,Email
+Reward Points Update,20,1,2,Push Notification
+KYC Reminder,279,0,0,Push Notification
+Payment Confirmation,72,1,1,WhatsApp
+KYC Reminder,110,1,1,Push Notification
+Fraud Alert,50,1,0,SMS
+Monthly Statement,130,1,1,Email
+Transaction OTP,5,0,0,Email
+Fraud Alert,82,0,0,SMS
+Beneficiary Added Alert,20,1,0,WhatsApp
+Payment Confirmation,70,0,0,Email
+Beneficiary Added Alert,72,0,1,WhatsApp
+Login OTP,8,1,1,SMS
+Low Balance Alert,119,0,1,Email
+Monthly Statement,25,1,1,Email
+Fraud Alert,99,1,0,WhatsApp
+Credit Card Bill Reminder,239,1,1,Push Notification
+Login OTP,12,0,0,SMS
+Payment Confirmation,109,1,2,Push Notification
+Credit Card Bill Reminder,328,0,0,Email
+Beneficiary Added Alert,84,0,1,WhatsApp
+Monthly Statement,90,1,0,Push Notification
+Monthly Statement,182,1,0,WhatsApp
+KYC Reminder,133,0,1,Push Notification
+Credit Card Bill Reminder,198,0,0,Email
+KYC Reminder,312,1,1,Push Notification
+Fraud Alert,53,1,1,SMS
+Transaction OTP,6,0,0,SMS
+Fraud Alert,96,1,0,SMS
+Fraud Alert,42,1,0,SMS
+Fraud Alert,104,0,0,SMS
+Reward Points Update,110,0,1,Email
+Fraud Alert,23,1,0,SMS
+Monthly Statement,68,0,1,Email
+KYC Reminder,267,1,1,Push Notification
+Reward Points Update,193,0,0,Email
+KYC Reminder,121,1,2,Push Notification
+Beneficiary Added Alert,99,0,1,WhatsApp
+Beneficiary Added Alert,59,1,0,WhatsApp
+Credit Card Bill Reminder,225,1,1,Email
+Transaction OTP,10,1,2,Push Notification
+Monthly Statement,175,0,1,Email
+Login OTP,8,0,0,SMS
+Monthly Statement,72,0,1,Email
+Credit Card Bill Reminder,288,1,0,Push Notification
+Credit Card Bill Reminder,323,0,1,Email
+Beneficiary Added Alert,117,1,1,WhatsApp
+Fraud Alert,92,1,1,SMS
+Beneficiary Added Alert,46,1,1,WhatsApp
+Monthly Statement,39,1,2,Push Notification
+Credit Card Bill Reminder,152,0,1,Email
+Payment Confirmation,32,1,0,Email
+Credit Card Bill Reminder,175,0,1,Email
+Credit Card Bill Reminder,176,0,1,Email
+KYC Reminder,230,1,0,Push Notification
+Credit Card Bill Reminder,263,1,0,Email
+Reward Points Update,152,1,2,Email
+Low Balance Alert,109,0,0,Email
+Low Balance Alert,29,1,1,Email
+Fraud Alert,40,1,1,SMS
+Low Balance Alert,27,1,0,Push Notification
+Low Balance Alert,22,0,0,Email
+Credit Card Bill Reminder,156,1,2,Push Notification
+Monthly Statement,199,1,0,Push Notification
+KYC Reminder,126,1,0,Push Notification
+KYC Reminder,133,1,0,Email
+Reward Points Update,140,0,0,Email
+Reward Points Update,186,0,1,Email
+Beneficiary Added Alert,87,0,1,WhatsApp
+Credit Card Bill Reminder,171,0,1,Email
+Transaction OTP,7,1,1,Email
+Reward Points Update,156,0,1,Email
+Beneficiary Added Alert,27,1,0,WhatsApp
+Login OTP,7,1,2,SMS
+Credit Card Bill Reminder,216,1,2,Email
+Credit Card Bill Reminder,270,0,0,Email
+Fraud Alert,120,1,0,SMS
+Low Balance Alert,56,0,0,Email
+Credit Card Bill Reminder,303,0,2,WhatsApp
+Beneficiary Added Alert,87,1,0,Push Notification
+Credit Card Bill Reminder,181,1,1,Push Notification
+Transaction OTP,7,0,2,Email
+Fraud Alert,110,0,0,SMS
+Credit Card Bill Reminder,257,1,1,Push Notification
+Reward Points Update,53,0,1,Email
+Reward Points Update,27,0,1,Email
+Login OTP,10,0,1,SMS
+Payment Confirmation,116,0,0,Email
+Fraud Alert,44,0,0,SMS
+Transaction OTP,10,1,0,Push Notification
+Beneficiary Added Alert,52,1,0,WhatsApp
+Login OTP,9,1,1,SMS
+KYC Reminder,143,0,0,Push Notification
+Low Balance Alert,72,1,0,Email
+Monthly Statement,166,1,1,Push Notification
+Transaction OTP,9,1,1,Push Notification
+Payment Confirmation,73,1,0,WhatsApp
+KYC Reminder,154,1,1,Push Notification
+KYC Reminder,300,0,1,Push Notification
+Monthly Statement,88,1,0,Push Notification
+Fraud Alert,73,0,1,SMS
+Monthly Statement,42,0,1,Email
+Payment Confirmation,146,0,0,Email
+Fraud Alert,34,1,1,SMS
+Transaction OTP,8,0,1,Email
+KYC Reminder,192,1,2,WhatsApp
+Low Balance Alert,56,1,0,Push Notification
+KYC Reminder,326,0,0,Email
+KYC Reminder,256,1,1,Push Notification
+Monthly Statement,67,1,0,Push Notification
+KYC Reminder,130,1,0,Push Notification
+Beneficiary Added Alert,70,1,0,WhatsApp
+KYC Reminder,160,1,0,Push Notification
+Payment Confirmation,132,0,0,Email
+Transaction OTP,6,1,0,Email
+Low Balance Alert,66,1,0,Push Notification
+Monthly Statement,80,1,0,Push Notification
+KYC Reminder,345,0,1,Email
+Low Balance Alert,105,0,1,Email
+KYC Reminder,347,1,1,Push Notification
+Payment Confirmation,40,1,0,Push Notification
+Monthly Statement,53,1,1,Email
+Beneficiary Added Alert,76,1,1,WhatsApp
+Login OTP,11,1,1,SMS
+Fraud Alert,25,1,0,SMS
+Monthly Statement,132,0,1,Email
+Beneficiary Added Alert,106,0,1,WhatsApp
+Reward Points Update,187,0,1,Email
+Transaction OTP,4,0,1,Email
+Monthly Statement,152,1,1,Email
+KYC Reminder,234,0,1,Push Notification
+KYC Reminder,147,1,0,Push Notification
+Monthly Statement,83,1,0,Email
+Monthly Statement,101,0,0,Email
+Reward Points Update,124,0,1,Email
+Login OTP,9,1,0,SMS
+Reward Points Update,177,0,1,Email
+Reward Points Update,101,0,0,Email
+Transaction OTP,7,0,0,Email
+Monthly Statement,35,1,0,Push Notification
+KYC Reminder,203,1,0,Push Notification
+Fraud Alert,100,1,1,SMS
+Transaction OTP,5,1,0,Email
+Payment Confirmation,121,0,1,Email
+KYC Reminder,232,1,0,Push Notification
+Monthly Statement,73,0,0,Email
+Monthly Statement,170,0,0,Email
+Low Balance Alert,64,1,0,Push Notification
+Transaction OTP,7,1,1,Push Notification
+Fraud Alert,112,0,1,SMS
+Login OTP,11,1,1,SMS
+Reward Points Update,165,0,0,Email
+KYC Reminder,174,1,1,WhatsApp
+Payment Confirmation,199,0,1,Email
+Low Balance Alert,46,1,0,Push Notification
+KYC Reminder,265,1,0,Push Notification
+Low Balance Alert,71,1,2,Email
+Monthly Statement,107,0,1,Email
+Low Balance Alert,108,1,2,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Reward Points Update,150,1,0,Push Notification
+KYC Reminder,220,1,1,Push Notification
+KYC Reminder,222,1,0,Push Notification
+Payment Confirmation,125,1,2,Push Notification
+Transaction OTP,9,0,1,Email
+Fraud Alert,54,0,1,SMS
+Payment Confirmation,109,0,0,Email
+Monthly Statement,84,0,2,Email
+Login OTP,11,0,3,SMS
+Payment Confirmation,147,1,1,Push Notification
+Credit Card Bill Reminder,341,1,1,Email
+Transaction OTP,4,1,1,Push Notification
+Fraud Alert,61,1,0,SMS
+Credit Card Bill Reminder,242,0,1,Email
+Monthly Statement,27,1,1,Push Notification
+Login OTP,7,0,0,SMS
+Transaction OTP,9,1,0,Email
+Login OTP,5,1,0,SMS
+Transaction OTP,5,1,1,Push Notification
+Beneficiary Added Alert,49,1,2,WhatsApp
+KYC Reminder,160,0,2,Push Notification
+Reward Points Update,146,1,1,Push Notification
+Reward Points Update,94,1,0,Email
+Low Balance Alert,118,0,0,Email
+Fraud Alert,50,0,0,SMS
+Monthly Statement,174,1,0,Email
+Monthly Statement,21,1,0,Push Notification
+KYC Reminder,155,0,0,Push Notification
+Fraud Alert,39,1,0,SMS
+Transaction OTP,11,1,0,Push Notification
+Payment Confirmation,70,0,2,Email
+Payment Confirmation,114,1,0,Push Notification
+KYC Reminder,174,1,0,Push Notification
+Monthly Statement,84,1,0,Email
+Monthly Statement,191,1,1,Push Notification
+Credit Card Bill Reminder,104,1,0,Email
+KYC Reminder,279,1,1,Push Notification
+Low Balance Alert,78,1,1,Push Notification
+Reward Points Update,47,1,0,Push Notification
+Reward Points Update,61,1,0,Email
+Beneficiary Added Alert,69,1,0,WhatsApp
+Fraud Alert,67,1,2,SMS
+Reward Points Update,87,1,0,Push Notification
+KYC Reminder,163,0,1,Push Notification
+KYC Reminder,132,1,0,Push Notification
+Low Balance Alert,49,0,2,Email
+Beneficiary Added Alert,38,1,0,WhatsApp
+Credit Card Bill Reminder,273,0,1,Email
+Beneficiary Added Alert,82,1,2,WhatsApp
+Credit Card Bill Reminder,128,1,1,Push Notification
+Reward Points Update,114,0,0,Email
+Fraud Alert,83,1,0,SMS
+Reward Points Update,159,1,0,Email
+Transaction OTP,11,0,0,Email
+Login OTP,4,0,0,SMS
+Reward Points Update,188,1,1,Push Notification
+Login OTP,6,1,0,SMS
+Credit Card Bill Reminder,265,1,0,Push Notification
+Beneficiary Added Alert,118,0,0,WhatsApp
+Payment Confirmation,66,1,0,Push Notification
+Monthly Statement,194,0,2,Email
+Credit Card Bill Reminder,199,1,1,Email
+Credit Card Bill Reminder,345,1,1,Email
+KYC Reminder,188,1,0,Push Notification
+Payment Confirmation,65,1,1,Push Notification
+Monthly Statement,111,1,0,Email
+Monthly Statement,117,0,1,Email
+Monthly Statement,156,1,0,Push Notification
+Transaction OTP,8,1,0,Push Notification
+Beneficiary Added Alert,114,0,0,WhatsApp
+Fraud Alert,26,1,2,SMS
+Reward Points Update,193,0,0,Email
+KYC Reminder,318,1,0,Push Notification
+Low Balance Alert,27,0,0,Email
+Transaction OTP,12,0,0,Email
+Low Balance Alert,89,0,1,Email
+Low Balance Alert,75,1,1,Email
+Login OTP,5,0,0,WhatsApp
+Low Balance Alert,24,1,0,Email
+KYC Reminder,290,1,0,Push Notification
+Beneficiary Added Alert,39,0,1,WhatsApp
+Monthly Statement,191,0,0,Email
+Beneficiary Added Alert,105,0,0,WhatsApp
+Fraud Alert,76,0,0,SMS
+KYC Reminder,139,1,0,Push Notification
+Payment Confirmation,143,0,0,Email
+Payment Confirmation,177,1,1,Push Notification
+Beneficiary Added Alert,23,0,0,WhatsApp
+KYC Reminder,298,1,1,Push Notification
+Credit Card Bill Reminder,171,0,1,Email
+Login OTP,12,1,1,SMS
+Reward Points Update,180,0,1,Email
+KYC Reminder,188,1,0,Push Notification
+Low Balance Alert,108,1,0,Push Notification
+Reward Points Update,48,0,0,Email
+Monthly Statement,59,0,0,Email
+Transaction OTP,11,1,1,Email
+Fraud Alert,114,1,2,SMS
+Monthly Statement,119,1,0,SMS
+Reward Points Update,40,1,1,Push Notification
+Credit Card Bill Reminder,315,1,0,Push Notification
+Low Balance Alert,110,1,1,Push Notification
+Transaction OTP,6,0,1,Email
+Fraud Alert,116,0,0,SMS
+Login OTP,8,1,0,SMS
+Reward Points Update,200,1,0,Push Notification
+KYC Reminder,240,1,1,Push Notification
+Low Balance Alert,108,1,0,Email
+Monthly Statement,75,1,0,Push Notification
+Beneficiary Added Alert,33,1,2,WhatsApp
+Reward Points Update,75,1,1,Email
+Fraud Alert,120,1,0,SMS
+Login OTP,12,0,0,SMS
+Reward Points Update,66,1,2,Email
+Credit Card Bill Reminder,136,1,2,Push Notification
+Monthly Statement,184,1,0,Email
+Reward Points Update,53,0,0,Email
+KYC Reminder,337,0,0,Push Notification
+Credit Card Bill Reminder,175,0,1,Email
+Payment Confirmation,110,0,1,Email
+KYC Reminder,343,1,0,Push Notification
+KYC Reminder,131,1,1,Push Notification
+Fraud Alert,107,1,0,SMS
+Payment Confirmation,22,1,0,Push Notification
+Login OTP,9,1,0,SMS
+Low Balance Alert,98,1,0,Email
+Reward Points Update,44,1,1,Push Notification
+Credit Card Bill Reminder,140,0,2,Email
+Low Balance Alert,63,1,1,Push Notification
+Reward Points Update,110,1,1,Email
+Beneficiary Added Alert,112,1,0,WhatsApp
+Transaction OTP,6,1,0,Push Notification
+Login OTP,11,1,0,SMS
+Login OTP,4,1,1,SMS
+Fraud Alert,58,0,0,SMS
+KYC Reminder,282,1,2,SMS
+Payment Confirmation,29,0,0,Email
+Monthly Statement,38,0,0,Email
+Reward Points Update,58,1,0,Push Notification
+Beneficiary Added Alert,44,1,1,WhatsApp
+Monthly Statement,33,0,0,Email
+KYC Reminder,122,0,0,Push Notification
+Reward Points Update,137,1,2,Push Notification
+Reward Points Update,130,0,0,Email
+KYC Reminder,214,1,1,Push Notification
+Low Balance Alert,112,1,0,Push Notification
+Fraud Alert,76,1,0,SMS
+Low Balance Alert,94,0,0,Email
+Transaction OTP,7,1,1,Email
+KYC Reminder,335,0,0,Push Notification
+Low Balance Alert,22,1,0,Push Notification
+Transaction OTP,4,0,0,Email
+Monthly Statement,118,0,1,Push Notification
+KYC Reminder,294,1,1,SMS
+Monthly Statement,93,0,0,Email
+Fraud Alert,33,1,1,SMS
+Payment Confirmation,171,1,2,Push Notification
+Transaction OTP,8,0,1,Email
+Monthly Statement,123,0,0,Email
+Reward Points Update,161,1,0,Email
+Fraud Alert,90,1,0,SMS
+Low Balance Alert,88,0,1,Email
+Beneficiary Added Alert,31,1,0,WhatsApp
+Credit Card Bill Reminder,231,0,1,Email
+Low Balance Alert,119,1,0,Push Notification
+KYC Reminder,263,0,0,Push Notification
+Monthly Statement,74,1,1,Push Notification
+Fraud Alert,31,0,0,SMS
+KYC Reminder,290,0,1,Push Notification
+Payment Confirmation,172,1,1,Push Notification
+Credit Card Bill Reminder,138,0,0,Email
+Transaction OTP,6,1,0,Email
+Reward Points Update,170,1,1,Push Notification
+Payment Confirmation,200,0,1,Email
+Low Balance Alert,99,0,2,Email
+KYC Reminder,172,0,1,Push Notification
+Reward Points Update,133,0,0,Email
+Transaction OTP,5,1,1,Push Notification
+Low Balance Alert,113,0,0,Email
+Login OTP,8,0,2,SMS
+Reward Points Update,118,0,0,Email
+Monthly Statement,104,1,3,Push Notification
+Fraud Alert,54,1,1,SMS
+Fraud Alert,21,0,0,SMS
+Monthly Statement,134,0,1,Email
+Login OTP,12,1,0,SMS
+Login OTP,6,1,1,SMS
+Beneficiary Added Alert,82,1,1,WhatsApp
+Reward Points Update,162,0,2,Email
+Reward Points Update,72,1,0,Push Notification
+Monthly Statement,111,1,2,Email
+Fraud Alert,73,0,0,SMS
+KYC Reminder,347,0,0,Push Notification
+Credit Card Bill Reminder,200,1,1,Email
+Monthly Statement,164,1,0,Email
+Fraud Alert,74,0,0,SMS
+Login OTP,5,0,1,WhatsApp
+Login OTP,12,1,2,SMS
+KYC Reminder,162,1,0,Push Notification
+Transaction OTP,11,1,1,Push Notification
+Login OTP,7,1,0,SMS
+Monthly Statement,177,1,1,Push Notification
+Monthly Statement,141,1,0,Push Notification
+Beneficiary Added Alert,61,0,0,WhatsApp
+Login OTP,5,1,1,SMS
+Transaction OTP,10,1,1,Push Notification
+Login OTP,9,0,1,SMS
+Fraud Alert,50,0,0,SMS
+Credit Card Bill Reminder,277,0,1,Email
+Payment Confirmation,25,1,0,Push Notification
+Transaction OTP,8,1,0,Push Notification
+KYC Reminder,150,0,2,Push Notification
+Reward Points Update,111,1,2,Email
+Payment Confirmation,89,0,2,Email
+Login OTP,5,0,0,SMS
+Low Balance Alert,104,1,1,Push Notification
+Reward Points Update,101,1,0,Push Notification
+Transaction OTP,9,0,0,Email
+Transaction OTP,12,1,0,Push Notification
+Transaction OTP,12,1,1,Email
+Monthly Statement,57,1,0,Push Notification
+Payment Confirmation,164,1,0,Email
+Beneficiary Added Alert,37,1,0,WhatsApp
+Login OTP,8,0,1,SMS
+Transaction OTP,6,1,0,Push Notification
+Credit Card Bill Reminder,142,1,0,Email
+Payment Confirmation,140,0,0,Email
+Payment Confirmation,48,0,0,Email
+Login OTP,7,1,2,SMS
+Reward Points Update,33,1,1,Email
+Reward Points Update,177,0,1,Email
+Reward Points Update,167,1,0,Push Notification
+Fraud Alert,47,1,0,SMS
+Monthly Statement,64,1,0,Push Notification
+KYC Reminder,255,0,1,Push Notification
+Reward Points Update,29,0,1,Email
+Login OTP,5,1,1,SMS
+Monthly Statement,84,0,0,Email
+Beneficiary Added Alert,118,0,1,WhatsApp
+Payment Confirmation,48,1,0,Push Notification
+Beneficiary Added Alert,99,1,0,WhatsApp
+Reward Points Update,180,0,1,Email
+KYC Reminder,298,1,0,Push Notification
+Reward Points Update,102,1,1,Email
+Fraud Alert,67,1,1,SMS
+Payment Confirmation,144,1,0,Email
+Reward Points Update,189,0,0,Email
+Credit Card Bill Reminder,123,1,0,Email
+KYC Reminder,284,0,1,Push Notification
+Login OTP,8,1,0,SMS
+Payment Confirmation,28,1,0,Push Notification
+KYC Reminder,204,0,1,Push Notification
+Reward Points Update,82,0,1,Email
+Login OTP,4,0,0,SMS
+Monthly Statement,101,1,0,Push Notification
+Payment Confirmation,183,0,2,Email
+Beneficiary Added Alert,78,1,1,WhatsApp
+Low Balance Alert,56,1,2,Push Notification
+KYC Reminder,249,1,0,Push Notification
+Login OTP,5,0,0,SMS
+Transaction OTP,12,1,1,Push Notification
+Fraud Alert,67,1,1,SMS
+Beneficiary Added Alert,32,1,3,WhatsApp
+Beneficiary Added Alert,44,1,0,WhatsApp
+Monthly Statement,163,1,1,Email
+Monthly Statement,22,1,0,SMS
+Monthly Statement,121,1,1,Email
+Credit Card Bill Reminder,173,1,2,Email
+Fraud Alert,82,0,0,SMS
+Monthly Statement,112,0,0,Email
+Transaction OTP,8,0,1,Email
+KYC Reminder,191,1,0,Push Notification
+Beneficiary Added Alert,85,1,0,WhatsApp
+Payment Confirmation,185,1,1,Push Notification
+KYC Reminder,317,0,2,Push Notification
+Low Balance Alert,74,0,0,Email
+Low Balance Alert,116,1,0,Email
+KYC Reminder,315,1,1,Push Notification
+Login OTP,11,1,0,SMS
+Credit Card Bill Reminder,117,0,2,Email
+Monthly Statement,27,0,1,Email
+Credit Card Bill Reminder,232,0,0,Email
+Reward Points Update,93,1,1,Email
+Fraud Alert,38,1,2,SMS
+Beneficiary Added Alert,96,0,2,WhatsApp
+Fraud Alert,82,0,0,SMS
+Transaction OTP,5,1,0,Push Notification
+Transaction OTP,7,1,1,Push Notification
+Credit Card Bill Reminder,136,0,2,WhatsApp
+Monthly Statement,185,1,1,Email
+Low Balance Alert,98,1,1,Email
+Credit Card Bill Reminder,316,1,2,Push Notification
+Transaction OTP,4,1,0,Push Notification
+Fraud Alert,98,1,0,SMS
+KYC Reminder,150,0,0,SMS
+Reward Points Update,154,1,1,Push Notification
+Login OTP,7,0,2,SMS
+Beneficiary Added Alert,22,0,1,WhatsApp
+Low Balance Alert,113,0,1,Email
+Low Balance Alert,87,1,3,Push Notification
+Monthly Statement,89,0,1,Email
+Reward Points Update,197,0,1,Email
+Monthly Statement,132,0,2,Email
+Monthly Statement,191,1,1,Push Notification
+KYC Reminder,233,1,0,Push Notification
+Payment Confirmation,79,1,1,Push Notification
+Monthly Statement,126,1,1,Push Notification
+Reward Points Update,116,0,1,Email
+Payment Confirmation,105,1,0,Email
+Credit Card Bill Reminder,242,0,0,Email
+Monthly Statement,84,1,0,Email
+Transaction OTP,5,1,1,Email
+Login OTP,6,0,2,SMS
+Reward Points Update,74,1,0,Push Notification
+Payment Confirmation,183,1,0,Push Notification
+Low Balance Alert,92,1,1,SMS
+KYC Reminder,265,1,1,Push Notification
+Low Balance Alert,79,1,0,Push Notification
+Transaction OTP,7,0,0,Email
+KYC Reminder,299,0,1,Push Notification
+Credit Card Bill Reminder,165,1,2,Push Notification
+Fraud Alert,112,1,1,SMS
+Low Balance Alert,92,0,0,Email
+Fraud Alert,98,1,0,SMS
+Reward Points Update,119,1,0,Email
+Low Balance Alert,75,0,0,Email
+Fraud Alert,101,1,0,SMS
+Transaction OTP,8,0,1,Email
+Fraud Alert,76,1,2,SMS
+Reward Points Update,110,1,1,Push Notification
+Monthly Statement,74,1,0,Push Notification
+Beneficiary Added Alert,99,0,0,WhatsApp
+Payment Confirmation,49,0,0,Email
+Login OTP,7,0,2,SMS
+Credit Card Bill Reminder,291,0,0,WhatsApp
+Credit Card Bill Reminder,234,0,0,Email
+KYC Reminder,342,1,0,Push Notification
+Low Balance Alert,109,0,1,Email
+Beneficiary Added Alert,118,0,2,WhatsApp
+Monthly Statement,150,0,0,Email
+Transaction OTP,7,1,1,Push Notification
+Payment Confirmation,114,0,0,Email
+Beneficiary Added Alert,107,0,1,WhatsApp
+KYC Reminder,228,1,2,Push Notification
+Low Balance Alert,24,1,1,Push Notification
+Login OTP,12,0,0,SMS
+Payment Confirmation,172,1,0,Email
+Credit Card Bill Reminder,125,0,1,Email
+Credit Card Bill Reminder,135,1,2,Push Notification
+Payment Confirmation,156,0,0,Email
+Payment Confirmation,36,0,1,Email
+Low Balance Alert,97,1,2,Email
+Beneficiary Added Alert,21,1,0,WhatsApp
+Reward Points Update,198,1,0,Email
+Payment Confirmation,116,1,1,Email
+Credit Card Bill Reminder,119,0,2,Email
+KYC Reminder,326,1,1,Push Notification
+Credit Card Bill Reminder,310,0,1,Email
+Beneficiary Added Alert,40,1,1,WhatsApp
+Reward Points Update,52,1,0,Email
+Login OTP,4,1,0,SMS
+Payment Confirmation,59,0,1,SMS
+Credit Card Bill Reminder,292,0,0,Email
+Fraud Alert,28,1,1,SMS
+Login OTP,9,1,0,SMS
+KYC Reminder,169,1,3,Push Notification
+Reward Points Update,136,1,1,Push Notification
+Beneficiary Added Alert,115,1,2,WhatsApp
+Fraud Alert,93,1,0,SMS
+Transaction OTP,8,1,0,Email
+Beneficiary Added Alert,47,1,1,Push Notification
+KYC Reminder,100,1,0,Push Notification
+Login OTP,11,1,0,SMS
+Fraud Alert,52,1,0,SMS
+Low Balance Alert,89,1,1,Push Notification
+Monthly Statement,157,0,0,Email
+Payment Confirmation,67,1,1,Push Notification
+Login OTP,9,1,1,SMS
+Payment Confirmation,86,0,0,Email
+Credit Card Bill Reminder,342,1,0,Push Notification
+Low Balance Alert,40,0,2,Email
+Credit Card Bill Reminder,161,0,1,Email
+Transaction OTP,7,0,1,Email
+KYC Reminder,280,1,0,Push Notification
+Payment Confirmation,95,0,1,Email
+Beneficiary Added Alert,80,1,0,WhatsApp
+Login OTP,12,1,1,SMS
+KYC Reminder,117,1,0,Push Notification
+Low Balance Alert,26,1,1,Push Notification
+Payment Confirmation,136,0,1,Email
+Beneficiary Added Alert,31,1,0,WhatsApp
+Transaction OTP,5,1,0,Push Notification
+Monthly Statement,151,0,0,Email
+Monthly Statement,184,0,0,Email
+Reward Points Update,60,1,0,Push Notification
+Low Balance Alert,22,1,1,Email
+Fraud Alert,100,1,0,SMS
+KYC Reminder,260,0,1,Push Notification
+Monthly Statement,167,0,0,Email
+Monthly Statement,131,1,1,Email
+Reward Points Update,174,0,1,Email
+Beneficiary Added Alert,112,1,1,WhatsApp
+Low Balance Alert,22,0,1,Email
+Credit Card Bill Reminder,122,1,0,Push Notification
+Monthly Statement,101,0,0,Email
+KYC Reminder,267,1,1,Push Notification
+Reward Points Update,110,1,0,Push Notification
+Monthly Statement,77,1,1,Push Notification
+Low Balance Alert,55,1,0,Email
+Reward Points Update,142,0,1,Email
+Reward Points Update,145,1,0,Email
+Low Balance Alert,101,1,0,Push Notification
+Fraud Alert,70,1,1,SMS
+Monthly Statement,160,1,0,Push Notification
+Credit Card Bill Reminder,348,1,1,Email
+Credit Card Bill Reminder,275,0,0,Email
+Low Balance Alert,68,1,0,Push Notification
+Monthly Statement,157,0,0,Email
+KYC Reminder,329,1,1,Push Notification
+KYC Reminder,104,1,0,Push Notification
+Credit Card Bill Reminder,158,1,0,Email
+KYC Reminder,254,0,0,Push Notification
+KYC Reminder,269,1,0,Push Notification
+Fraud Alert,41,0,0,Push Notification
+Fraud Alert,79,1,0,SMS
+Low Balance Alert,112,1,0,Email
+Transaction OTP,4,1,1,Email
+KYC Reminder,338,0,0,Push Notification
+Beneficiary Added Alert,108,0,2,WhatsApp
+KYC Reminder,284,0,1,Push Notification
+Payment Confirmation,195,1,1,Push Notification
+Low Balance Alert,65,1,0,Push Notification
+Beneficiary Added Alert,22,1,0,WhatsApp
+KYC Reminder,257,0,1,Push Notification
+Monthly Statement,94,1,1,Push Notification
+Login OTP,11,1,1,SMS
+Transaction OTP,5,1,1,Push Notification
+Beneficiary Added Alert,57,0,0,WhatsApp
+Transaction OTP,10,0,1,Email
+Monthly Statement,72,1,0,Push Notification
+Credit Card Bill Reminder,215,0,1,Email
+KYC Reminder,152,1,0,Push Notification
+Payment Confirmation,172,1,1,Email
+Credit Card Bill Reminder,168,0,0,Email
+Reward Points Update,166,0,1,Email
+Fraud Alert,71,1,1,SMS
+Login OTP,7,0,0,SMS
+Monthly Statement,138,1,0,Push Notification
+Fraud Alert,104,1,2,Email
+Fraud Alert,106,0,0,SMS
+Fraud Alert,102,1,0,Email
+Transaction OTP,8,1,0,Email
+Monthly Statement,181,1,1,Email
+Low Balance Alert,59,0,1,Email
+Payment Confirmation,73,0,0,Email
+KYC Reminder,195,1,1,Push Notification
+Fraud Alert,39,0,0,SMS
+Low Balance Alert,94,0,0,Email
+Transaction OTP,4,0,0,Email
+Credit Card Bill Reminder,208,1,1,Push Notification
+Beneficiary Added Alert,75,1,1,WhatsApp
+Low Balance Alert,36,1,2,Email
+Beneficiary Added Alert,30,1,0,WhatsApp
+Monthly Statement,150,1,2,Email
+Payment Confirmation,160,0,0,Email
+KYC Reminder,212,1,0,Push Notification
+Reward Points Update,50,1,0,Push Notification
+KYC Reminder,185,0,1,Push Notification
+Monthly Statement,164,0,0,Email
+Payment Confirmation,119,0,1,Email
+Reward Points Update,71,1,0,Email
+Login OTP,7,0,1,SMS
+Low Balance Alert,66,1,0,Email
+KYC Reminder,231,0,1,Push Notification
+Payment Confirmation,181,1,1,Push Notification
+Credit Card Bill Reminder,239,1,2,Push Notification
+Credit Card Bill Reminder,224,1,0,WhatsApp
+Low Balance Alert,79,0,1,Email
+Reward Points Update,110,1,0,Push Notification
+Login OTP,7,1,1,SMS
+Login OTP,11,0,0,SMS
+Fraud Alert,115,0,0,SMS
+Low Balance Alert,35,0,1,Email
+Reward Points Update,172,0,0,Email
+Fraud Alert,87,1,0,SMS
+Fraud Alert,59,0,0,WhatsApp
+Low Balance Alert,99,1,0,Push Notification
+KYC Reminder,230,1,0,Push Notification
+Reward Points Update,167,0,0,Email
+Low Balance Alert,48,1,0,Email
+Low Balance Alert,66,1,0,Email
+KYC Reminder,228,1,0,Push Notification
+Reward Points Update,48,1,1,Push Notification
+Reward Points Update,49,1,1,Email
+KYC Reminder,298,1,2,Push Notification
+Beneficiary Added Alert,47,1,1,WhatsApp
+Low Balance Alert,38,1,0,Email
+Monthly Statement,58,1,2,Email
+Payment Confirmation,87,1,0,Email
+KYC Reminder,315,0,0,Push Notification
+Credit Card Bill Reminder,104,0,0,Email
+Payment Confirmation,110,1,0,WhatsApp
+Low Balance Alert,50,0,0,Email
+Credit Card Bill Reminder,129,1,0,Push Notification
+Low Balance Alert,22,1,0,Push Notification
+KYC Reminder,125,0,0,Push Notification
+Login OTP,10,0,2,SMS
+Low Balance Alert,113,0,1,Email
+Fraud Alert,71,0,0,SMS
+Reward Points Update,109,1,1,Push Notification
+Fraud Alert,36,0,1,SMS
+Transaction OTP,6,1,0,Push Notification
+Credit Card Bill Reminder,251,0,0,Push Notification
+KYC Reminder,111,0,0,Push Notification
+Monthly Statement,29,1,0,Email
+Fraud Alert,25,1,0,SMS
+Reward Points Update,106,0,1,Email
+Transaction OTP,10,1,0,Email
+Transaction OTP,7,1,2,SMS
+Monthly Statement,133,0,2,Email
+KYC Reminder,342,0,0,Push Notification
+Beneficiary Added Alert,89,1,0,WhatsApp
+Credit Card Bill Reminder,298,0,0,Email
+Reward Points Update,46,1,0,Push Notification
+Transaction OTP,8,1,2,Email
+Credit Card Bill Reminder,114,0,0,Email
+Transaction OTP,11,1,0,Push Notification
+Reward Points Update,165,1,0,Email
+Low Balance Alert,33,0,1,Email
+KYC Reminder,281,1,1,Push Notification
+Login OTP,9,0,0,SMS
+Credit Card Bill Reminder,327,1,0,Push Notification
+Low Balance Alert,42,1,0,Email
+Fraud Alert,43,1,1,SMS
+Login OTP,11,1,1,SMS
+Payment Confirmation,64,1,0,Push Notification
+Transaction OTP,6,1,1,Push Notification
+Low Balance Alert,103,1,0,Email
+Fraud Alert,64,1,3,WhatsApp
+Transaction OTP,4,1,1,Push Notification
+Fraud Alert,78,1,1,SMS
+Payment Confirmation,120,1,0,Email
+Transaction OTP,9,1,1,Email
+Beneficiary Added Alert,45,0,1,WhatsApp
+Beneficiary Added Alert,34,0,0,WhatsApp
+Transaction OTP,9,0,0,Email
+Fraud Alert,30,0,1,SMS
+Monthly Statement,121,0,0,Email
+Transaction OTP,8,1,0,Email
+Transaction OTP,10,1,1,Push Notification
+Payment Confirmation,36,1,1,Push Notification
+Login OTP,12,0,1,SMS
+Low Balance Alert,83,0,1,Email
+Low Balance Alert,113,1,2,Push Notification
+Credit Card Bill Reminder,338,1,0,Push Notification
+Credit Card Bill Reminder,206,0,0,Email
+Beneficiary Added Alert,109,1,1,WhatsApp
+Payment Confirmation,108,0,1,Email
+Login OTP,6,1,0,SMS
+Beneficiary Added Alert,35,1,1,WhatsApp
+KYC Reminder,124,1,1,Push Notification
+Transaction OTP,11,1,1,Email
+Credit Card Bill Reminder,157,1,0,Email
+KYC Reminder,137,0,0,Push Notification
+Reward Points Update,68,1,1,Email
+Fraud Alert,85,1,2,SMS
+Monthly Statement,195,1,0,Push Notification
+KYC Reminder,336,1,3,Push Notification
+Login OTP,4,1,0,SMS
+KYC Reminder,347,1,0,Push Notification
+Credit Card Bill Reminder,249,1,1,Email
+Credit Card Bill Reminder,305,1,0,Email
+Transaction OTP,6,0,0,Email
+KYC Reminder,123,1,0,Push Notification
+Beneficiary Added Alert,104,1,0,WhatsApp
+Payment Confirmation,84,1,2,Email
+Credit Card Bill Reminder,299,1,1,Email
+Credit Card Bill Reminder,120,1,0,Push Notification
+Monthly Statement,152,1,1,Push Notification
+Fraud Alert,77,1,2,SMS
+Payment Confirmation,85,0,0,Email
+Monthly Statement,62,1,0,Email
+Beneficiary Added Alert,40,1,0,WhatsApp
+Beneficiary Added Alert,117,1,1,WhatsApp
+Login OTP,4,1,1,SMS
+Monthly Statement,67,0,0,Email
+Fraud Alert,39,1,1,SMS
+Login OTP,7,0,1,SMS
+KYC Reminder,299,0,1,Push Notification
+KYC Reminder,331,1,0,Push Notification
+Low Balance Alert,107,1,1,Push Notification
+KYC Reminder,319,1,0,Push Notification
+Credit Card Bill Reminder,105,0,1,Email
+Fraud Alert,50,1,2,SMS
+Payment Confirmation,173,1,0,Push Notification
+Credit Card Bill Reminder,325,1,0,Push Notification
+Transaction OTP,12,1,2,Email
+Credit Card Bill Reminder,269,1,0,WhatsApp
+Reward Points Update,175,1,1,Email
+Login OTP,6,1,0,SMS
+KYC Reminder,259,1,0,Push Notification
+Login OTP,8,1,0,SMS
+Login OTP,7,0,0,SMS
+Low Balance Alert,111,1,1,Email
+KYC Reminder,268,1,1,Push Notification
+Fraud Alert,61,1,1,SMS
+Monthly Statement,82,1,0,Push Notification
+KYC Reminder,298,1,3,Push Notification
+Fraud Alert,61,0,0,SMS
+KYC Reminder,313,1,1,Push Notification
+Transaction OTP,9,1,2,Push Notification
+Reward Points Update,122,0,1,Email
+Transaction OTP,12,1,1,Email
+Beneficiary Added Alert,113,1,0,WhatsApp
+Fraud Alert,27,1,0,SMS
+Monthly Statement,76,1,1,Push Notification
+Reward Points Update,130,1,0,Push Notification
+KYC Reminder,324,0,1,Email
+Fraud Alert,79,1,0,SMS
+Monthly Statement,134,0,0,Email
+Login OTP,5,1,2,SMS
+Payment Confirmation,191,0,1,Email
+KYC Reminder,332,1,1,Push Notification
+Fraud Alert,70,1,0,SMS
+Login OTP,12,1,0,SMS
+Fraud Alert,73,1,0,SMS
+KYC Reminder,126,1,1,Push Notification
+Credit Card Bill Reminder,222,1,0,Push Notification
+Monthly Statement,38,1,1,Push Notification
+Fraud Alert,115,1,2,SMS
+Payment Confirmation,67,1,2,Push Notification
+Low Balance Alert,49,1,0,Email
+Credit Card Bill Reminder,281,0,0,Email
+Credit Card Bill Reminder,312,0,0,Email
+Payment Confirmation,21,0,1,Email
+Transaction OTP,12,0,0,Email
+Fraud Alert,95,1,0,Email
+Low Balance Alert,90,0,0,Email
+Login OTP,9,0,0,SMS
+Transaction OTP,6,1,2,Push Notification
+Payment Confirmation,145,1,0,Email
+KYC Reminder,298,0,0,Push Notification
+Credit Card Bill Reminder,156,1,1,Push Notification
+Login OTP,4,1,1,SMS
+Beneficiary Added Alert,31,0,1,WhatsApp
+Reward Points Update,90,1,2,Email
+Login OTP,10,0,1,SMS
+Reward Points Update,200,1,0,Email
+Low Balance Alert,42,0,2,Email
+Monthly Statement,29,1,0,Push Notification
+Reward Points Update,115,1,0,Push Notification
+Credit Card Bill Reminder,316,1,1,Email
+Low Balance Alert,44,1,1,Push Notification
+Credit Card Bill Reminder,122,0,0,Email
+Beneficiary Added Alert,55,0,0,WhatsApp
+Monthly Statement,95,0,1,Email
+Login OTP,7,1,0,SMS
+Beneficiary Added Alert,35,1,0,WhatsApp
+Payment Confirmation,191,1,0,Push Notification
+Low Balance Alert,50,1,0,Email
+Credit Card Bill Reminder,227,0,0,Email
+Reward Points Update,150,1,0,Push Notification
+Beneficiary Added Alert,97,0,1,WhatsApp
+Reward Points Update,172,0,1,Email
+Transaction OTP,11,0,1,Email
+Reward Points Update,35,0,1,Email
+Fraud Alert,90,1,0,SMS
+Monthly Statement,173,1,0,Push Notification
+Login OTP,10,1,0,SMS
+KYC Reminder,296,1,0,Push Notification
+Beneficiary Added Alert,45,0,0,SMS
+KYC Reminder,204,1,1,Push Notification
+Reward Points Update,34,1,1,Email
+Transaction OTP,10,0,0,Email
+KYC Reminder,161,1,0,Push Notification
+Credit Card Bill Reminder,331,0,1,Email
+Beneficiary Added Alert,108,0,1,WhatsApp
+Payment Confirmation,69,1,1,Push Notification
+Fraud Alert,50,1,0,SMS
+Transaction OTP,6,1,0,Push Notification
+Reward Points Update,24,1,0,Email
+Low Balance Alert,35,1,1,Email
+Fraud Alert,76,1,0,SMS
+Beneficiary Added Alert,95,1,2,WhatsApp
+Transaction OTP,12,1,0,Email
+Fraud Alert,59,1,2,SMS
+Low Balance Alert,36,1,1,SMS
+Payment Confirmation,92,1,2,Email
+Beneficiary Added Alert,42,1,1,WhatsApp
+Payment Confirmation,134,0,0,Email
+Credit Card Bill Reminder,320,1,1,Push Notification
+Fraud Alert,109,1,0,SMS
+Credit Card Bill Reminder,312,0,0,Email
+Credit Card Bill Reminder,311,0,0,Email
+Beneficiary Added Alert,120,1,1,WhatsApp
+Payment Confirmation,45,0,0,Email
+Beneficiary Added Alert,120,1,1,WhatsApp
+Reward Points Update,198,0,1,Email
+KYC Reminder,123,0,1,Push Notification
+Payment Confirmation,87,1,0,Email
+Transaction OTP,5,0,2,Email
+KYC Reminder,162,1,0,Push Notification
+Low Balance Alert,48,0,1,Email
+Transaction OTP,4,0,1,Email
+Reward Points Update,101,0,1,Email
+Monthly Statement,87,1,2,Push Notification
+Login OTP,12,1,0,SMS
+Beneficiary Added Alert,63,0,3,WhatsApp
+Reward Points Update,77,0,1,Email
+Transaction OTP,10,1,1,Push Notification
+Beneficiary Added Alert,28,0,1,WhatsApp
+Login OTP,9,1,0,SMS
+Credit Card Bill Reminder,166,0,0,Email
+Login OTP,4,0,0,SMS
+KYC Reminder,209,1,0,Push Notification
+Fraud Alert,41,1,0,SMS
+Low Balance Alert,31,0,1,Email
+Low Balance Alert,110,1,0,Push Notification
+Transaction OTP,11,0,0,Email
+Beneficiary Added Alert,98,1,0,WhatsApp
+Payment Confirmation,36,1,0,Push Notification
+Monthly Statement,69,1,0,Push Notification
+Fraud Alert,81,1,0,SMS
+Fraud Alert,45,0,1,SMS
+Login OTP,6,1,1,SMS
+Fraud Alert,90,0,1,WhatsApp
+KYC Reminder,149,0,1,Push Notification
+Credit Card Bill Reminder,253,1,1,Push Notification
+KYC Reminder,225,1,1,Push Notification
+Reward Points Update,158,1,0,Email
+Low Balance Alert,71,0,1,Email
+Monthly Statement,111,1,0,Email
+Transaction OTP,6,1,1,Email
+Monthly Statement,58,1,1,Email
+Reward Points Update,36,1,1,Push Notification
+Payment Confirmation,29,1,2,Email
+Low Balance Alert,114,1,1,Email
+Monthly Statement,184,1,0,Email
+Login OTP,6,1,2,SMS
+Monthly Statement,198,1,0,Push Notification
+Monthly Statement,156,1,2,Push Notification
+KYC Reminder,264,1,2,Push Notification
+KYC Reminder,257,1,0,Push Notification
+Reward Points Update,52,1,0,Push Notification
+Fraud Alert,55,1,0,SMS
+Monthly Statement,53,1,2,Email
+Payment Confirmation,108,1,1,Push Notification
+KYC Reminder,137,0,0,Push Notification
+Beneficiary Added Alert,119,0,2,WhatsApp
+Fraud Alert,61,0,1,SMS
+Low Balance Alert,32,1,2,Push Notification
+Beneficiary Added Alert,71,1,2,WhatsApp
+Payment Confirmation,28,1,1,Push Notification
+KYC Reminder,170,1,0,Push Notification
+KYC Reminder,167,1,1,Push Notification
+Credit Card Bill Reminder,305,1,0,Email
+Low Balance Alert,80,1,0,Push Notification
+Low Balance Alert,40,0,1,Email
+Payment Confirmation,70,1,1,Email
+KYC Reminder,216,0,0,Email
+Reward Points Update,47,1,2,Push Notification
+Fraud Alert,109,1,2,SMS
+Beneficiary Added Alert,118,0,0,WhatsApp
+Credit Card Bill Reminder,272,1,1,Push Notification
+Transaction OTP,7,0,2,Email
+Payment Confirmation,61,1,1,Email
+Beneficiary Added Alert,97,0,1,WhatsApp
+Login OTP,4,1,1,SMS
+Low Balance Alert,49,1,1,Email
+Monthly Statement,54,1,0,Push Notification
+Reward Points Update,169,1,0,Email
+Fraud Alert,90,1,0,SMS
+KYC Reminder,201,1,1,Push Notification
+KYC Reminder,311,1,0,Push Notification
+Payment Confirmation,136,0,2,Email
+Reward Points Update,161,1,0,Push Notification
+Transaction OTP,12,1,1,Push Notification
+KYC Reminder,303,0,1,Push Notification
+Beneficiary Added Alert,36,1,0,WhatsApp
+Reward Points Update,79,0,0,Email
+Transaction OTP,12,0,0,Email
+Payment Confirmation,141,0,1,Email
+Low Balance Alert,91,0,1,Email
+KYC Reminder,331,1,0,Push Notification
+Reward Points Update,196,0,1,Email
+KYC Reminder,172,0,0,Push Notification
+Beneficiary Added Alert,42,1,0,WhatsApp
+Transaction OTP,10,1,0,Push Notification
+Beneficiary Added Alert,105,1,1,WhatsApp
+Fraud Alert,91,1,0,SMS
+Reward Points Update,184,0,0,Email
+Low Balance Alert,62,0,0,Email
+Beneficiary Added Alert,39,1,1,WhatsApp
+Low Balance Alert,59,1,2,Push Notification
+Beneficiary Added Alert,96,0,0,WhatsApp
+Transaction OTP,10,1,1,Push Notification
+Fraud Alert,108,1,0,Push Notification
+Credit Card Bill Reminder,216,1,0,Email
+Transaction OTP,5,0,0,Email
+Fraud Alert,23,0,1,SMS
+Reward Points Update,167,0,0,SMS
+KYC Reminder,188,0,0,Push Notification
+KYC Reminder,314,1,0,Push Notification
+Login OTP,11,0,1,SMS
+Reward Points Update,25,1,0,Push Notification
+Monthly Statement,185,0,1,Email
+Monthly Statement,48,0,1,Email
+Low Balance Alert,63,0,0,Email
+Reward Points Update,56,1,1,Push Notification
+Beneficiary Added Alert,71,1,0,WhatsApp
+Beneficiary Added Alert,107,1,1,WhatsApp
+Payment Confirmation,67,1,2,Push Notification
+Reward Points Update,117,1,0,Email
+Payment Confirmation,142,0,0,Email
+Payment Confirmation,88,0,0,Email
+Monthly Statement,90,0,2,Email
+Transaction OTP,11,1,1,Email
+Fraud Alert,119,1,1,SMS
+Payment Confirmation,62,1,0,Push Notification
+Transaction OTP,8,1,0,Email
+Low Balance Alert,120,1,1,Push Notification
+KYC Reminder,311,1,1,Push Notification
+Login OTP,11,1,0,SMS
+Credit Card Bill Reminder,269,1,0,Push Notification
+Beneficiary Added Alert,106,1,0,WhatsApp
+Monthly Statement,135,0,0,Email
+Fraud Alert,99,0,0,SMS
+Beneficiary Added Alert,117,1,1,WhatsApp
+Monthly Statement,25,0,1,Email
+Low Balance Alert,111,1,0,Email
+Monthly Statement,155,0,0,Email
+Beneficiary Added Alert,25,1,1,WhatsApp
+KYC Reminder,102,1,1,Push Notification
+Transaction OTP,12,0,2,Email
+KYC Reminder,338,0,0,Push Notification
+Transaction OTP,9,1,1,Email
+KYC Reminder,189,0,0,Push Notification
+Login OTP,5,0,2,SMS
+Reward Points Update,44,1,0,Email
+Reward Points Update,146,0,1,Email
+KYC Reminder,165,1,0,Push Notification
+Login OTP,7,0,0,SMS
+Credit Card Bill Reminder,258,1,1,Push Notification
+Login OTP,5,0,1,SMS
+Low Balance Alert,108,0,0,SMS
+Low Balance Alert,96,1,0,Push Notification
+Payment Confirmation,192,1,0,Push Notification
+Beneficiary Added Alert,85,0,1,WhatsApp
+KYC Reminder,301,1,1,Push Notification
+Low Balance Alert,115,0,0,Email
+Transaction OTP,7,0,0,Email
+Credit Card Bill Reminder,130,1,0,Push Notification
+Credit Card Bill Reminder,259,0,0,Email
+Reward Points Update,93,0,1,Email
+Monthly Statement,131,0,2,Email
+KYC Reminder,187,0,1,Push Notification
+KYC Reminder,213,0,1,Push Notification
+Beneficiary Added Alert,45,0,1,WhatsApp
+Beneficiary Added Alert,45,1,0,WhatsApp
+Fraud Alert,48,0,1,SMS
+Login OTP,8,1,0,SMS
+Fraud Alert,52,0,1,SMS
+Monthly Statement,142,0,0,Email
+Fraud Alert,48,0,1,SMS
+Payment Confirmation,79,1,0,SMS
+Fraud Alert,103,0,0,SMS
+Credit Card Bill Reminder,216,0,1,Email
+Login OTP,4,1,0,SMS
+Payment Confirmation,187,1,0,Push Notification
+Credit Card Bill Reminder,302,0,0,Email
+Fraud Alert,99,0,2,SMS
+KYC Reminder,331,1,1,Push Notification
+Fraud Alert,109,1,0,WhatsApp
+Beneficiary Added Alert,51,1,2,WhatsApp
+Payment Confirmation,114,1,0,Push Notification
+Monthly Statement,161,1,0,Push Notification
+Monthly Statement,117,0,1,Email
+Reward Points Update,184,1,0,Push Notification
+Transaction OTP,6,1,0,Email
+Monthly Statement,78,1,0,Push Notification
+Credit Card Bill Reminder,241,1,1,Push Notification
+Payment Confirmation,125,1,1,Email
+Low Balance Alert,112,0,0,Email
+Payment Confirmation,65,1,0,Push Notification
+KYC Reminder,279,0,1,Push Notification
+Payment Confirmation,165,0,0,Email
+KYC Reminder,346,0,0,Push Notification
+Low Balance Alert,67,1,0,Push Notification
+KYC Reminder,276,0,0,Push Notification
+Monthly Statement,99,1,0,Push Notification
+Credit Card Bill Reminder,219,0,1,Email
+Credit Card Bill Reminder,306,0,2,Email
+KYC Reminder,183,1,1,Push Notification
+Low Balance Alert,107,0,2,SMS
+Payment Confirmation,188,0,2,Email
+Low Balance Alert,84,0,0,Push Notification
+Transaction OTP,8,1,2,Push Notification
+Monthly Statement,56,0,0,Email
+Reward Points Update,161,1,0,Push Notification
+Credit Card Bill Reminder,305,1,0,Email
+Monthly Statement,81,1,0,Push Notification
+Low Balance Alert,23,0,1,Email
+Fraud Alert,44,0,1,SMS
+Login OTP,9,1,2,SMS
+Low Balance Alert,21,1,1,Push Notification
+Transaction OTP,10,0,0,Email
+Low Balance Alert,106,1,0,Push Notification
+Payment Confirmation,155,0,0,Email
+Payment Confirmation,196,1,0,Email
+Beneficiary Added Alert,24,1,0,WhatsApp
+KYC Reminder,111,1,0,Push Notification
+Payment Confirmation,109,1,1,Push Notification
+Reward Points Update,173,0,0,Email
+Login OTP,8,1,1,SMS
+Transaction OTP,6,0,0,Email
+Reward Points Update,60,0,1,Email
+Beneficiary Added Alert,99,1,2,WhatsApp
+Beneficiary Added Alert,109,0,0,WhatsApp
+Monthly Statement,146,1,0,Push Notification
+KYC Reminder,317,0,0,Push Notification
+Reward Points Update,111,0,0,Email
+Login OTP,11,1,0,SMS
+Beneficiary Added Alert,102,1,0,WhatsApp
+Credit Card Bill Reminder,182,1,0,Push Notification
+Reward Points Update,43,1,0,Push Notification
+Fraud Alert,43,0,2,SMS
+Fraud Alert,115,0,1,SMS
+Reward Points Update,76,1,0,Push Notification
+Monthly Statement,162,0,2,Email
+Credit Card Bill Reminder,275,1,1,Email
+Monthly Statement,155,0,0,Email
+Beneficiary Added Alert,93,1,0,WhatsApp
+Reward Points Update,130,0,1,Email
+Monthly Statement,166,0,1,Email
+Monthly Statement,29,0,0,WhatsApp
+Low Balance Alert,44,0,1,Email
+Reward Points Update,72,0,0,Email
+Login OTP,6,1,1,SMS
+Beneficiary Added Alert,48,0,0,WhatsApp
+Monthly Statement,194,1,0,Push Notification
+Credit Card Bill Reminder,188,0,1,Email
+Reward Points Update,183,0,1,Email
+KYC Reminder,157,1,0,Push Notification
+Monthly Statement,25,0,2,Email
+Login OTP,6,1,1,SMS
+Payment Confirmation,29,0,1,Email
+Beneficiary Added Alert,107,0,0,WhatsApp
+Login OTP,11,1,1,WhatsApp
+Fraud Alert,86,1,0,SMS
+Payment Confirmation,56,0,0,Email
+Credit Card Bill Reminder,319,0,0,Email
+Credit Card Bill Reminder,181,0,0,Email
+Login OTP,9,0,0,SMS
+Fraud Alert,108,1,1,SMS
+KYC Reminder,298,1,0,Push Notification
+Beneficiary Added Alert,28,1,0,WhatsApp
+Payment Confirmation,195,1,0,Email
+Reward Points Update,153,0,2,Email
+Monthly Statement,143,0,3,Email
+Beneficiary Added Alert,66,0,1,WhatsApp
+Payment Confirmation,142,0,0,Email
+Credit Card Bill Reminder,333,1,0,Email
+Monthly Statement,136,1,0,WhatsApp
+Low Balance Alert,47,1,0,Email
+Monthly Statement,77,1,0,Push Notification
+Beneficiary Added Alert,67,0,0,WhatsApp
+Payment Confirmation,187,0,1,Email
+KYC Reminder,109,1,1,Push Notification
+Low Balance Alert,44,0,2,Email
+Beneficiary Added Alert,62,1,0,WhatsApp
+KYC Reminder,137,0,1,Push Notification
+KYC Reminder,179,1,0,Push Notification
+Beneficiary Added Alert,100,1,1,WhatsApp
+KYC Reminder,100,0,2,Push Notification
+Monthly Statement,109,1,1,Email
+Login OTP,6,1,1,SMS
+Reward Points Update,118,1,1,Email
+Fraud Alert,88,1,0,SMS
+Login OTP,6,1,1,SMS
+Transaction OTP,5,1,0,Push Notification
+KYC Reminder,249,1,2,WhatsApp
+Low Balance Alert,108,0,0,Email
+Beneficiary Added Alert,31,1,0,WhatsApp
+Reward Points Update,131,1,0,Email
+Reward Points Update,156,1,0,Email
+KYC Reminder,331,1,0,Push Notification
+Monthly Statement,121,0,0,Email
+Reward Points Update,65,0,1,Email
+KYC Reminder,349,1,2,Push Notification
+Transaction OTP,11,0,0,Email
+Beneficiary Added Alert,119,1,0,WhatsApp
+Beneficiary Added Alert,120,1,1,WhatsApp
+Low Balance Alert,21,0,1,Email
+Credit Card Bill Reminder,181,1,1,Email
+Low Balance Alert,32,1,0,Email
+Login OTP,11,0,0,SMS
+Beneficiary Added Alert,79,1,2,WhatsApp
+Beneficiary Added Alert,71,1,0,WhatsApp
+Beneficiary Added Alert,120,0,0,WhatsApp
+Credit Card Bill Reminder,197,1,0,Push Notification
+Payment Confirmation,68,1,0,Push Notification
+Fraud Alert,31,0,1,SMS
+Reward Points Update,111,1,0,Email
+Reward Points Update,192,0,1,WhatsApp
+Login OTP,10,1,1,SMS
+Fraud Alert,31,1,0,SMS
+Low Balance Alert,63,1,0,Push Notification
+Payment Confirmation,143,1,0,Push Notification
+Reward Points Update,57,0,1,Email
+Beneficiary Added Alert,80,1,2,Email
+Monthly Statement,37,1,2,Email
+Low Balance Alert,120,1,1,Push Notification
+Credit Card Bill Reminder,264,0,1,Email
+Credit Card Bill Reminder,225,0,0,Email
+Beneficiary Added Alert,52,0,1,WhatsApp
+Fraud Alert,69,1,0,SMS
+Fraud Alert,24,1,1,SMS
+Reward Points Update,48,1,0,Email
+KYC Reminder,227,0,0,Push Notification
+Low Balance Alert,54,0,0,Email
+KYC Reminder,130,0,1,WhatsApp
+Payment Confirmation,142,1,1,Push Notification
+Transaction OTP,11,0,0,Email
+Payment Confirmation,103,1,0,Push Notification
+Credit Card Bill Reminder,294,0,0,Email
+Credit Card Bill Reminder,257,1,1,Email
+Low Balance Alert,102,1,2,Push Notification
+Beneficiary Added Alert,32,0,1,WhatsApp
+Login OTP,11,0,2,SMS
+KYC Reminder,340,1,0,Push Notification
+Payment Confirmation,50,0,0,Email
+Login OTP,11,0,0,SMS
+Fraud Alert,34,0,1,SMS
+KYC Reminder,206,1,1,Push Notification
+Low Balance Alert,77,0,2,Email
+Fraud Alert,58,1,0,SMS
+Login OTP,10,1,1,SMS
+Beneficiary Added Alert,93,1,0,WhatsApp
+Login OTP,6,1,0,SMS
+Beneficiary Added Alert,78,1,1,WhatsApp
+Low Balance Alert,74,1,1,Email
+Fraud Alert,110,0,0,SMS
+KYC Reminder,180,1,0,Push Notification
+Beneficiary Added Alert,119,0,1,WhatsApp
+Low Balance Alert,65,1,2,Push Notification
+Login OTP,7,1,1,SMS
+Transaction OTP,11,0,0,Email
+KYC Reminder,151,0,1,Push Notification
+Low Balance Alert,55,1,0,Push Notification
+Monthly Statement,144,1,1,Email
+Transaction OTP,8,1,1,Push Notification
+Login OTP,5,1,0,SMS
+Low Balance Alert,95,1,1,Push Notification
+Beneficiary Added Alert,118,1,1,WhatsApp
+Fraud Alert,100,1,0,SMS
+Credit Card Bill Reminder,164,0,0,Email
+Payment Confirmation,42,1,1,Email
+Login OTP,4,1,0,SMS
+Transaction OTP,11,1,1,Push Notification
+Transaction OTP,7,0,1,Email
+Credit Card Bill Reminder,187,1,0,Email
+Low Balance Alert,93,1,0,Push Notification
+Monthly Statement,165,0,1,Email
+Fraud Alert,74,0,2,SMS
+Transaction OTP,7,1,0,Email
+Reward Points Update,163,1,1,Email
+Fraud Alert,47,0,2,SMS
+Transaction OTP,6,1,0,Email
+Transaction OTP,5,1,1,Push Notification
+Credit Card Bill Reminder,294,0,0,Email
+Transaction OTP,12,1,2,Email
+Transaction OTP,9,1,1,Push Notification
+Payment Confirmation,33,0,2,Email
+Transaction OTP,10,1,0,Push Notification
+Credit Card Bill Reminder,223,1,1,Email
+Reward Points Update,184,1,0,Push Notification
+Reward Points Update,57,1,0,Email
+KYC Reminder,275,0,2,Push Notification
+Credit Card Bill Reminder,137,0,0,Email
+Low Balance Alert,39,1,0,Email
+Payment Confirmation,93,0,0,Email
+Beneficiary Added Alert,20,1,0,WhatsApp
+Fraud Alert,106,0,0,SMS
+Payment Confirmation,195,1,2,Push Notification
+Beneficiary Added Alert,104,0,2,WhatsApp
+KYC Reminder,229,1,0,Push Notification
+Payment Confirmation,180,1,3,Email
+Beneficiary Added Alert,71,0,0,WhatsApp
+KYC Reminder,309,1,1,Push Notification
+Login OTP,10,1,1,SMS
+KYC Reminder,206,1,2,Email
+Beneficiary Added Alert,98,0,1,WhatsApp
+Payment Confirmation,177,1,1,Push Notification
+Low Balance Alert,33,1,0,Push Notification
+Credit Card Bill Reminder,262,1,2,WhatsApp
+Fraud Alert,46,1,0,SMS
+KYC Reminder,177,1,0,Push Notification
+Beneficiary Added Alert,69,1,0,WhatsApp
+Monthly Statement,92,0,1,Email
+Transaction OTP,4,1,0,Push Notification
+Fraud Alert,41,1,1,SMS
+Credit Card Bill Reminder,255,1,0,Email
+Low Balance Alert,103,1,0,Push Notification
+KYC Reminder,240,1,1,Push Notification
+Payment Confirmation,128,0,1,Email
+Login OTP,7,1,0,SMS
+Low Balance Alert,120,1,0,Email
+Payment Confirmation,154,1,0,Email
+Login OTP,7,1,0,SMS
+Fraud Alert,69,1,2,SMS
+Transaction OTP,12,1,0,Email
+KYC Reminder,131,0,1,Push Notification
+Monthly Statement,69,0,1,Email
+Credit Card Bill Reminder,206,0,0,Email
+Fraud Alert,57,0,0,SMS
+Payment Confirmation,132,0,0,Email
+Credit Card Bill Reminder,232,0,1,Email
+Beneficiary Added Alert,38,1,0,WhatsApp
+Reward Points Update,101,0,0,Push Notification
+Beneficiary Added Alert,30,1,0,WhatsApp
+Payment Confirmation,185,1,1,Push Notification
+KYC Reminder,116,1,0,Push Notification
+Fraud Alert,74,0,0,SMS
+Transaction OTP,10,1,1,Push Notification
+Beneficiary Added Alert,118,1,1,WhatsApp
+Transaction OTP,9,0,2,Email
+Payment Confirmation,39,1,1,Email
+Login OTP,4,1,0,Email
+Credit Card Bill Reminder,346,0,1,Email
+KYC Reminder,106,1,0,Push Notification
+Beneficiary Added Alert,114,0,0,WhatsApp
+Beneficiary Added Alert,23,1,2,WhatsApp
+KYC Reminder,184,0,1,Push Notification
+Login OTP,5,1,0,SMS
+Monthly Statement,48,0,1,Email
+Reward Points Update,161,0,2,Email
+Beneficiary Added Alert,94,1,2,WhatsApp
+KYC Reminder,302,1,0,Push Notification
+Credit Card Bill Reminder,170,0,2,Email
+Low Balance Alert,107,0,0,Email
+Fraud Alert,90,1,1,SMS
+Credit Card Bill Reminder,327,0,0,Email
+Transaction OTP,11,1,1,Email
+Beneficiary Added Alert,104,1,1,WhatsApp
+Payment Confirmation,150,1,1,Push Notification
+Beneficiary Added Alert,85,0,1,WhatsApp
+Beneficiary Added Alert,31,1,1,WhatsApp
+Low Balance Alert,115,0,1,Email
+Low Balance Alert,111,1,1,Email
+Beneficiary Added Alert,93,1,0,WhatsApp
+Payment Confirmation,161,1,2,Push Notification
+Login OTP,6,1,0,SMS
+Monthly Statement,137,1,1,Push Notification
+Beneficiary Added Alert,58,1,0,WhatsApp
+Beneficiary Added Alert,52,1,0,WhatsApp
+KYC Reminder,265,1,1,Push Notification
+Beneficiary Added Alert,83,1,0,WhatsApp
+Credit Card Bill Reminder,229,0,1,Email
+KYC Reminder,149,1,0,Push Notification
+Fraud Alert,22,0,2,SMS
+Monthly Statement,131,1,1,Email
+Reward Points Update,146,0,0,Email
+Login OTP,10,1,0,SMS
+Reward Points Update,37,1,1,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Fraud Alert,108,1,2,SMS
+KYC Reminder,273,1,0,Push Notification
+Reward Points Update,57,1,0,Push Notification
+KYC Reminder,129,1,1,Push Notification
+Monthly Statement,194,0,0,Email
+Credit Card Bill Reminder,143,1,1,Email
+Login OTP,9,0,0,SMS
+Payment Confirmation,30,0,1,Email
+Payment Confirmation,154,0,1,Email
+Monthly Statement,128,1,1,Push Notification
+Reward Points Update,127,1,0,Push Notification
+KYC Reminder,348,0,2,Push Notification
+KYC Reminder,116,0,0,Push Notification
+Login OTP,9,0,1,SMS
+Transaction OTP,4,1,1,Email
+Credit Card Bill Reminder,119,1,1,Push Notification
+Beneficiary Added Alert,104,0,0,WhatsApp
+Beneficiary Added Alert,39,0,0,WhatsApp
+Payment Confirmation,150,0,2,Email
+Low Balance Alert,81,1,1,Email
+Monthly Statement,125,1,1,Push Notification
+Credit Card Bill Reminder,187,1,1,Push Notification
+Credit Card Bill Reminder,305,1,0,Push Notification
+Payment Confirmation,63,1,2,Email
+KYC Reminder,197,1,0,Push Notification
+Transaction OTP,11,0,0,Email
+Fraud Alert,60,1,0,SMS
+KYC Reminder,237,1,0,Push Notification
+KYC Reminder,175,1,0,Push Notification
+KYC Reminder,210,1,0,Push Notification
+Monthly Statement,21,1,1,Push Notification
+Transaction OTP,5,1,0,Email
+Monthly Statement,34,1,0,Push Notification
+Reward Points Update,89,1,0,Push Notification
+Credit Card Bill Reminder,268,0,3,Email
+Transaction OTP,4,1,0,Push Notification
+Reward Points Update,135,1,1,Push Notification
+Transaction OTP,10,0,3,Email
+Fraud Alert,53,0,2,SMS
+Low Balance Alert,52,1,1,Push Notification
+Credit Card Bill Reminder,172,0,0,Email
+Login OTP,12,1,2,SMS
+Low Balance Alert,97,0,1,Email
+Monthly Statement,195,0,0,Email
+Transaction OTP,6,1,0,Push Notification
+Credit Card Bill Reminder,153,1,0,Push Notification
+Monthly Statement,38,1,0,Push Notification
+Payment Confirmation,184,0,0,Email
+Credit Card Bill Reminder,127,0,1,Email
+KYC Reminder,231,1,1,Push Notification
+Credit Card Bill Reminder,169,0,1,Email
+Low Balance Alert,55,1,1,Email
+Payment Confirmation,86,0,2,Email
+Credit Card Bill Reminder,203,1,0,Push Notification
+Credit Card Bill Reminder,304,0,1,Email
+Fraud Alert,26,0,2,SMS
+Payment Confirmation,71,1,0,Email
+Fraud Alert,55,1,1,SMS
+Fraud Alert,38,0,1,SMS
+Payment Confirmation,108,0,1,Email
+Low Balance Alert,64,1,0,Push Notification
+Beneficiary Added Alert,59,0,1,WhatsApp
+Login OTP,10,0,0,SMS
+Low Balance Alert,93,1,1,Email
+Reward Points Update,126,1,0,Push Notification
+Credit Card Bill Reminder,296,0,1,Email
+Beneficiary Added Alert,49,1,1,WhatsApp
+Beneficiary Added Alert,112,0,0,WhatsApp
+Monthly Statement,137,0,1,Email
+KYC Reminder,216,1,0,Push Notification
+Low Balance Alert,76,1,0,Email
+Credit Card Bill Reminder,111,0,2,Email
+Low Balance Alert,20,1,1,Email
+Fraud Alert,104,1,1,SMS
+Beneficiary Added Alert,120,1,0,WhatsApp
+Login OTP,9,1,0,SMS
+Payment Confirmation,198,0,0,Email
+Fraud Alert,120,1,2,SMS
+Transaction OTP,8,0,1,Email
+Monthly Statement,109,1,0,Email
+Credit Card Bill Reminder,262,1,1,Email
+Low Balance Alert,32,0,0,Email
+Transaction OTP,8,1,0,Push Notification
+Monthly Statement,89,1,1,Push Notification
+KYC Reminder,266,1,0,Push Notification
+Login OTP,8,1,1,WhatsApp
+Monthly Statement,68,1,0,Push Notification
+Fraud Alert,69,1,1,SMS
+Beneficiary Added Alert,71,1,0,WhatsApp
+Credit Card Bill Reminder,211,1,0,Push Notification
+Login OTP,9,0,0,SMS
+Beneficiary Added Alert,32,0,0,WhatsApp
+Login OTP,11,0,0,WhatsApp
+Payment Confirmation,127,1,0,Push Notification
+Low Balance Alert,34,0,1,Email
+Login OTP,12,1,2,SMS
+KYC Reminder,324,1,0,SMS
+Login OTP,6,1,1,SMS
+Low Balance Alert,112,1,1,Push Notification
+Fraud Alert,69,1,0,SMS
+Payment Confirmation,137,1,0,Email
+Payment Confirmation,112,1,2,Push Notification
+Login OTP,12,0,2,SMS
+Login OTP,12,0,1,SMS
+Beneficiary Added Alert,39,0,0,WhatsApp
+Reward Points Update,39,0,0,Email
+KYC Reminder,212,1,0,Push Notification
+KYC Reminder,299,1,0,Push Notification
+Login OTP,4,1,0,SMS
+Monthly Statement,33,1,1,SMS
+Beneficiary Added Alert,57,1,0,WhatsApp
+Fraud Alert,74,0,0,SMS
+Monthly Statement,177,1,0,Email
+KYC Reminder,322,0,2,Push Notification
+Reward Points Update,106,1,0,Push Notification
+Credit Card Bill Reminder,308,1,1,Email
+Payment Confirmation,98,0,1,SMS
+Low Balance Alert,36,0,0,Email
+Fraud Alert,45,0,0,SMS
+Fraud Alert,76,0,1,SMS
+Low Balance Alert,63,1,2,Email
+Monthly Statement,167,1,1,Email
+KYC Reminder,327,1,0,Push Notification
+Fraud Alert,91,0,0,SMS
+Payment Confirmation,176,0,2,Email
+Reward Points Update,67,0,2,Email
+Login OTP,12,0,0,SMS
+Payment Confirmation,124,0,1,Email
+KYC Reminder,339,0,1,Push Notification
+Reward Points Update,22,0,2,Email
+Login OTP,7,0,1,SMS
+Credit Card Bill Reminder,136,1,1,Push Notification
+Payment Confirmation,84,0,1,Email
+Reward Points Update,187,0,1,Email
+Monthly Statement,173,1,2,Push Notification
+Reward Points Update,146,1,1,Email
+Monthly Statement,78,1,1,Email
+Login OTP,11,1,1,SMS
+Transaction OTP,4,1,0,Push Notification
+Transaction OTP,12,1,2,Push Notification
+Credit Card Bill Reminder,242,1,1,Email
+Credit Card Bill Reminder,201,1,1,Push Notification
+Monthly Statement,87,0,0,Email
+Beneficiary Added Alert,95,1,1,WhatsApp
+Transaction OTP,4,1,0,Push Notification
+Login OTP,6,1,1,SMS
+KYC Reminder,229,1,2,Push Notification
+Login OTP,4,1,0,SMS
+Payment Confirmation,20,1,1,Email
+Login OTP,4,0,0,SMS
+Monthly Statement,181,0,0,Email
+Beneficiary Added Alert,52,1,1,WhatsApp
+Transaction OTP,11,0,1,Email
+Monthly Statement,159,1,0,Email
+Beneficiary Added Alert,49,1,1,WhatsApp
+Fraud Alert,44,1,1,SMS
+Credit Card Bill Reminder,212,1,0,Push Notification
+Transaction OTP,12,1,0,Email
+Beneficiary Added Alert,105,0,0,WhatsApp
+Credit Card Bill Reminder,303,1,1,Push Notification
+Credit Card Bill Reminder,284,1,1,Push Notification
+Login OTP,7,1,0,SMS
+Credit Card Bill Reminder,207,1,0,Email
+Monthly Statement,25,1,1,Email
+Reward Points Update,90,1,1,Email
+Fraud Alert,115,0,1,SMS
+KYC Reminder,274,1,0,Push Notification
+Transaction OTP,12,0,2,Email
+Transaction OTP,4,0,0,Email
+Monthly Statement,84,0,0,Email
+Login OTP,6,1,0,WhatsApp
+Transaction OTP,5,0,1,Email
+Payment Confirmation,136,1,0,Email
+Login OTP,12,1,0,SMS
+Beneficiary Added Alert,49,0,0,WhatsApp
+Monthly Statement,35,1,0,Push Notification
+Reward Points Update,172,0,0,Email
+Fraud Alert,77,1,1,SMS
+Beneficiary Added Alert,40,1,2,WhatsApp
+Login OTP,4,1,1,SMS
+Monthly Statement,37,1,0,Email
+Credit Card Bill Reminder,223,1,0,Push Notification
+Beneficiary Added Alert,104,1,0,WhatsApp
+Transaction OTP,6,1,0,Email
+Fraud Alert,25,1,0,SMS
+Credit Card Bill Reminder,297,1,0,Push Notification
+KYC Reminder,299,0,1,Push Notification
+Transaction OTP,5,0,1,Email
+Credit Card Bill Reminder,235,1,0,Email
+KYC Reminder,156,1,0,Push Notification
+Credit Card Bill Reminder,104,1,1,Email
+Login OTP,10,0,0,SMS
+Fraud Alert,40,1,0,SMS
+KYC Reminder,156,1,1,Push Notification
+Monthly Statement,180,1,0,Push Notification
+Monthly Statement,133,1,2,Push Notification
+Monthly Statement,122,1,1,Push Notification
+Beneficiary Added Alert,25,1,1,WhatsApp
+Payment Confirmation,125,1,0,Email
+Beneficiary Added Alert,117,1,0,WhatsApp
+Transaction OTP,11,0,1,Email
+Login OTP,6,1,1,SMS
+Beneficiary Added Alert,97,0,0,WhatsApp
+Monthly Statement,139,0,0,Push Notification
+Credit Card Bill Reminder,137,1,2,Email
+Credit Card Bill Reminder,320,0,0,Email
+Transaction OTP,12,1,0,Push Notification
+Low Balance Alert,82,1,0,Push Notification
+Monthly Statement,101,0,0,Email
+Transaction OTP,5,1,0,Email
+Credit Card Bill Reminder,163,1,1,Push Notification
+Beneficiary Added Alert,49,0,0,WhatsApp
+Transaction OTP,4,1,1,Push Notification
+Beneficiary Added Alert,54,0,2,WhatsApp
+KYC Reminder,114,0,0,Push Notification
+Payment Confirmation,154,1,0,Email
+Beneficiary Added Alert,75,0,0,WhatsApp
+Transaction OTP,10,0,0,Email
+KYC Reminder,229,1,1,Push Notification
+Login OTP,11,1,0,SMS
+KYC Reminder,319,0,0,Push Notification
+Beneficiary Added Alert,47,1,0,WhatsApp
+Monthly Statement,189,0,1,Email
+Fraud Alert,118,0,1,SMS
+Fraud Alert,83,0,0,SMS
+Beneficiary Added Alert,66,0,1,WhatsApp
+Login OTP,9,1,0,SMS
+KYC Reminder,125,1,0,WhatsApp
+Low Balance Alert,113,1,0,Email
+Payment Confirmation,64,1,0,Email
+Payment Confirmation,82,1,0,Email
+Login OTP,8,1,2,SMS
+Transaction OTP,9,0,1,Email
+Transaction OTP,7,1,0,Email
+Fraud Alert,116,0,0,SMS
+Monthly Statement,60,1,1,Email
+KYC Reminder,305,0,0,Push Notification
+Monthly Statement,182,1,1,Push Notification
+Credit Card Bill Reminder,142,1,0,Email
+Monthly Statement,65,1,1,Push Notification
+Fraud Alert,95,1,0,SMS
+Monthly Statement,55,1,0,Email
+KYC Reminder,129,1,0,Push Notification
+Reward Points Update,179,0,1,Email
+Fraud Alert,101,1,0,SMS
+Beneficiary Added Alert,20,0,0,WhatsApp
+Login OTP,10,1,0,SMS
+Transaction OTP,8,0,0,Email
+KYC Reminder,114,0,0,Push Notification
+KYC Reminder,208,1,2,Push Notification
+KYC Reminder,139,0,1,WhatsApp
+Low Balance Alert,48,1,0,Email
+Credit Card Bill Reminder,300,0,0,Push Notification
+Beneficiary Added Alert,70,1,1,WhatsApp
+Payment Confirmation,137,1,0,Email
+KYC Reminder,216,1,2,Email
+Transaction OTP,11,1,0,Push Notification
+Transaction OTP,11,1,1,Push Notification
+Payment Confirmation,163,0,1,Email
+Credit Card Bill Reminder,266,0,0,WhatsApp
+Payment Confirmation,25,0,0,Email
+Reward Points Update,177,1,1,Push Notification
+Payment Confirmation,65,0,2,Email
+Credit Card Bill Reminder,124,1,0,Email
+Login OTP,11,1,3,SMS
+Login OTP,8,1,0,SMS
+Reward Points Update,179,0,0,Email
+Fraud Alert,97,1,0,SMS
+KYC Reminder,167,0,0,Push Notification
+Login OTP,9,0,0,SMS
+Beneficiary Added Alert,119,0,1,WhatsApp
+Beneficiary Added Alert,71,0,1,WhatsApp
+Beneficiary Added Alert,26,1,1,WhatsApp
+KYC Reminder,103,0,1,Push Notification
+Payment Confirmation,144,1,0,Email
+Login OTP,5,1,1,SMS
+Beneficiary Added Alert,93,1,0,WhatsApp
+Payment Confirmation,136,1,1,Email
+Login OTP,12,1,0,SMS
+Low Balance Alert,43,0,2,Email
+Reward Points Update,123,1,1,Push Notification
+KYC Reminder,243,0,0,Push Notification
+Low Balance Alert,50,1,2,Email
+KYC Reminder,335,0,0,Push Notification
+Fraud Alert,75,0,1,SMS
+Credit Card Bill Reminder,115,0,2,Email
+Login OTP,4,0,0,Email
+Payment Confirmation,102,1,1,Push Notification
+Login OTP,11,0,0,SMS
+Credit Card Bill Reminder,346,1,0,Email
+Login OTP,12,0,0,SMS
+Fraud Alert,91,1,1,SMS
+Fraud Alert,44,1,1,SMS
+KYC Reminder,252,0,1,Push Notification
+Payment Confirmation,169,1,0,Email
+Credit Card Bill Reminder,114,0,2,Email
+Fraud Alert,113,1,0,SMS
+Payment Confirmation,53,1,0,Push Notification
+Low Balance Alert,99,0,0,Email
+Payment Confirmation,59,0,0,Email
+Low Balance Alert,55,1,0,Email
+Low Balance Alert,75,1,0,Email
+Beneficiary Added Alert,32,0,0,WhatsApp
+Transaction OTP,7,1,0,Email
+Credit Card Bill Reminder,260,1,0,Email
+Transaction OTP,4,0,0,Push Notification
+Transaction OTP,7,1,0,Email
+Beneficiary Added Alert,51,0,0,WhatsApp
+Beneficiary Added Alert,37,1,1,WhatsApp
+Beneficiary Added Alert,59,1,1,WhatsApp
+Login OTP,11,1,1,SMS
+Beneficiary Added Alert,93,0,0,WhatsApp
+Fraud Alert,101,1,1,SMS
+Monthly Statement,71,0,1,Email
+Reward Points Update,77,0,0,Email
+KYC Reminder,239,0,2,Push Notification
+Transaction OTP,6,1,0,Push Notification
+Low Balance Alert,39,1,0,Email
+Beneficiary Added Alert,45,1,0,Push Notification
+Fraud Alert,97,0,0,SMS
+Fraud Alert,37,0,0,SMS
+KYC Reminder,115,0,0,Push Notification
+Login OTP,10,0,3,SMS
+Monthly Statement,117,1,0,Push Notification
+Reward Points Update,82,0,0,Email
+KYC Reminder,230,1,1,Push Notification
+KYC Reminder,341,0,1,Push Notification
+Reward Points Update,142,1,0,WhatsApp
+Credit Card Bill Reminder,298,1,0,Push Notification
+Reward Points Update,68,0,0,Email
+Transaction OTP,9,1,1,Email
+Reward Points Update,58,1,0,Push Notification
+Transaction OTP,6,1,1,Push Notification
+Payment Confirmation,144,1,0,Email
+Credit Card Bill Reminder,279,1,0,Email
+Monthly Statement,126,0,0,Email
+Fraud Alert,23,0,0,SMS
+Reward Points Update,21,1,2,Push Notification
+Low Balance Alert,68,1,1,Push Notification
+Beneficiary Added Alert,110,1,0,Email
+Beneficiary Added Alert,104,0,1,WhatsApp
+Reward Points Update,108,0,1,WhatsApp
+Low Balance Alert,26,0,1,Email
+Beneficiary Added Alert,64,0,0,WhatsApp
+KYC Reminder,292,1,0,Push Notification
+Credit Card Bill Reminder,221,1,0,Email
+Login OTP,10,1,0,SMS
+KYC Reminder,284,1,1,Push Notification
+Payment Confirmation,153,1,0,Email
+Transaction OTP,10,1,1,Email
+Reward Points Update,113,1,1,Push Notification
+Transaction OTP,6,1,2,Push Notification
+Reward Points Update,147,1,1,Email
+Credit Card Bill Reminder,259,1,0,Push Notification
+Login OTP,10,0,0,SMS
+Monthly Statement,119,1,1,Email
+Low Balance Alert,93,0,0,WhatsApp
+KYC Reminder,115,1,1,Push Notification
+Low Balance Alert,79,1,2,Email
+Fraud Alert,98,1,0,SMS
+KYC Reminder,312,1,0,Push Notification
+Reward Points Update,143,0,3,Email
+Low Balance Alert,56,1,0,Push Notification
+Fraud Alert,27,1,0,SMS
+Fraud Alert,105,0,0,SMS
+Beneficiary Added Alert,33,1,1,WhatsApp
+Low Balance Alert,58,0,0,Email
+Beneficiary Added Alert,52,0,1,Push Notification
+Monthly Statement,177,1,1,Push Notification
+Fraud Alert,106,1,0,SMS
+Low Balance Alert,95,0,1,Email
+Reward Points Update,32,0,0,Email
+Beneficiary Added Alert,94,0,0,Push Notification
+Beneficiary Added Alert,111,0,0,WhatsApp
+Transaction OTP,11,0,0,Email
+Monthly Statement,123,0,1,Email
+Transaction OTP,4,0,0,Email
+Transaction OTP,11,0,1,Email
+Reward Points Update,159,0,0,Email
+Payment Confirmation,44,1,0,Email
+Low Balance Alert,102,1,0,Push Notification
+Reward Points Update,26,0,0,Email
+KYC Reminder,146,1,1,Push Notification
+Credit Card Bill Reminder,122,0,0,Email
+Monthly Statement,45,0,1,Email
+Fraud Alert,93,0,2,SMS
+Credit Card Bill Reminder,193,0,1,Email
+Monthly Statement,171,0,1,Email
+Low Balance Alert,68,1,2,Push Notification
+Payment Confirmation,50,0,0,Email
+Credit Card Bill Reminder,314,1,2,Email
+KYC Reminder,146,1,1,Push Notification
+Credit Card Bill Reminder,168,0,0,Email
+Credit Card Bill Reminder,249,1,1,Push Notification
+Login OTP,9,1,0,SMS
+Fraud Alert,27,1,1,SMS
+Fraud Alert,23,0,0,SMS
+Transaction OTP,11,1,1,Push Notification
+Transaction OTP,9,0,0,Email
+KYC Reminder,181,1,2,Push Notification
+Fraud Alert,71,0,1,SMS
+Low Balance Alert,90,0,0,Email
+KYC Reminder,142,1,0,Push Notification
+Fraud Alert,46,0,0,SMS
+Payment Confirmation,115,0,0,Email
+Transaction OTP,4,0,0,Email
+Beneficiary Added Alert,114,0,0,WhatsApp
+Low Balance Alert,100,1,2,Push Notification
+Fraud Alert,69,0,2,WhatsApp
+Transaction OTP,12,1,0,Email
+Fraud Alert,75,1,1,Push Notification
+Payment Confirmation,27,0,0,Email
+Fraud Alert,32,1,1,SMS
+KYC Reminder,112,0,2,Push Notification
+Monthly Statement,66,0,2,Email
+Transaction OTP,7,1,0,Email
+KYC Reminder,340,1,1,Push Notification
+Monthly Statement,81,0,0,Email
+Low Balance Alert,23,0,1,Email
+Credit Card Bill Reminder,153,1,0,Email
+Fraud Alert,25,1,0,SMS
+Payment Confirmation,191,0,0,Email
+Login OTP,7,0,0,SMS
+KYC Reminder,175,0,0,Push Notification
+Fraud Alert,75,0,1,SMS
+Low Balance Alert,91,0,1,Email
+Login OTP,12,0,0,SMS
+Monthly Statement,186,0,1,Email
+Login OTP,9,0,0,SMS
+Payment Confirmation,66,0,1,Email
+Credit Card Bill Reminder,117,0,0,Email
+Low Balance Alert,98,1,1,Email
+Monthly Statement,45,0,1,Email
+Credit Card Bill Reminder,172,1,0,Push Notification
+KYC Reminder,289,1,0,Push Notification
+Beneficiary Added Alert,99,0,1,WhatsApp
+Reward Points Update,76,0,1,Email
+Payment Confirmation,139,1,1,Email
+Credit Card Bill Reminder,331,1,1,Push Notification
+Credit Card Bill Reminder,151,1,1,Email
+Beneficiary Added Alert,112,0,1,WhatsApp
+Transaction OTP,10,0,2,Email
+Fraud Alert,77,1,0,SMS
+Payment Confirmation,96,1,0,Email
+Monthly Statement,33,1,1,Push Notification
+Monthly Statement,34,0,1,Email
+Monthly Statement,199,1,2,Email
+Fraud Alert,68,1,1,Push Notification
+Transaction OTP,12,0,0,Email
+Reward Points Update,189,1,1,Email
+Beneficiary Added Alert,116,1,1,WhatsApp
+Beneficiary Added Alert,91,0,2,WhatsApp
+Monthly Statement,152,1,1,Email
+Low Balance Alert,102,0,0,Email
+Beneficiary Added Alert,116,1,1,WhatsApp
+Beneficiary Added Alert,42,1,0,WhatsApp
+Fraud Alert,87,1,0,WhatsApp
+Monthly Statement,73,1,1,Push Notification
+Fraud Alert,29,0,0,Push Notification
+Reward Points Update,45,1,0,Email
+Payment Confirmation,140,0,1,Email
+Transaction OTP,6,0,0,Email
+Transaction OTP,7,1,0,Push Notification
+Credit Card Bill Reminder,196,1,0,Push Notification
+Beneficiary Added Alert,66,1,0,WhatsApp
+Login OTP,6,1,0,SMS
+Transaction OTP,5,1,0,Push Notification
+KYC Reminder,191,1,0,Push Notification
+Credit Card Bill Reminder,335,0,1,Email
+Payment Confirmation,151,0,1,Email
+KYC Reminder,297,0,2,WhatsApp
+Low Balance Alert,78,1,0,Push Notification
+Fraud Alert,54,1,0,SMS
+Credit Card Bill Reminder,206,1,1,Push Notification
+Beneficiary Added Alert,93,1,1,WhatsApp
+Low Balance Alert,87,0,0,Email
+Reward Points Update,39,0,0,Email
+Beneficiary Added Alert,95,1,0,WhatsApp
+Monthly Statement,178,1,2,Push Notification
+Reward Points Update,185,0,0,Email
+KYC Reminder,335,1,1,Push Notification
+Beneficiary Added Alert,96,1,1,WhatsApp
+Credit Card Bill Reminder,333,0,0,Email
+Beneficiary Added Alert,54,1,0,WhatsApp
+Credit Card Bill Reminder,225,1,1,Push Notification
+Payment Confirmation,101,1,0,Push Notification
+KYC Reminder,239,1,2,Push Notification
+Credit Card Bill Reminder,103,1,0,Push Notification
+Fraud Alert,102,1,2,SMS
+Reward Points Update,96,1,2,Email
+KYC Reminder,144,1,1,Push Notification
+Credit Card Bill Reminder,309,1,2,Push Notification
+Monthly Statement,135,1,1,Push Notification
+Monthly Statement,158,0,1,Email
+Credit Card Bill Reminder,349,0,0,Email
+Reward Points Update,151,1,0,Push Notification
+Fraud Alert,24,1,1,SMS
+Fraud Alert,119,0,0,SMS
+Low Balance Alert,46,0,0,Email
+Payment Confirmation,171,0,0,Email
+Reward Points Update,82,1,2,Email
+Reward Points Update,56,1,1,Push Notification
+Credit Card Bill Reminder,191,1,0,Push Notification
+Payment Confirmation,95,1,1,Email
+KYC Reminder,154,0,1,Push Notification
+Monthly Statement,158,1,2,Push Notification
+Credit Card Bill Reminder,220,1,1,Email
+Transaction OTP,10,1,2,Email
+Payment Confirmation,157,1,0,Email
+Beneficiary Added Alert,52,1,1,WhatsApp
+KYC Reminder,331,1,0,SMS
+Payment Confirmation,114,1,2,Email
+Fraud Alert,107,1,0,WhatsApp
+Payment Confirmation,20,1,0,Push Notification
+Reward Points Update,115,1,0,Push Notification
+Transaction OTP,8,0,0,Email
+KYC Reminder,262,0,2,Push Notification
+KYC Reminder,186,1,2,Push Notification
+Fraud Alert,42,1,1,SMS
+Login OTP,12,1,0,SMS
+Beneficiary Added Alert,55,1,2,WhatsApp
+Reward Points Update,164,1,0,Push Notification
+Reward Points Update,190,1,0,Push Notification
+Reward Points Update,191,1,0,Email
+Monthly Statement,33,1,0,Push Notification
+Low Balance Alert,32,0,1,Email
+Reward Points Update,73,1,0,Push Notification
+Beneficiary Added Alert,115,1,0,WhatsApp
+Low Balance Alert,55,0,0,Email
+Beneficiary Added Alert,117,1,1,WhatsApp
+Reward Points Update,82,1,1,Push Notification
+KYC Reminder,311,1,3,Push Notification
+Payment Confirmation,55,1,0,Push Notification
+Login OTP,7,0,0,SMS
+Monthly Statement,181,1,2,Push Notification
+Payment Confirmation,141,1,0,Push Notification
+Monthly Statement,131,1,2,Push Notification
+Transaction OTP,4,1,1,Email
+Monthly Statement,174,0,1,Email
+Fraud Alert,35,0,2,SMS
+Fraud Alert,98,1,0,SMS
+Credit Card Bill Reminder,296,0,0,Email
+Login OTP,4,0,1,SMS
+Low Balance Alert,117,1,0,Email
+Credit Card Bill Reminder,299,0,1,Email
+Fraud Alert,84,1,1,SMS
+Reward Points Update,122,1,2,Push Notification
+KYC Reminder,217,1,0,Push Notification
+Fraud Alert,119,1,1,WhatsApp
+Transaction OTP,10,0,0,Email
+Beneficiary Added Alert,76,0,1,WhatsApp
+Low Balance Alert,100,0,0,Email
+Reward Points Update,53,0,1,Email
+Low Balance Alert,119,0,0,Email
+Low Balance Alert,23,1,1,Email
+Beneficiary Added Alert,66,1,1,Push Notification
+Payment Confirmation,62,1,1,Email
+Credit Card Bill Reminder,118,1,0,Email
+Beneficiary Added Alert,116,1,0,WhatsApp
+KYC Reminder,330,1,0,Push Notification
+Login OTP,5,1,1,SMS
+Login OTP,12,0,1,SMS
+Payment Confirmation,184,0,1,Email
+Monthly Statement,46,1,0,Push Notification
+Fraud Alert,26,0,0,SMS
+Transaction OTP,7,1,0,Push Notification
+Fraud Alert,77,1,0,SMS
+Credit Card Bill Reminder,247,1,0,Email
+Login OTP,5,0,0,SMS
+Login OTP,7,1,1,SMS
+Reward Points Update,134,0,0,Email
+Transaction OTP,5,0,1,Email
+Transaction OTP,8,0,0,Email
+Reward Points Update,149,0,0,Email
+Transaction OTP,9,1,0,Email
+Credit Card Bill Reminder,259,1,1,Push Notification
+Monthly Statement,165,0,0,Email
+Monthly Statement,157,0,0,Email
+KYC Reminder,141,1,0,Push Notification
+Payment Confirmation,134,0,2,Email
+Beneficiary Added Alert,87,0,1,Push Notification
+KYC Reminder,136,1,1,Push Notification
+Monthly Statement,25,1,2,Email
+Beneficiary Added Alert,81,1,0,WhatsApp
+Low Balance Alert,101,0,0,Email
+KYC Reminder,141,1,1,Push Notification
+Beneficiary Added Alert,101,1,0,WhatsApp
+Low Balance Alert,45,1,1,Push Notification
+Reward Points Update,159,0,1,Email
+Monthly Statement,153,0,0,Email
+Beneficiary Added Alert,84,1,2,WhatsApp
+Reward Points Update,75,1,0,Push Notification
+Credit Card Bill Reminder,320,1,1,Email
+Beneficiary Added Alert,78,1,1,WhatsApp
+Fraud Alert,100,0,1,Push Notification
+Monthly Statement,107,0,0,Email
+Login OTP,11,1,0,SMS
+Credit Card Bill Reminder,248,1,1,Push Notification
+Beneficiary Added Alert,118,1,1,WhatsApp
+KYC Reminder,147,0,0,Push Notification
+Beneficiary Added Alert,63,0,1,Email
+Login OTP,7,0,1,SMS
+KYC Reminder,315,1,1,Push Notification
+Transaction OTP,12,0,1,Email
+Beneficiary Added Alert,43,0,0,WhatsApp
+Payment Confirmation,125,1,0,Push Notification
+Login OTP,6,0,0,SMS
+Low Balance Alert,51,1,1,Push Notification
+Credit Card Bill Reminder,240,1,1,Push Notification
+Beneficiary Added Alert,114,1,0,WhatsApp
+Low Balance Alert,21,1,1,Email
+Login OTP,12,1,2,Push Notification
+Payment Confirmation,131,0,0,Email
+Beneficiary Added Alert,77,0,0,WhatsApp
+Login OTP,4,0,1,SMS
+KYC Reminder,243,1,1,Push Notification
+KYC Reminder,200,1,0,Push Notification
+Reward Points Update,107,1,1,Push Notification
+Login OTP,6,1,2,SMS
+KYC Reminder,240,1,1,Push Notification
+Login OTP,4,1,2,WhatsApp
+Payment Confirmation,109,1,0,Email
+KYC Reminder,271,0,0,Push Notification
+Credit Card Bill Reminder,151,0,1,Email
+Credit Card Bill Reminder,285,1,0,Push Notification
+Beneficiary Added Alert,41,1,0,WhatsApp
+Reward Points Update,22,1,1,Push Notification
+KYC Reminder,325,1,0,Push Notification
+Login OTP,9,1,1,SMS
+Monthly Statement,110,1,1,Push Notification
+Transaction OTP,5,1,1,Push Notification
+Monthly Statement,163,1,1,Email
+Beneficiary Added Alert,94,0,0,WhatsApp
+Transaction OTP,9,1,1,Push Notification
+Login OTP,4,0,0,SMS
+KYC Reminder,112,0,2,Push Notification
+Transaction OTP,8,1,1,Push Notification
+Credit Card Bill Reminder,322,1,1,Email
+Transaction OTP,11,1,2,Push Notification
+Monthly Statement,100,0,0,Push Notification
+Reward Points Update,92,1,1,Push Notification
+Low Balance Alert,64,0,0,Email
+Transaction OTP,8,1,0,WhatsApp
+Transaction OTP,11,1,0,SMS
+Beneficiary Added Alert,116,1,0,WhatsApp
+Fraud Alert,23,0,0,SMS
+Low Balance Alert,81,0,0,Email
+Monthly Statement,178,1,2,Push Notification
+Payment Confirmation,74,0,1,Email
+KYC Reminder,206,1,1,Push Notification
+Login OTP,5,1,1,Push Notification
+Transaction OTP,9,0,1,Email
+Monthly Statement,129,0,1,Email
+Beneficiary Added Alert,34,1,1,SMS
+Beneficiary Added Alert,29,0,1,WhatsApp
+Payment Confirmation,46,1,2,Email
+Low Balance Alert,85,0,1,Email
+Fraud Alert,120,1,2,SMS
+Low Balance Alert,24,1,0,Email
+Transaction OTP,6,0,1,Email
+Credit Card Bill Reminder,304,1,0,Push Notification
+Fraud Alert,85,0,0,SMS
+Payment Confirmation,128,0,1,Email
+Transaction OTP,6,0,0,Email
+Monthly Statement,183,1,2,Email
+Credit Card Bill Reminder,217,0,1,Email
+Reward Points Update,158,0,0,Email
+Monthly Statement,43,1,1,Email
+Reward Points Update,138,0,1,Email
+Login OTP,6,0,0,SMS
+KYC Reminder,123,0,0,Push Notification
+Reward Points Update,127,0,0,Email
+Low Balance Alert,22,1,0,Push Notification
+KYC Reminder,227,0,0,Push Notification
+Payment Confirmation,42,1,1,SMS
+Monthly Statement,86,0,2,Email
+KYC Reminder,295,0,1,Push Notification
+Login OTP,6,0,1,SMS
+Monthly Statement,180,0,1,Email
+Payment Confirmation,72,1,0,Push Notification
+Payment Confirmation,112,1,0,Push Notification
+Reward Points Update,121,0,0,Email
+Monthly Statement,47,1,1,Email
+Payment Confirmation,40,0,0,Email
+Monthly Statement,77,1,2,WhatsApp
+Fraud Alert,34,1,0,SMS
+Credit Card Bill Reminder,200,1,0,Email
+Monthly Statement,167,0,2,Email
+Reward Points Update,105,0,0,Email
+Reward Points Update,185,1,0,Email
+Fraud Alert,60,0,0,SMS
+Payment Confirmation,161,1,1,Email
+Monthly Statement,77,1,0,SMS
+Beneficiary Added Alert,75,0,0,WhatsApp
+Credit Card Bill Reminder,339,0,1,SMS
+KYC Reminder,268,0,1,Push Notification
+Monthly Statement,166,1,0,Push Notification
+Credit Card Bill Reminder,274,1,0,Email
+Payment Confirmation,163,1,0,Push Notification
+Credit Card Bill Reminder,122,1,0,Push Notification
+Reward Points Update,109,0,1,Email
+Low Balance Alert,63,1,2,Email
+Payment Confirmation,134,1,0,Email
+Beneficiary Added Alert,120,0,1,WhatsApp
+Monthly Statement,63,1,2,Push Notification
+Fraud Alert,95,1,0,SMS
+Login OTP,7,1,1,SMS
+Monthly Statement,62,0,2,Email
+Beneficiary Added Alert,101,1,0,WhatsApp
+Low Balance Alert,24,1,0,Email
+Low Balance Alert,61,0,0,Email
+Transaction OTP,12,0,2,Email
+Payment Confirmation,70,1,0,Push Notification
+Payment Confirmation,169,1,1,Email
+Login OTP,4,0,2,SMS
+Monthly Statement,25,0,0,Email
+Fraud Alert,69,1,2,SMS
+Credit Card Bill Reminder,298,0,0,Email
+Credit Card Bill Reminder,150,0,0,Email
+Fraud Alert,48,1,1,SMS
+Credit Card Bill Reminder,117,1,0,Push Notification
+Beneficiary Added Alert,118,1,0,WhatsApp
+Login OTP,11,1,0,SMS
+Transaction OTP,7,0,0,Email
+Reward Points Update,199,0,1,Email
+Beneficiary Added Alert,80,1,0,WhatsApp
+Fraud Alert,101,0,0,SMS
+Credit Card Bill Reminder,243,1,0,Push Notification
+Transaction OTP,12,1,1,Push Notification
+KYC Reminder,105,0,0,Push Notification
+Credit Card Bill Reminder,272,1,0,Email
+Monthly Statement,80,1,2,Push Notification
+KYC Reminder,209,1,1,Push Notification
+Payment Confirmation,51,0,1,Email
+Reward Points Update,36,1,1,Push Notification
+Payment Confirmation,29,0,0,Email
+Low Balance Alert,100,1,1,Push Notification
+Credit Card Bill Reminder,186,1,0,Email
+Credit Card Bill Reminder,312,1,0,Email
+KYC Reminder,148,0,1,Push Notification
+Low Balance Alert,66,1,2,Push Notification
+Transaction OTP,9,1,0,SMS
+Monthly Statement,139,1,2,Push Notification
+Monthly Statement,52,1,1,Push Notification
+Transaction OTP,9,0,0,Email
+Monthly Statement,190,0,0,Email
+Beneficiary Added Alert,108,1,1,WhatsApp
+Reward Points Update,59,1,1,Email
+Fraud Alert,75,0,1,SMS
+Reward Points Update,111,0,0,Email
+Credit Card Bill Reminder,114,0,1,Email
+KYC Reminder,291,1,0,Push Notification
+KYC Reminder,145,1,1,Push Notification
+Payment Confirmation,80,1,0,Push Notification
+Credit Card Bill Reminder,136,0,1,Email
+Monthly Statement,79,0,0,Email
+Login OTP,11,0,2,SMS
+Low Balance Alert,117,1,0,Push Notification
+Reward Points Update,170,1,0,Push Notification
+Low Balance Alert,86,1,0,Push Notification
+Payment Confirmation,172,1,0,Push Notification
+Transaction OTP,8,1,1,Push Notification
+KYC Reminder,278,0,0,Push Notification
+Low Balance Alert,26,0,1,Email
+Login OTP,4,0,0,SMS
+Payment Confirmation,166,1,3,Email
+KYC Reminder,281,1,0,Push Notification
+Monthly Statement,98,1,2,Email
+Low Balance Alert,43,1,0,Email
+Low Balance Alert,104,0,0,Email
+Payment Confirmation,72,1,0,Push Notification
+Payment Confirmation,87,1,1,Email
+Transaction OTP,9,1,1,Push Notification
+Reward Points Update,77,0,0,Email
+Beneficiary Added Alert,31,1,0,WhatsApp
+Payment Confirmation,140,1,1,Email
+Credit Card Bill Reminder,305,1,3,Email
+Login OTP,10,1,0,SMS
+Monthly Statement,98,1,1,Email
+Fraud Alert,117,1,0,SMS
+Monthly Statement,67,1,2,Email
+Payment Confirmation,178,1,0,Email
+Reward Points Update,59,0,0,Email
+Reward Points Update,136,0,2,Email
+Low Balance Alert,104,1,0,Push Notification
+Beneficiary Added Alert,87,0,0,WhatsApp
+Low Balance Alert,43,1,1,SMS
+Fraud Alert,58,1,1,SMS
+Reward Points Update,86,0,0,Email
+KYC Reminder,310,1,0,Push Notification
+KYC Reminder,235,0,1,Push Notification
+Credit Card Bill Reminder,298,1,0,Push Notification
+Reward Points Update,89,0,0,Email
+KYC Reminder,302,0,0,Push Notification
+Transaction OTP,12,0,0,Email
+Monthly Statement,61,1,1,Email
+Monthly Statement,155,1,1,SMS
+KYC Reminder,108,1,1,Push Notification
+Monthly Statement,197,1,0,Push Notification
+Login OTP,12,0,2,SMS
+Fraud Alert,24,1,1,SMS
+Fraud Alert,93,0,0,SMS
+Credit Card Bill Reminder,268,1,0,Push Notification
+Beneficiary Added Alert,41,1,1,WhatsApp
+KYC Reminder,184,1,0,Push Notification
+Transaction OTP,11,0,3,Email
+Monthly Statement,50,1,0,Email
+Credit Card Bill Reminder,297,1,1,Push Notification
+Transaction OTP,8,0,2,Email
+Payment Confirmation,66,1,2,Push Notification
+Credit Card Bill Reminder,188,1,3,Push Notification
+Fraud Alert,25,1,1,SMS
+Credit Card Bill Reminder,273,1,1,Email
+Payment Confirmation,51,1,0,Email
+Reward Points Update,194,1,1,Push Notification
+Payment Confirmation,58,0,1,Email
+Fraud Alert,29,0,2,WhatsApp
+KYC Reminder,259,0,1,Push Notification
+Low Balance Alert,45,1,1,Push Notification
+Login OTP,11,0,0,SMS
+KYC Reminder,167,0,2,Push Notification
+Payment Confirmation,130,0,1,Email
+Fraud Alert,41,1,1,SMS
+Low Balance Alert,105,1,0,Push Notification
+KYC Reminder,188,0,0,Push Notification
+Credit Card Bill Reminder,143,0,1,Email
+Reward Points Update,35,1,0,Push Notification
+Login OTP,12,0,0,SMS
+Monthly Statement,193,0,0,WhatsApp
+Beneficiary Added Alert,104,1,1,WhatsApp
+Credit Card Bill Reminder,212,0,2,Email
+Fraud Alert,21,1,2,SMS
+KYC Reminder,208,1,0,Push Notification
+Beneficiary Added Alert,67,1,0,WhatsApp
+Reward Points Update,107,0,0,Email
+Payment Confirmation,191,0,1,Email
+KYC Reminder,234,1,0,Push Notification
+Fraud Alert,89,0,0,Push Notification
+Transaction OTP,5,1,0,Push Notification
+Reward Points Update,43,0,0,Email
+Credit Card Bill Reminder,117,1,0,Push Notification
+KYC Reminder,253,1,1,SMS
+Credit Card Bill Reminder,207,0,1,Email
+Reward Points Update,45,0,1,Email
+Transaction OTP,12,1,0,Push Notification
+Payment Confirmation,171,0,0,Push Notification
+Reward Points Update,75,1,0,Push Notification
+Transaction OTP,12,1,0,WhatsApp
+Beneficiary Added Alert,111,1,1,Push Notification
+Login OTP,4,0,1,SMS
+KYC Reminder,134,1,1,Push Notification
+Login OTP,9,1,1,SMS
+Low Balance Alert,60,0,0,Email
+Low Balance Alert,74,0,0,Email
+Credit Card Bill Reminder,238,0,0,Email
+Fraud Alert,52,1,2,SMS
+Credit Card Bill Reminder,204,1,0,Push Notification
+Monthly Statement,108,1,2,Email
+Monthly Statement,112,1,3,Email
+Fraud Alert,113,0,0,SMS
+Fraud Alert,23,1,0,SMS
+Reward Points Update,46,1,0,Push Notification
+Low Balance Alert,114,1,0,Push Notification
+Beneficiary Added Alert,92,1,1,WhatsApp
+Credit Card Bill Reminder,133,0,0,Email
+KYC Reminder,321,1,1,Push Notification
+Payment Confirmation,35,1,0,Email
+Transaction OTP,4,0,0,Email
+Monthly Statement,39,1,0,Push Notification
+Beneficiary Added Alert,29,0,1,WhatsApp
+Beneficiary Added Alert,37,0,0,WhatsApp
+Low Balance Alert,66,0,1,Email
+Transaction OTP,7,1,0,Email
+Transaction OTP,8,1,0,Email
+Credit Card Bill Reminder,292,0,1,Email
+Transaction OTP,7,1,0,Push Notification
+Fraud Alert,49,1,0,SMS

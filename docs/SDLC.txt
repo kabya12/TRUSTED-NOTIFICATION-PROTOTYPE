@@ -1,0 +1,79 @@
+SDLC Documentation (Software Development Life Cycle)
+
+Following Waterfall + Agile hybrid suitable for prototypes.
+
+
+3.1 Requirement Analysis
+
+Understand bank needs for reliable notifications.
+
+Identify factors affecting delivery success (channels, retry score, app-installed flag).
+
+Define API endpoints, UI requirements, dataset inputs.
+
+
+3.2 Feasibility Study
+
+Technical, economic, operational feasibility evaluated (above).
+
+Tools and tech stack finalized.
+
+
+3.3 System Design
+Backend Design
+
+FastAPI architecture
+
+/send-notification endpoint
+
+ML model (Decision Tree)
+
+Fallback logic
+
+Logging & replay module
+
+Frontend Design
+
+Streamlit pages
+
+Customer lookup
+
+EDA charts
+
+Data table
+
+Notification testing panel
+
+Replay log panel
+
+Data Flow Diagram
+Dataset → Streamlit UI → ML Model → Channel Prediction → Simulated Send → Logging → Replay
+
+
+3.4 Implementation
+
+Trained ML model on synthetic dataset
+
+Developed backend API for inference
+
+Styled frontend with HDFC-like theme
+
+Added OTP reveal, logging, and replay features
+
+
+
+3.6 Deployment
+
+GitHub → Render (backend)
+
+GitHub → Streamlit Cloud (frontend)
+
+
+
+3.7 Maintenance
+
+New datasets can be uploaded anytime
+
+Logs grow automatically
+
+Model retraining possible

@@ -1,0 +1,4 @@
+timestamp,customer_id,event_type,message,phone,email,app_installed,chosen_channel,provider_message_id,status,otp_demo
+2025-12-09T22:53:54.209241,,Login OTP,Your OTP is 123456,,,True,Push Notification,925b866d-419d-4135-8344-624f06e70dbc,sent,482121
+2025-12-09T22:55:06.644798,74,Login OTP,Your OTP is 123456,,,True,Push Notification,b0a344e5-6893-4aec-8291-be9a8202d4d1,sent,529398
+2025-12-09T23:02:31.401465,,Login OTP,Your OTP is 123456,,,True,Push Notification,0902fae4-bf7f-431a-aac0-d2c5f9444d77,sent,529398,2025-12-09T22:55:06.644798

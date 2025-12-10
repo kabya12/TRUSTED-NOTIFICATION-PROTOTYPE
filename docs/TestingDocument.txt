@@ -1,0 +1,51 @@
+Testing Document (complete)
+4.1 Unit Testing
+Component	Test	Expected Result
+ML model	Predict channel for sample input	Returns one of: SMS, Email, WhatsApp, Push
+Backend	/health	Returns {status: ok}
+Backend	/send-notification	Accepts valid POST payload
+Fallback logic	No phone → choose email/push	Correct fallback applied
+Streamlit UI	Dataset upload	Loads without error
+4.2 Integration Testing
+Test 1 — Full Flow
+
+Input: Customer ID + Event Type + Message
+Process: Streamlit → Backend → Model → Fallback → Response
+Expected: Valid channel + provider message ID + “sent”
+
+Test 2 — Missing fields
+
+Case: No phone, no email, no app
+Expected: Backend returns 400 — No contact method available
+
+4.3 User Acceptance Testing (UAT)
+
+Performed by simulated bank operator:
+
+Search customer → auto-fill fields → send test → check logs
+
+Replay past events → check UI consistency
+
+EDA charts load correctly
+
+Result: Passed ✓
+
+4.4 Regression Testing
+
+After adding replay logic, tested:
+
+Prediction still works
+
+Logs still append correctly
+
+UI components render normally
+
+Result: Passed ✓
+
+4.5 Stress Testing (Limited for Prototype)
+
+Repeatedly sending 50+ test events
+
+No crash or slowdown
+
+Result: Passed ✓
