@@ -84,7 +84,6 @@ def read_file(uploaded_file):
         st.error(f"Failed to read file: {e}")
         return None
 
-
 def load_sample_data():
     candidates = [
         "datasets/Trusted_Notifications_Sample_Events_Updated (1).xlsx",
@@ -120,8 +119,8 @@ TEST_EVENTS_CSV = os.path.join(LOGS_DIR, "test_events.csv")
 
 def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
     """
-    Append a test event row to CSV. Return True if successful, False otherwise.
-    Adds retries and attempts to flush/fsync for better persistence on cloud.
+    Append a test event row to CSV. Return True if successful.
+    Uses flush + fsync when possible to reduce loss on some hosts.
     """
     header = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
     for attempt in range(retries):
@@ -149,21 +148,19 @@ def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
 
 def read_test_events() -> pd.DataFrame:
     """
-    Read logs robustly. Uses the python engine and on_bad_lines='skip' to handle malformed lines.
-    Returns an empty DataFrame with expected columns if reading fails.
+    Robustly read logs. Uses python engine and skips bad lines so stray commas
+    in message text won't break the reader.
     """
     cols = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
     if os.path.exists(TEST_EVENTS_CSV):
         try:
-            # use python engine and skip bad lines to avoid tokenizing errors when messages contain stray commas
+            # keep strings, skip malformed lines
             df = pd.read_csv(TEST_EVENTS_CSV, dtype=str, keep_default_na=False, engine="python", on_bad_lines="skip")
-            # ensure expected columns exist
             for c in cols:
                 if c not in df.columns:
                     df[c] = ""
             return df[cols]
         except Exception:
-            # fallback empty
             return pd.DataFrame(columns=cols)
     else:
         return pd.DataFrame(columns=cols)
@@ -330,13 +327,12 @@ with st.form("test_form"):
     test_app = st.checkbox("App installed?", value=default_app_installed)
     otp_reveal = st.checkbox("Reveal demo OTP (demo-only)", value=False)
 
-    # Optional: use Streamlit secrets for a real backend URL
+    # optional: use Streamlit secrets for a real backend URL
     default_backend = ""
     try:
         default_backend = st.secrets["BACKEND_URL"]
     except Exception:
         default_backend = ""
-
     backend_url = st.text_input("Backend URL (leave blank to use simulated fallback)", value=default_backend or "")
     submit = st.form_submit_button("Run prediction & simulate send")
 
@@ -345,7 +341,7 @@ if submit:
         st.markdown("### Customer history (from uploaded dataset)")
         st.dataframe(customer_history.tail(10), use_container_width=True)
 
-    # generate demo OTP and include into payload/logs
+    # generate demo OTP and include it in payload/log
     otp_value = ""
     if otp_reveal:
         otp_value = f"{random.randint(0,999999):06d}"
@@ -362,11 +358,11 @@ if submit:
     provider_message_id = None
     status = None
 
-    # Decide if using real backend or simulated fallback (cloud-safe)
+    # decide if we call a real backend
     use_simulated = False
     if not backend_url:
         use_simulated = True
-        st.info("No backend URL configured — using local simulated fallback.")
+        st.info("No backend URL configured — using simulated fallback.")
     else:
         if backend_url.startswith("http://127.") or backend_url.startswith("http://localhost"):
             if "RUNNING_LOCALLY" not in os.environ:
@@ -401,7 +397,7 @@ if submit:
         provider_message_id = f"sim-{random.randint(100000,999999)}"
         st.json({"chosen_channel": chosen_channel, "status": status, "provider_message_id": provider_message_id, "note":"simulated fallback used"})
 
-    # log the test event
+    # write the event to logs
     row = {
         "timestamp": datetime.utcnow().isoformat(),
         "customer_id": int(customer_id) if (customer_id and customer_id.isdigit()) else "",
@@ -419,7 +415,7 @@ if submit:
     ok = append_test_event(row)
     if ok:
         st.success("Saved test event to logs/test_events.csv")
-        # show quick snapshot download (useful on ephemeral cloud storage)
+        # present a download snapshot (useful on cloud)
         logs_df = read_test_events()
         if not logs_df.empty:
             buf = BytesIO()
@@ -429,11 +425,11 @@ if submit:
     else:
         st.error("Failed to save test event to logs/test_events.csv")
 
-# ---------------- Unified Logs + Replay module ----------------
+# ---------------- LOGS VIEWER (SIMPLE, NO REPLAY) ----------------
 st.markdown("---")
-st.markdown("## 🔍 Unified Logs & Replay")
+st.markdown("## 🔍 Test Event Logs (Saved Predictions Only)")
 
-# Show logs folder contents (helpful to debug)
+# show logs dir contents (helpful)
 if os.path.exists(LOGS_DIR):
     files = os.listdir(LOGS_DIR)
     if files:
@@ -448,167 +444,46 @@ if os.path.exists(LOGS_DIR):
     else:
         st.info("Logs folder exists but is empty.")
 else:
-    st.info("Logs folder not found (it will be created after first test event).")
+    st.info("Logs folder not found. It will be created after the first prediction is logged.")
 
-# Refresh control
+# refresh control
 if st.button("Refresh logs"):
-    # try modern rerun / fallback
     try:
         st.rerun()
     except Exception:
-        try:
-            st.experimental_rerun()
-        except Exception:
-            pass
+        pass
 
-# Read logs (robust)
+# load logs
 logs_df = read_test_events()
 
 if logs_df.empty:
-    st.info("No test events found yet — run a test notification to generate logs.")
+    st.info("No test events logged yet — run a prediction to generate logs.")
 else:
-    st.markdown("### 📄 test_events.csv — latest rows")
-    # color-code the 'status' column
+    st.markdown("### 📄 Saved Predictions (Latest 200 rows)")
+
     def status_color(val):
         v = str(val).lower()
-        if v in ("sent","ok"):
-            return "background-color: #d4f7d4"  # green-ish
+        if v in ("sent", "ok"):
+            return "background-color: #d4f7d4"
         if "sim" in v or v == "simulated":
-            return "background-color: #fff4cc"  # yellow-ish
-        if v in ("failed","error","failed_to_send"):
-            return "background-color: #ffd6d6"  # red-ish
+            return "background-color: #fff4cc"
+        if v in ("failed", "error", "failed_to_send"):
+            return "background-color: #ffd6d6"
         return ""
 
-    display_df = logs_df.copy()
-    display_df = display_df.reset_index(drop=False).rename(columns={"index":"log_index"})
-    # show a styled table in dataframe area (note: Streamlit displays Styler as static HTML in some versions)
+    view = logs_df.reset_index(drop=False).rename(columns={"index": "log_index"})
     try:
-        styled = display_df.tail(200).style.applymap(status_color, subset=["status"])
+        styled = view.tail(200).style.applymap(status_color, subset=["status"])
         st.dataframe(styled, use_container_width=True)
     except Exception:
-        # fallback plain
-        st.dataframe(display_df.tail(200), use_container_width=True)
+        st.dataframe(view.tail(200), use_container_width=True)
 
-    # Download snapshot
+    # download button
     csv_buf = BytesIO()
     logs_df.to_csv(csv_buf, index=False)
     csv_buf.seek(0)
-    st.download_button("Download test_events.csv", data=csv_buf, file_name="test_events.csv", mime="text/csv")
+    st.download_button("Download test_events.csv (all logs)", data=csv_buf, file_name="test_events.csv", mime="text/csv")
 
-    # Replay controls: operate on the same logs table
-    st.markdown("### ▶️ Replay an event from the logs")
-    # Build select options: show newest first
-    display_df["label"] = display_df.apply(lambda r: f"{r['log_index']} • {r['timestamp']} • cust:{r['customer_id'] or '-'} • {r['event_type']}", axis=1)
-    options = display_df["label"].tolist()[::-1]
-    selected_label = st.selectbox("Select event to replay", options=options) if options else None
-
-    if selected_label:
-        idx = int(selected_label.split(" • ")[0])
-        selected_row = display_df[display_df["log_index"] == idx].iloc[0].to_dict()
-        st.markdown("Selected event details")
-        st.json({k: selected_row.get(k) for k in display_df.columns if k != "label"})
-
-        # backend replay URL input (default from secrets if set)
-        default_backend_replay = ""
-        try:
-            default_backend_replay = st.secrets["BACKEND_URL"]
-        except Exception:
-            default_backend_replay = ""
-
-        backend_url_replay = st.text_input("Backend URL for replay (leave blank to simulate)", value=default_backend_replay or "")
-        if st.button("Replay selected event"):
-            replay_payload = {
-                "event_type": selected_row.get("event_type", ""),
-                "message": selected_row.get("message", ""),
-                "contact": {
-                    "phone": selected_row.get("phone") or None,
-                    "email": selected_row.get("email") or None,
-                    "app_installed": True if str(selected_row.get("app_installed")).lower() in ("true","1","yes") else False
-                },
-                "demo_otp": selected_row.get("otp_demo") or None
-            }
-
-            use_simulated_replay = False
-            if not backend_url_replay:
-                use_simulated_replay = True
-            elif backend_url_replay.startswith("http://127.") or backend_url_replay.startswith("http://localhost"):
-                if "RUNNING_LOCALLY" not in os.environ:
-                    use_simulated_replay = True
-                    st.warning("Replay backend points to localhost; using simulated replay on cloud.")
-
-            resp2 = None
-            try:
-                if not use_simulated_replay:
-                    r2 = requests.post(f"{backend_url_replay.rstrip('/')}/send-notification", json=replay_payload, timeout=8)
-                    r2.raise_for_status()
-                    resp2 = r2.json()
-                else:
-                    # simulated response
-                    if replay_payload["contact"]["app_installed"]:
-                        chosen = "Push Notification"
-                    elif replay_payload["contact"]["phone"]:
-                        chosen = "SMS"
-                    elif replay_payload["contact"]["email"]:
-                        chosen = "Email"
-                    else:
-                        chosen = "Email"
-                    fake_provider = f"replay-sim-{random.randint(100000,999999)}"
-                    resp2 = {"chosen_channel": chosen, "status": "simulated", "provider_message_id": fake_provider}
-                    st.json(resp2)
-
-                if resp2 is not None:
-                    st.success("Replay response:")
-                    st.json(resp2)
-                    new_row = {
-                        "timestamp": datetime.utcnow().isoformat(),
-                        "customer_id": int(selected_row.get("customer_id")) if str(selected_row.get("customer_id")).isdigit() else "",
-                        "event_type": selected_row.get("event_type", ""),
-                        "message": selected_row.get("message", ""),
-                        "phone": selected_row.get("phone", ""),
-                        "email": selected_row.get("email", ""),
-                        "app_installed": selected_row.get("app_installed"),
-                        "chosen_channel": resp2.get("chosen_channel", ""),
-                        "provider_message_id": resp2.get("provider_message_id", ""),
-                        "status": resp2.get("status", ""),
-                        "otp_demo": selected_row.get("otp_demo", ""),
-                        "replayed_from": selected_row.get("timestamp", "")
-                    }
-                    ok2 = append_test_event(new_row)
-                    if ok2:
-                        st.success("Replay saved to test events log.")
-                    else:
-                        st.error("Failed to save replay to logs.")
-            except Exception as e:
-                st.error("Replay failed; showing simulated fallback.")
-                st.write(str(e))
-                # fallback simulated
-                if replay_payload["contact"]["app_installed"]:
-                    chosen = "Push Notification"
-                elif replay_payload["contact"]["phone"]:
-                    chosen = "SMS"
-                elif replay_payload["contact"]["email"]:
-                    chosen = "Email"
-                else:
-                    chosen = "Email"
-                fake_provider = f"replay-sim-{random.randint(100000,999999)}"
-                st.json({"chosen_channel": chosen, "status": "simulated", "provider_message_id": fake_provider})
-                fallback_row = {
-                    "timestamp": datetime.utcnow().isoformat(),
-                    "customer_id": int(selected_row.get("customer_id")) if str(selected_row.get("customer_id")).isdigit() else "",
-                    "event_type": selected_row.get("event_type", ""),
-                    "message": selected_row.get("message", ""),
-                    "phone": selected_row.get("phone", ""),
-                    "email": selected_row.get("email", ""),
-                    "app_installed": selected_row.get("app_installed"),
-                    "chosen_channel": chosen,
-                    "provider_message_id": fake_provider,
-                    "status": "simulated",
-                    "otp_demo": selected_row.get("otp_demo", ""),
-                    "replayed_from": selected_row.get("timestamp", "")
-                }
-                append_test_event(fallback_row)
-
-# ---------------- Footer guidance ----------------
 st.markdown("---")
-st.info("Note: Streamlit Cloud filesystem is ephemeral. Download logs after demos or configure remote storage (S3 / DB) for persistence.")
+st.info("Note: On Streamlit Cloud the filesystem is ephemeral. Download logs after demos or configure remote storage (S3/DB) for persistence.")
 st.caption("Dashboard prototype : Trusted Notifications. Place your datasets under datasets/ or upload via the sidebar.")
