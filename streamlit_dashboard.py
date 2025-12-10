@@ -122,10 +122,10 @@ def read_file(uploaded_file):
 
 def load_sample_data():
     candidates = [
-        str(BASE_DIR / "datasets" / "Trusted_Notifications_Sample_Events_Updated (1).xlsx"),
-        str(BASE_DIR / "datasets" / "Trusted_Notifications_Sample_Events_Updated.xlsx"),
-        str(BASE_DIR / "datasets" / "Event_Type_Stats (1).xlsx"),
-        str(BASE_DIR / "data" / "sample_events.csv"),
+        "datasets/Trusted_Notifications_Sample_Events_Updated (1).xlsx",
+        "datasets/Trusted_Notifications_Sample_Events_Updated.xlsx",
+        "datasets/Event_Type_Stats (1).xlsx",
+        "data/sample_events.csv",
     ]
     for p in candidates:
         if os.path.exists(p):
@@ -148,32 +148,58 @@ def load_sample_data():
     })
     return df
 
+# ---------------- Logging utilities (robust & atomic) ----------------
+LOGS_DIR = os.path.join(os.getcwd(), "logs")
+os.makedirs(LOGS_DIR, exist_ok=True)
+TEST_EVENTS_CSV = os.path.join(LOGS_DIR, "test_events.csv")
 
-# ---------------- Logging utilities ----------------
-def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
+LOG_HEADER = [
+    "timestamp","customer_id","event_type","message","phone","email",
+    "app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"
+]
+
+def append_test_event_atomic(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
     """
-    Append a test event row to CSV. Return True if successful.
-    Uses flush + fsync when possible to reduce loss on some hosts.
+    Robust append implemented as: read existing rows -> append -> write temp -> atomic replace.
+    This avoids partial/corrupted files when multiple writes happen.
     """
-    header = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
     for attempt in range(retries):
         try:
-            exists = TEST_EVENTS_CSV.exists()
-            # Use text mode write with newline='' for CSV portability
-            with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
-                writer = csv.DictWriter(f, fieldnames=header, extrasaction="ignore", quoting=csv.QUOTE_MINIMAL)
-                if not exists:
-                    writer.writeheader()
-                writer.writerow(row)
+            # read existing rows (if any) using csv.DictReader to be robust against weird quoting
+            existing = []
+            if os.path.exists(TEST_EVENTS_CSV):
                 try:
-                    f.flush()
-                    os.fsync(f.fileno())
+                    with open(TEST_EVENTS_CSV, "r", newline="", encoding="utf-8") as rf:
+                        reader = csv.DictReader(rf)
+                        for r in reader:
+                            # keep only header keys (ignore stray columns)
+                            entry = {k: r.get(k, "") for k in LOG_HEADER}
+                            existing.append(entry)
                 except Exception:
-                    # ignore fsync errors on restricted environments
+                    # if reading fails, fall back to treating as empty (we'll rewrite the file)
+                    existing = []
+
+            # append new row (ensure all keys present as strings)
+            normalized = {k: (str(row.get(k, "")) if row.get(k,"") is not None else "") for k in LOG_HEADER}
+            existing.append(normalized)
+
+            # write to a temp file in same directory then atomic replace
+            fd, tmp_path = tempfile.mkstemp(dir=LOGS_DIR, prefix="tmp_logs_", suffix=".csv")
+            os.close(fd)
+            with open(tmp_path, "w", newline="", encoding="utf-8") as wf:
+                writer = csv.DictWriter(wf, fieldnames=LOG_HEADER, extrasaction="ignore", quoting=csv.QUOTE_MINIMAL)
+                writer.writeheader()
+                for r in existing:
+                    writer.writerow(r)
+                try:
+                    wf.flush()
+                    os.fsync(wf.fileno())
+                except Exception:
                     pass
+            # atomic replace
+            os.replace(tmp_path, TEST_EVENTS_CSV)
             return True
         except Exception:
-            # transient error -> retry
             if attempt < retries - 1:
                 time.sleep(delay)
                 continue
@@ -181,26 +207,22 @@ def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
                 return False
     return False
 
-
-def read_test_events() -> pd.DataFrame:
+def read_test_events_csv() -> pd.DataFrame:
     """
-    Robustly read logs. Use python engine and skip malformed lines so stray commas
-    in message text won't break the reader. Always return DataFrame with expected columns.
+    Read logs using csv module to avoid pandas tokenization issues.
+    Returns a DataFrame (strings) with expected columns.
     """
-    cols = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
-    if TEST_EVENTS_CSV.exists():
+    rows = []
+    if os.path.exists(TEST_EVENTS_CSV):
         try:
-            df = pd.read_csv(TEST_EVENTS_CSV, dtype=str, keep_default_na=False, engine="python", on_bad_lines="skip")
-            # Ensure columns exist and keep order
-            for c in cols:
-                if c not in df.columns:
-                    df[c] = ""
-            return df[cols]
+            with open(TEST_EVENTS_CSV, "r", newline="", encoding="utf-8") as rf:
+                reader = csv.DictReader(rf)
+                for r in reader:
+                    rows.append({k: r.get(k, "") for k in LOG_HEADER})
         except Exception:
-            return pd.DataFrame(columns=cols)
-    else:
-        return pd.DataFrame(columns=cols)
-
+            # if read fails return empty with header
+            return pd.DataFrame(columns=LOG_HEADER)
+    return pd.DataFrame(rows, columns=LOG_HEADER)
 
 # ---------------- Sidebar controls ----------------
 st.sidebar.title("Data & Controls")
@@ -230,8 +252,7 @@ delivered = st.sidebar.selectbox("Delivered?", options=["All","Y","N"])
 st.sidebar.markdown("---")
 st.sidebar.caption("Trusted Notifications — Dashboard prototype")
 
-
-# ---------------- Main layout / summary ----------------
+# ---------------- Main layout / charts / preview ----------------
 col1, col2 = st.columns([1,3])
 with col1:
     st.markdown("### Summary")
@@ -251,8 +272,6 @@ with col2:
     st.write("Explore the data, test the model, and visualize channel distributions and retry patterns.")
     st.markdown("---")
 
-
-# ---------------- Filters helper ----------------
 def apply_filters(df):
     if df is None:
         return df
@@ -272,8 +291,6 @@ def apply_filters(df):
 
 df_filtered = apply_filters(df)
 
-
-# ---------------- Charts ----------------
 st.markdown("### Channel distribution")
 if df is None:
     st.info("Load data to see charts.")
@@ -289,7 +306,6 @@ else:
         st.altair_chart(bar, use_container_width=True)
     else:
         st.write("No 'Intended_Channel' column found in dataset.")
-
 
 colA, colB = st.columns(2)
 with colA:
@@ -316,23 +332,18 @@ with colB:
         st.write("No Event_Type column.")
 
 st.markdown("---")
-
-
-# ---------------- Data preview ----------------
 st.markdown("### Data preview")
 if df_filtered is None:
     st.info("No dataset loaded.")
 else:
     st.dataframe(df_filtered.head(200), use_container_width=True)
 
-
-# ---------------- Test / simulated send panel ----------------
+# ---------------- Test form ----------------
 st.markdown("---")
 st.markdown("## Test channel decision & simulate send")
 with st.form("test_form"):
     customer_id = st.text_input("Customer ID (optional)", "")
 
-    # autofill contact info if present in dataset
     default_phone = ""
     default_email = ""
     default_app_installed = False
@@ -370,7 +381,6 @@ with st.form("test_form"):
     test_app = st.checkbox("App installed?", value=default_app_installed)
     otp_reveal = st.checkbox("Reveal demo OTP (demo-only)", value=False)
 
-    default_backend = ""
     try:
         default_backend = st.secrets["BACKEND_URL"]
     except Exception:
@@ -383,7 +393,6 @@ if submit:
         st.markdown("### Customer history (from uploaded dataset)")
         st.dataframe(customer_history.tail(10), use_container_width=True)
 
-    # generate demo OTP and include it in payload/log
     otp_value = ""
     if otp_reveal:
         otp_value = f"{random.randint(0,999999):06d}"
@@ -400,7 +409,6 @@ if submit:
     provider_message_id = None
     status = None
 
-    # decide if we call a real backend
     use_simulated = False
     if not backend_url:
         use_simulated = True
@@ -439,7 +447,7 @@ if submit:
         provider_message_id = f"sim-{random.randint(100000,999999)}"
         st.json({"chosen_channel": chosen_channel, "status": status, "provider_message_id": provider_message_id, "note":"simulated fallback used"})
 
-    # write the event to logs
+    # write the event atomically
     row = {
         "timestamp": datetime.utcnow().isoformat(),
         "customer_id": int(customer_id) if (customer_id and customer_id.isdigit()) else "",
@@ -454,47 +462,55 @@ if submit:
         "otp_demo": otp_value or "",
         "replayed_from": ""
     }
-    ok = append_test_event(row)
+    ok = append_test_event_atomic(row)
     if ok:
         st.success("Saved test event to logs/test_events.csv")
-        # immediate rerun to pick up the new row in the viewer
-        do_rerun()
+        # show download snapshot (useful on ephemeral cloud)
+        logs_df = read_test_events_csv()
+        if not logs_df.empty:
+            buf = BytesIO()
+            logs_df.to_csv(buf, index=False)
+            buf.seek(0)
+            st.download_button("Download latest test_events.csv (snapshot)", data=buf, file_name="test_events.csv", mime="text/csv")
     else:
         st.error("Failed to save test event to logs/test_events.csv")
 
-
-# ---------------- LOGS VIEWER (SIMPLE, NO REPLAY) ----------------
+# ---------------- LOGS VIEWER (simple) ----------------
 st.markdown("---")
 st.markdown("## 🔍 Test Event Logs (Saved Predictions Only)")
 
-# show logs dir contents (helpful)
-if LOGS_DIR.exists():
-    files = sorted(os.listdir(LOGS_DIR))
+# show logs dir contents
+if os.path.exists(LOGS_DIR):
+    files = os.listdir(LOGS_DIR)
     if files:
         st.write("**Files in logs/**")
         for f in files:
-            full = LOGS_DIR / f
+            full = os.path.join(LOGS_DIR, f)
             try:
-                size = full.stat().st_size
+                size = os.path.getsize(full)
+                mtime = datetime.fromtimestamp(os.path.getmtime(full)).isoformat()
             except Exception:
                 size = 0
-            st.write(f"- `{f}` — {size} bytes")
+                mtime = ""
+            st.write(f"- `{f}` — {size} bytes — last modified: {mtime}")
     else:
         st.info("Logs folder exists but is empty.")
 else:
     st.info("Logs folder not found. It will be created after the first prediction is logged.")
 
-# refresh control (safe)
+# refresh control
 if st.button("Refresh logs"):
-    do_rerun()
+    try:
+        st.rerun()
+    except Exception:
+        pass
 
-# load logs
-logs_df = read_test_events()
+logs_df = read_test_events_csv()
 
 if logs_df.empty:
     st.info("No test events logged yet — run a prediction to generate logs.")
 else:
-    st.markdown("### 📄 Saved Predictions (Latest 200 rows)")
+    st.markdown("### 📄 Saved Predictions (Latest rows)")
 
     def status_color(val):
         v = str(val).lower()
