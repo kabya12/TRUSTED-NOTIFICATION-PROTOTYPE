@@ -9,6 +9,7 @@ from io import BytesIO
 from datetime import datetime
 import random
 import csv
+from requests.exceptions import RequestException, ConnectionError
 
 # ---------------- Page config & theme colors ----------------
 st.set_page_config(page_title="Trusted Notifications Dashboard", layout="wide")
@@ -274,7 +275,7 @@ if df_filtered is None:
 else:
     st.dataframe(df_filtered.head(200))
 
-# ---------------- Model Test / Send Notification panel ----------------
+# ---------------- Model Test / Send Notification panel (cloud-safe) ----------------
 st.markdown("---")
 st.markdown("## Test channel decision & simulate send")
 
@@ -323,8 +324,15 @@ with st.form("test_form"):
     test_app = st.checkbox("App installed?", value=default_app_installed)
     # demo-only OTP reveal option
     otp_reveal = st.checkbox("Reveal demo OTP (demo-only)", value=False)
-    # backend url inside the form so it is included when submitted
-    backend_url = st.text_input("Backend URL (leave default for local)", value="http://127.0.0.1:8000")
+
+    # Use Streamlit secret BACKEND_URL if present (recommended) — otherwise leave blank for simulated fallback
+    default_backend = ""
+    try:
+        default_backend = st.secrets["BACKEND_URL"]
+    except Exception:
+        default_backend = ""
+
+    backend_url = st.text_input("Backend URL (leave blank to use simulated fallback)", value=default_backend or "")
     submit = st.form_submit_button("Run prediction & simulate send")
 
 if submit:
@@ -349,19 +357,36 @@ if submit:
     provider_message_id = None
     status = None
 
-    try:
-        r = requests.post(f"{backend_url.rstrip('/')}/send-notification", json=payload, timeout=8)
-        r.raise_for_status()
-        resp = r.json()
-        st.success("Backend response:")
-        st.json(resp)
-        chosen_channel = resp.get("chosen_channel")
-        provider_message_id = resp.get("provider_message_id")
-        status = resp.get("status")
-    except Exception as e:
-        st.error("Backend request failed; showing local fallback result.")
-        st.write(e)
-        # simple fallback decision (rules)
+    # Decide whether to call a real backend or use simulated fallback
+    use_simulated = False
+    if not backend_url:
+        use_simulated = True
+        st.info("No backend URL configured — using local simulated fallback.")
+    else:
+        # avoid calling localhost from cloud
+        if backend_url.startswith("http://127.") or backend_url.startswith("http://localhost"):
+            if "RUNNING_LOCALLY" not in os.environ:
+                use_simulated = True
+                st.warning("Backend URL points to localhost. On Streamlit Cloud the app cannot reach localhost — using simulated fallback.")
+
+    # Try real backend if allowed
+    if not use_simulated:
+        try:
+            r = requests.post(f"{backend_url.rstrip('/')}/send-notification", json=payload, timeout=8)
+            r.raise_for_status()
+            resp = r.json()
+            st.success("Backend response:")
+            st.json(resp)
+            chosen_channel = resp.get("chosen_channel")
+            provider_message_id = resp.get("provider_message_id")
+            status = resp.get("status")
+        except (ConnectionError, RequestException) as e:
+            st.error("Backend request failed; showing local fallback result.")
+            st.write(str(e))
+            use_simulated = True
+
+    # Simulated fallback
+    if use_simulated:
         if test_app:
             chosen_channel = "Push Notification"
         elif test_phone:
@@ -372,7 +397,7 @@ if submit:
             chosen_channel = "Email"
         status = "simulated"
         provider_message_id = f"sim-{random.randint(100000,999999)}"
-        st.json({"chosen_channel": chosen_channel, "status": status, "provider_message_id": provider_message_id})
+        st.json({"chosen_channel": chosen_channel, "status": status, "provider_message_id": provider_message_id, "note":"simulated fallback used"})
 
     # append the test event to logs/test_events.csv
     row = {
@@ -447,34 +472,66 @@ with colx:
                         "app_installed": bool(selected_row.get("app_installed"))
                     }
                 }
-                # call backend
+
+                # cloud-safe replay backend selection
+                default_backend_replay = ""
                 try:
-                    backend_url_replay = st.text_input("Backend URL for replay", value="http://127.0.0.1:8000")
-                    r2 = requests.post(f"{backend_url_replay.rstrip('/')}/send-notification", json=replay_payload, timeout=8)
-                    r2.raise_for_status()
-                    resp2 = r2.json()
-                    st.success("Replay backend response:")
-                    st.json(resp2)
-                    # Append a new log row indicating replay
-                    new_row = {
-                        "timestamp": datetime.utcnow().isoformat(),
-                        "customer_id": int(selected_row.get("customer_id")) if str(selected_row.get("customer_id")).isdigit() else "",
-                        "event_type": selected_row.get("event_type", ""),
-                        "message": selected_row.get("message", ""),
-                        "phone": selected_row.get("phone", ""),
-                        "email": selected_row.get("email", ""),
-                        "app_installed": bool(selected_row.get("app_installed")),
-                        "chosen_channel": resp2.get("chosen_channel", ""),
-                        "provider_message_id": resp2.get("provider_message_id", ""),
-                        "status": resp2.get("status", ""),
-                        "otp_demo": selected_row.get("otp_demo", ""),
-                        "replayed_from": selected_row.get("timestamp", "")
-                    }
-                    append_test_event(new_row)
-                    st.success("Replay saved to test events log.")
+                    default_backend_replay = st.secrets["BACKEND_URL"]
+                except Exception:
+                    default_backend_replay = ""
+
+                backend_url_replay = st.text_input("Backend URL for replay (leave blank to simulate)", value=default_backend_replay or "")
+                use_simulated_replay = False
+                if not backend_url_replay:
+                    use_simulated_replay = True
+                elif backend_url_replay.startswith("http://127.") or backend_url_replay.startswith("http://localhost"):
+                    if "RUNNING_LOCALLY" not in os.environ:
+                        use_simulated_replay = True
+                        st.warning("Backend replay URL points to localhost; using simulated replay on cloud.")
+
+                resp2 = None
+                try:
+                    if not use_simulated_replay:
+                        r2 = requests.post(f"{backend_url_replay.rstrip('/')}/send-notification", json=replay_payload, timeout=8)
+                        r2.raise_for_status()
+                        resp2 = r2.json()
+                    else:
+                        # create a simulated response
+                        if selected_row.get("app_installed"):
+                            chosen = "Push Notification"
+                        elif selected_row.get("phone"):
+                            chosen = "SMS"
+                        elif selected_row.get("email"):
+                            chosen = "Email"
+                        else:
+                            chosen = "Email"
+                        fake_provider = f"replay-sim-{random.randint(100000,999999)}"
+                        resp2 = {"chosen_channel": chosen, "status": "simulated", "provider_message_id": fake_provider}
+                        st.json(resp2)
+
+                    # If we have resp2, show and log it
+                    if resp2 is not None:
+                        st.success("Replay response:")
+                        st.json(resp2)
+                        new_row = {
+                            "timestamp": datetime.utcnow().isoformat(),
+                            "customer_id": int(selected_row.get("customer_id")) if str(selected_row.get("customer_id")).isdigit() else "",
+                            "event_type": selected_row.get("event_type", ""),
+                            "message": selected_row.get("message", ""),
+                            "phone": selected_row.get("phone", ""),
+                            "email": selected_row.get("email", ""),
+                            "app_installed": bool(selected_row.get("app_installed")),
+                            "chosen_channel": resp2.get("chosen_channel", ""),
+                            "provider_message_id": resp2.get("provider_message_id", ""),
+                            "status": resp2.get("status", ""),
+                            "otp_demo": selected_row.get("otp_demo", ""),
+                            "replayed_from": selected_row.get("timestamp", "")
+                        }
+                        append_test_event(new_row)
+                        st.success("Replay saved to test events log.")
                 except Exception as e:
                     st.error("Replay failed; showing local fallback result.")
-                    st.write(e)
+                    st.write(str(e))
                     # fallback determined from the saved record
                     if selected_row.get("app_installed"):
                         chosen = "Push Notification"
