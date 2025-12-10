@@ -10,6 +10,7 @@ from datetime import datetime
 import random
 import csv
 from requests.exceptions import RequestException, ConnectionError
+import time
 
 # ---------------- Page config & theme colors ----------------
 st.set_page_config(page_title="Trusted Notifications Dashboard", layout="wide")
@@ -139,22 +140,54 @@ LOGS_DIR = os.path.join(os.getcwd(), "logs")
 os.makedirs(LOGS_DIR, exist_ok=True)
 TEST_EVENTS_CSV = os.path.join(LOGS_DIR, "test_events.csv")
 
-def append_test_event(row: dict):
+def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
+    """
+    Append a test event row to CSV. Return True if successful, False otherwise.
+    Adds simple retries and fsync to reduce persistence problems on some hosts.
+    """
     header = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
-    exists = os.path.exists(TEST_EVENTS_CSV)
-    with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=header)
-        if not exists:
-            writer.writeheader()
-        writer.writerow(row)
+    for attempt in range(retries):
+        try:
+            exists = os.path.exists(TEST_EVENTS_CSV)
+            with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=header)
+                if not exists:
+                    writer.writeheader()
+                writer.writerow(row)
+                try:
+                    f.flush()
+                    os.fsync(f.fileno())
+                except Exception:
+                    # some platforms disallow fsync; ignore but don't fail
+                    pass
+            return True
+        except Exception as e:
+            # transient error; retry a couple times
+            if attempt < retries - 1:
+                time.sleep(delay)
+                continue
+            else:
+                return False
+    return False
 
 def read_test_events():
+    """
+    Return a DataFrame of test events. If file not present or cannot be read,
+    return an empty DataFrame with the expected columns.
+    """
+    cols = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
     if os.path.exists(TEST_EVENTS_CSV):
         try:
-            return pd.read_csv(TEST_EVENTS_CSV)
+            df = pd.read_csv(TEST_EVENTS_CSV)
+            # ensure columns exist
+            for c in cols:
+                if c not in df.columns:
+                    df[c] = ""
+            return df
         except Exception:
-            return None
-    return None
+            return pd.DataFrame(columns=cols)
+    else:
+        return pd.DataFrame(columns=cols)
 
 # ---------------- Sidebar controls ----------------
 st.sidebar.title("Data & Controls")
@@ -341,7 +374,7 @@ if submit:
         st.markdown("### Customer history (from uploaded dataset)")
         st.dataframe(customer_history.tail(10))
 
-    # generate demo OTP if user asked for it (6 digit)
+    # generate demo OTP before building payload so it is included in logs/payload
     otp_value = ""
     if otp_reveal:
         otp_value = f"{random.randint(0,999999):06d}"
@@ -350,7 +383,9 @@ if submit:
     payload = {
         "event_type": test_event,
         "message": test_msg,
-        "contact": {"phone": test_phone or None, "email": test_email or None, "app_installed": bool(test_app)}
+        "contact": {"phone": test_phone or None, "email": test_email or None, "app_installed": bool(test_app)},
+        # include demo otp in payload for debugging/demo purposes (safe for demo)
+        "demo_otp": otp_value or None
     }
 
     chosen_channel = None
@@ -414,12 +449,11 @@ if submit:
         "otp_demo": otp_value or "",
         "replayed_from": ""
     }
-    try:
-        append_test_event(row)
+    ok = append_test_event(row)
+    if ok:
         st.success("Saved test event to logs/test_events.csv")
-    except Exception as e:
-        st.error("Failed to save test event:")
-        st.write(e)
+    else:
+        st.error("Failed to save test event to logs/test_events.csv")
 
 # ---------------- Bottom logs / export & REPLAY ----------------
 st.markdown("---")
@@ -435,8 +469,9 @@ with colx:
         else:
             st.warning("No data to download.")
     # allow downloading logs of past test events
+    # re-read logs to ensure latest content
     test_events_df = read_test_events()
-    if test_events_df is not None:
+    if not test_events_df.empty:
         st.markdown("#### Test events log")
         st.dataframe(test_events_df.tail(50))
         csv_buffer = BytesIO()
@@ -470,7 +505,9 @@ with colx:
                         "phone": selected_row.get("phone") or None,
                         "email": selected_row.get("email") or None,
                         "app_installed": bool(selected_row.get("app_installed"))
-                    }
+                    },
+                    # include previous demo OTP if present
+                    "demo_otp": selected_row.get("otp_demo") or None
                 }
 
                 # cloud-safe replay backend selection
@@ -527,8 +564,11 @@ with colx:
                             "otp_demo": selected_row.get("otp_demo", ""),
                             "replayed_from": selected_row.get("timestamp", "")
                         }
-                        append_test_event(new_row)
-                        st.success("Replay saved to test events log.")
+                        ok2 = append_test_event(new_row)
+                        if ok2:
+                            st.success("Replay saved to test events log.")
+                        else:
+                            st.error("Failed to save replay to logs.")
                 except Exception as e:
                     st.error("Replay failed; showing local fallback result.")
                     st.write(str(e))
