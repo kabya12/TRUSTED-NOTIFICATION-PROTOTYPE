@@ -101,7 +101,18 @@ def read_file(uploaded_file):
         if name.endswith(".csv"):
             return pd.read_csv(uploaded_file)
         elif name.endswith((".xlsx", ".xls")):
-            return pd.read_excel(uploaded_file)
+            # try to read Excel; if openpyxl is missing show friendly error
+            try:
+                return pd.read_excel(uploaded_file, engine="openpyxl")
+            except ImportError:
+                st.error(
+                    "Reading Excel files requires the optional package `openpyxl`. "
+                    "Install it with `pip install openpyxl` (and add it to requirements.txt for deployment)."
+                )
+                return None
+            except Exception as e:
+                st.error(f"Failed to parse Excel file: {e}")
+                return None
         else:
             return pd.read_csv(uploaded_file)
     except Exception as e:
