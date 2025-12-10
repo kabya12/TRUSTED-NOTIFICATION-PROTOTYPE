@@ -10,7 +10,6 @@ from datetime import datetime
 import random
 import csv
 import time
-from requests.exceptions import RequestException, ConnectionError
 from pathlib import Path
 
 # ---------------- Page config & theme colors ----------------
@@ -21,11 +20,16 @@ ACCENT_ORANGE = "#FF6A00"
 NAVY = "#073763"
 BG = "#F4F8FB"
 
-# ---------------- Base paths (use script directory for stability) ----------------
+# ---------------- Base paths (script dir for stability) ----------------
 BASE_DIR = Path(__file__).resolve().parent
 LOGS_DIR = BASE_DIR / "logs"
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 TEST_EVENTS_CSV = LOGS_DIR / "test_events.csv"
+
+LOG_HEADER = [
+    "timestamp", "customer_id", "event_type", "message", "phone", "email",
+    "app_installed", "chosen_channel", "provider_message_id", "status", "otp_demo", "replayed_from"
+]
 
 # ---------------- Branded header / CSS ----------------
 st.markdown(
@@ -79,21 +83,14 @@ st.markdown(
 
 # ---------------- Helpers ----------------
 def do_rerun():
-    """
-    Safely request a Streamlit rerun. Try the most recent API first (st.rerun),
-    fall back to older experimental_rerun if available.
-    If neither is available, do nothing.
-    """
+    """Try to rerun Streamlit safely."""
     try:
         st.rerun()
     except Exception:
         try:
-            # older Streamlit versions
             st.experimental_rerun()
         except Exception:
-            # cannot force rerun — leave as-is
             pass
-
 
 def read_file(uploaded_file):
     name = uploaded_file.name.lower()
@@ -101,14 +98,10 @@ def read_file(uploaded_file):
         if name.endswith(".csv"):
             return pd.read_csv(uploaded_file)
         elif name.endswith((".xlsx", ".xls")):
-            # try to read Excel; if openpyxl is missing show friendly error
             try:
                 return pd.read_excel(uploaded_file, engine="openpyxl")
             except ImportError:
-                st.error(
-                    "Reading Excel files requires the optional package `openpyxl`. "
-                    "Install it with `pip install openpyxl` (and add it to requirements.txt for deployment)."
-                )
+                st.error("Reading Excel files requires `openpyxl`. Install it and add to requirements.")
                 return None
             except Exception as e:
                 st.error(f"Failed to parse Excel file: {e}")
@@ -118,7 +111,6 @@ def read_file(uploaded_file):
     except Exception as e:
         st.error(f"Failed to read file: {e}")
         return None
-
 
 def load_sample_data():
     candidates = [
@@ -148,77 +140,84 @@ def load_sample_data():
     })
     return df
 
-# ---------------- Logging utilities (robust & atomic) ----------------
-LOGS_DIR = os.path.join(os.getcwd(), "logs")
-os.makedirs(LOGS_DIR, exist_ok=True)
-TEST_EVENTS_CSV = os.path.join(LOGS_DIR, "test_events.csv")
+# ---------------- Logging (robust + fallback buffer) ----------------
+def _write_row_to_file(row: dict) -> None:
+    """Low level: write a normalized row to CSV path. Raises on failure."""
+    header = LOG_HEADER
+    file_exists = TEST_EVENTS_CSV.exists()
+    with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=header, extrasaction="ignore", quoting=csv.QUOTE_MINIMAL)
+        if not file_exists:
+            writer.writeheader()
+        # normalize values to strings
+        clean_row = {k: ("" if row.get(k) is None else str(row.get(k))) for k in header}
+        writer.writerow(clean_row)
+        f.flush()
+        try:
+            os.fsync(f.fileno())
+        except Exception:
+            # some platforms deny fsync — ignore
+            pass
 
-LOG_HEADER = [
-    "timestamp","customer_id","event_type","message","phone","email",
-    "app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"
-]
-
-def append_test_event(row: dict) -> bool:
+def append_test_event(row: dict) -> (bool, str): # type: ignore
     """
-    Cloud-safe simple append. No atomic replace, no tempfile.
-    Guarantees writing even in restricted environments.
+    Append a test event row. Returns (success, message).
+    On failure: stores the row in session_state.pending_logs and returns False with error string.
     """
-    header = ["timestamp","customer_id","event_type","message","phone","email",
-              "app_installed","chosen_channel","provider_message_id","status",
-              "otp_demo","replayed_from"]
-
+    # Try direct write first
     try:
-        # check if file exists
-        file_exists = os.path.exists(TEST_EVENTS_CSV)
-
-        # open in append mode
-        with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(
-                f,
-                fieldnames=header,
-                extrasaction="ignore",
-                quoting=csv.QUOTE_MINIMAL
-            )
-
-            # write header only if first time
-            if not file_exists:
-                writer.writeheader()
-
-            # normalize row
-            clean_row = {k: str(row.get(k, "")) for k in header}
-            writer.writerow(clean_row)
-
-            # flush buffer
-            f.flush()
-
-            # try fsync (cloud may reject—ignore if fails)
-            try:
-                os.fsync(f.fileno())
-            except Exception:
-                pass
-
-        return True
-
+        _write_row_to_file(row)
+        return True, "OK"
     except Exception as e:
-        st.error(f"LOGGING ERROR: {e}")
-        return False
-    
+        # store in session buffer for later retry
+        pending = st.session_state.get("pending_logs", [])
+        pending.append({"row": row, "error": str(e), "ts": datetime.utcnow().isoformat()})
+        st.session_state["pending_logs"] = pending
+        return False, str(e)
+
 def read_test_events_csv() -> pd.DataFrame:
     """
-    Read logs using csv module to avoid pandas tokenization issues.
-    Returns a DataFrame (strings) with expected columns.
+    Read logs using csv.DictReader to avoid tokenization problems.
+    Returns DataFrame (strings) with expected columns.
     """
     rows = []
-    if os.path.exists(TEST_EVENTS_CSV):
+    if TEST_EVENTS_CSV.exists():
         try:
             with open(TEST_EVENTS_CSV, "r", newline="", encoding="utf-8") as rf:
                 reader = csv.DictReader(rf)
                 for r in reader:
+                    # guarantee all keys exist
                     rows.append({k: r.get(k, "") for k in LOG_HEADER})
         except Exception:
-            # if read fails return empty with header
             return pd.DataFrame(columns=LOG_HEADER)
     return pd.DataFrame(rows, columns=LOG_HEADER)
+
+def flush_pending_logs() -> (int, list): # type: ignore
+    """
+    Try to flush pending logs from session_state to disk. Returns (count_flushed, failures_list).
+    """
+    pending = st.session_state.get("pending_logs", [])
+    failures = []
+    flushed = 0
+    if not pending:
+        return 0, failures
+    # attempt sequential write
+    remaining = []
+    for item in pending:
+        row = item.get("row", {})
+        try:
+            _write_row_to_file(row)
+            flushed += 1
+        except Exception as e:
+            item["error"] = str(e)
+            item["last_try"] = datetime.utcnow().isoformat()
+            remaining.append(item)
+    st.session_state["pending_logs"] = remaining
+    return flushed, remaining
+
+# init pending_logs if not present
+if "pending_logs" not in st.session_state:
+    st.session_state["pending_logs"] = []
 
 # ---------------- Sidebar controls ----------------
 st.sidebar.title("Data & Controls")
@@ -248,7 +247,7 @@ delivered = st.sidebar.selectbox("Delivered?", options=["All","Y","N"])
 st.sidebar.markdown("---")
 st.sidebar.caption("Trusted Notifications — Dashboard prototype")
 
-# ---------------- Main layout / charts / preview ----------------
+# ---------------- Main layout / summary ----------------
 col1, col2 = st.columns([1,3])
 with col1:
     st.markdown("### Summary")
@@ -268,6 +267,7 @@ with col2:
     st.write("Explore the data, test the model, and visualize channel distributions and retry patterns.")
     st.markdown("---")
 
+# ---------------- Charts / preview ----------------
 def apply_filters(df):
     if df is None:
         return df
@@ -413,7 +413,7 @@ if submit:
         if backend_url.startswith("http://127.") or backend_url.startswith("http://localhost"):
             if "RUNNING_LOCALLY" not in os.environ:
                 use_simulated = True
-                st.warning("Backend URL points to localhost. On cloud the app cannot reach localhost using simulated fallback.")
+                st.warning("Backend URL points to localhost. On cloud the app cannot reach localhost — using simulated fallback.")
 
     if not use_simulated:
         try:
@@ -425,7 +425,7 @@ if submit:
             chosen_channel = resp.get("chosen_channel")
             provider_message_id = resp.get("provider_message_id")
             status = resp.get("status")
-        except (ConnectionError, RequestException) as e:
+        except (requests.exceptions.ConnectionError, requests.exceptions.RequestException) as e:
             st.error("Backend request failed; using simulated fallback.")
             st.write(str(e))
             use_simulated = True
@@ -443,7 +443,7 @@ if submit:
         provider_message_id = f"sim-{random.randint(100000,999999)}"
         st.json({"chosen_channel": chosen_channel, "status": status, "provider_message_id": provider_message_id, "note":"simulated fallback used"})
 
-    # write the event atomically
+    # build log row
     row = {
         "timestamp": datetime.utcnow().isoformat(),
         "customer_id": int(customer_id) if (customer_id and customer_id.isdigit()) else "",
@@ -458,10 +458,11 @@ if submit:
         "otp_demo": otp_value or "",
         "replayed_from": ""
     }
-    ok = append_test_event(row)
-    if ok:
+
+    success, msg = append_test_event(row)
+    if success:
         st.success("Saved test event to logs/test_events.csv")
-        # show download snapshot (useful on ephemeral cloud)
+        # quick download snapshot (helpful on ephemeral cloud)
         logs_df = read_test_events_csv()
         if not logs_df.empty:
             buf = BytesIO()
@@ -470,41 +471,57 @@ if submit:
             st.download_button("Download latest test_events.csv (snapshot)", data=buf, file_name="test_events.csv", mime="text/csv")
     else:
         st.error("Failed to save test event to logs/test_events.csv")
+        st.write(f"Error: {msg}")
+        pending_count = len(st.session_state.get("pending_logs", []))
+        st.warning(f"Stored event in local pending buffer ({pending_count} pending). Use 'Flush pending logs' or download them.")
 
-# ---------------- LOGS VIEWER (simple) ----------------
+# ---------------- Logs viewer (simple) ----------------
 st.markdown("---")
 st.markdown("## 🔍 Test Event Logs (Saved Predictions Only)")
 
-# show logs dir contents
-if os.path.exists(LOGS_DIR):
-    files = os.listdir(LOGS_DIR)
+# directory listing
+try:
+    files = list(LOGS_DIR.iterdir())
     if files:
         st.write("**Files in logs/**")
-        for f in files:
-            full = os.path.join(LOGS_DIR, f)
+        for p in sorted(files, key=lambda x: x.name):
             try:
-                size = os.path.getsize(full)
-                mtime = datetime.fromtimestamp(os.path.getmtime(full)).isoformat()
+                size = p.stat().st_size
+                mtime = datetime.fromtimestamp(p.stat().st_mtime).isoformat()
             except Exception:
                 size = 0
                 mtime = ""
-            st.write(f"- `{f}` — {size} bytes — last modified: {mtime}")
+            st.write(f"- `{p.name}` — {size} bytes — last modified: {mtime}")
     else:
         st.info("Logs folder exists but is empty.")
-else:
-    st.info("Logs folder not found. It will be created after the first prediction is logged.")
+except Exception:
+    st.info("Logs folder not available.")
 
-# refresh control
-if st.button("Refresh logs"):
-    try:
-        st.rerun()
-    except Exception:
-        pass
+# pending logs controls
+pending = st.session_state.get("pending_logs", [])
+if pending:
+    st.markdown("### ⚠️ Pending logs (not yet written to disk)")
+    st.write(f"{len(pending)} rows pending write.")
+    if st.button("Flush pending logs"):
+        flushed, remaining = flush_pending_logs()
+        if flushed:
+            st.success(f"Flushed {flushed} pending rows to disk.")
+        if remaining:
+            st.error(f"{len(remaining)} rows still pending.")
+        do_rerun()
+    # allow download of pending as CSV
+    pending_rows = [p["row"] for p in pending]
+    if pending_rows:
+        df_pending = pd.DataFrame(pending_rows, columns=LOG_HEADER)
+        buf = BytesIO()
+        df_pending.to_csv(buf, index=False)
+        buf.seek(0)
+        st.download_button("Download pending logs as CSV", data=buf, file_name="pending_test_events.csv", mime="text/csv")
 
+# load saved logs
 logs_df = read_test_events_csv()
-
 if logs_df.empty:
-    st.info("No test events logged yet run a prediction to generate logs.")
+    st.info("No test events logged yet — run a prediction to generate logs.")
 else:
     st.markdown("### 📄 Saved Predictions (Latest rows)")
 
