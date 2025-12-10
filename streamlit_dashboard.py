@@ -11,6 +11,7 @@ import random
 import csv
 import time
 from requests.exceptions import RequestException, ConnectionError
+from pathlib import Path
 
 # ---------------- Page config & theme colors ----------------
 st.set_page_config(page_title="Trusted Notifications Dashboard", layout="wide")
@@ -19,6 +20,12 @@ PRIMARY_BLUE = "#0B5DA7"
 ACCENT_ORANGE = "#FF6A00"
 NAVY = "#073763"
 BG = "#F4F8FB"
+
+# ---------------- Base paths (use script directory for stability) ----------------
+BASE_DIR = Path(__file__).resolve().parent
+LOGS_DIR = BASE_DIR / "logs"
+LOGS_DIR.mkdir(parents=True, exist_ok=True)
+TEST_EVENTS_CSV = LOGS_DIR / "test_events.csv"
 
 # ---------------- Branded header / CSS ----------------
 st.markdown(
@@ -70,7 +77,24 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ---------------- Helper utilities ----------------
+# ---------------- Helpers ----------------
+def do_rerun():
+    """
+    Safely request a Streamlit rerun. Try the most recent API first (st.rerun),
+    fall back to older experimental_rerun if available.
+    If neither is available, do nothing.
+    """
+    try:
+        st.rerun()
+    except Exception:
+        try:
+            # older Streamlit versions
+            st.experimental_rerun()
+        except Exception:
+            # cannot force rerun — leave as-is
+            pass
+
+
 def read_file(uploaded_file):
     name = uploaded_file.name.lower()
     try:
@@ -84,12 +108,13 @@ def read_file(uploaded_file):
         st.error(f"Failed to read file: {e}")
         return None
 
+
 def load_sample_data():
     candidates = [
-        "datasets/Trusted_Notifications_Sample_Events_Updated (1).xlsx",
-        "datasets/Trusted_Notifications_Sample_Events_Updated.xlsx",
-        "datasets/Event_Type_Stats (1).xlsx",
-        "data/sample_events.csv",
+        str(BASE_DIR / "datasets" / "Trusted_Notifications_Sample_Events_Updated (1).xlsx"),
+        str(BASE_DIR / "datasets" / "Trusted_Notifications_Sample_Events_Updated.xlsx"),
+        str(BASE_DIR / "datasets" / "Event_Type_Stats (1).xlsx"),
+        str(BASE_DIR / "data" / "sample_events.csv"),
     ]
     for p in candidates:
         if os.path.exists(p):
@@ -112,11 +137,8 @@ def load_sample_data():
     })
     return df
 
-# ---------------- Logging utilities ----------------
-LOGS_DIR = os.path.join(os.getcwd(), "logs")
-os.makedirs(LOGS_DIR, exist_ok=True)
-TEST_EVENTS_CSV = os.path.join(LOGS_DIR, "test_events.csv")
 
+# ---------------- Logging utilities ----------------
 def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
     """
     Append a test event row to CSV. Return True if successful.
@@ -125,7 +147,8 @@ def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
     header = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
     for attempt in range(retries):
         try:
-            exists = os.path.exists(TEST_EVENTS_CSV)
+            exists = TEST_EVENTS_CSV.exists()
+            # Use text mode write with newline='' for CSV portability
             with open(TEST_EVENTS_CSV, "a", newline="", encoding="utf-8") as f:
                 writer = csv.DictWriter(f, fieldnames=header, extrasaction="ignore", quoting=csv.QUOTE_MINIMAL)
                 if not exists:
@@ -135,10 +158,11 @@ def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
                     f.flush()
                     os.fsync(f.fileno())
                 except Exception:
-                    # some environments don't allow fsync; ignore
+                    # ignore fsync errors on restricted environments
                     pass
             return True
         except Exception:
+            # transient error -> retry
             if attempt < retries - 1:
                 time.sleep(delay)
                 continue
@@ -146,16 +170,17 @@ def append_test_event(row: dict, retries: int = 3, delay: float = 0.2) -> bool:
                 return False
     return False
 
+
 def read_test_events() -> pd.DataFrame:
     """
-    Robustly read logs. Uses python engine and skips bad lines so stray commas
-    in message text won't break the reader.
+    Robustly read logs. Use python engine and skip malformed lines so stray commas
+    in message text won't break the reader. Always return DataFrame with expected columns.
     """
     cols = ["timestamp","customer_id","event_type","message","phone","email","app_installed","chosen_channel","provider_message_id","status","otp_demo","replayed_from"]
-    if os.path.exists(TEST_EVENTS_CSV):
+    if TEST_EVENTS_CSV.exists():
         try:
-            # keep strings, skip malformed lines
             df = pd.read_csv(TEST_EVENTS_CSV, dtype=str, keep_default_na=False, engine="python", on_bad_lines="skip")
+            # Ensure columns exist and keep order
             for c in cols:
                 if c not in df.columns:
                     df[c] = ""
@@ -164,6 +189,7 @@ def read_test_events() -> pd.DataFrame:
             return pd.DataFrame(columns=cols)
     else:
         return pd.DataFrame(columns=cols)
+
 
 # ---------------- Sidebar controls ----------------
 st.sidebar.title("Data & Controls")
@@ -193,6 +219,7 @@ delivered = st.sidebar.selectbox("Delivered?", options=["All","Y","N"])
 st.sidebar.markdown("---")
 st.sidebar.caption("Trusted Notifications — Dashboard prototype")
 
+
 # ---------------- Main layout / summary ----------------
 col1, col2 = st.columns([1,3])
 with col1:
@@ -212,6 +239,7 @@ with col2:
     st.markdown("# Early Risk Signals Prototype")
     st.write("Explore the data, test the model, and visualize channel distributions and retry patterns.")
     st.markdown("---")
+
 
 # ---------------- Filters helper ----------------
 def apply_filters(df):
@@ -233,6 +261,7 @@ def apply_filters(df):
 
 df_filtered = apply_filters(df)
 
+
 # ---------------- Charts ----------------
 st.markdown("### Channel distribution")
 if df is None:
@@ -249,6 +278,7 @@ else:
         st.altair_chart(bar, use_container_width=True)
     else:
         st.write("No 'Intended_Channel' column found in dataset.")
+
 
 colA, colB = st.columns(2)
 with colA:
@@ -276,12 +306,14 @@ with colB:
 
 st.markdown("---")
 
+
 # ---------------- Data preview ----------------
 st.markdown("### Data preview")
 if df_filtered is None:
     st.info("No dataset loaded.")
 else:
     st.dataframe(df_filtered.head(200), use_container_width=True)
+
 
 # ---------------- Test / simulated send panel ----------------
 st.markdown("---")
@@ -327,7 +359,6 @@ with st.form("test_form"):
     test_app = st.checkbox("App installed?", value=default_app_installed)
     otp_reveal = st.checkbox("Reveal demo OTP (demo-only)", value=False)
 
-    # optional: use Streamlit secrets for a real backend URL
     default_backend = ""
     try:
         default_backend = st.secrets["BACKEND_URL"]
@@ -415,29 +446,25 @@ if submit:
     ok = append_test_event(row)
     if ok:
         st.success("Saved test event to logs/test_events.csv")
-        # present a download snapshot (useful on cloud)
-        logs_df = read_test_events()
-        if not logs_df.empty:
-            buf = BytesIO()
-            logs_df.to_csv(buf, index=False)
-            buf.seek(0)
-            st.download_button("Download latest test_events.csv (snapshot)", data=buf, file_name="test_events.csv", mime="text/csv")
+        # immediate rerun to pick up the new row in the viewer
+        do_rerun()
     else:
         st.error("Failed to save test event to logs/test_events.csv")
+
 
 # ---------------- LOGS VIEWER (SIMPLE, NO REPLAY) ----------------
 st.markdown("---")
 st.markdown("## 🔍 Test Event Logs (Saved Predictions Only)")
 
 # show logs dir contents (helpful)
-if os.path.exists(LOGS_DIR):
-    files = os.listdir(LOGS_DIR)
+if LOGS_DIR.exists():
+    files = sorted(os.listdir(LOGS_DIR))
     if files:
         st.write("**Files in logs/**")
         for f in files:
-            full = os.path.join(LOGS_DIR, f)
+            full = LOGS_DIR / f
             try:
-                size = os.path.getsize(full)
+                size = full.stat().st_size
             except Exception:
                 size = 0
             st.write(f"- `{f}` — {size} bytes")
@@ -446,12 +473,9 @@ if os.path.exists(LOGS_DIR):
 else:
     st.info("Logs folder not found. It will be created after the first prediction is logged.")
 
-# refresh control
+# refresh control (safe)
 if st.button("Refresh logs"):
-    try:
-        st.rerun()
-    except Exception:
-        pass
+    do_rerun()
 
 # load logs
 logs_df = read_test_events()
